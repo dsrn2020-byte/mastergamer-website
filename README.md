@@ -70,4 +70,6 @@ http://localhost:8080
 
 Upload the contents of this folder to any static host, such as Netlify, Vercel, GitHub Pages, Cloudflare Pages, or standard web hosting.
 
+If deploying the whole Codex project folder to Vercel, keep the root `vercel.json` file in place. It rewrites root-level requests to the static site in `outputs/` so paths such as `assets/site/mastergamer-logo.png`, `styles.css`, `games.js`, and each page URL resolve correctly.
+
 Before publishing, review store links, online play links, trailer files, and legal text with final studio-approved content.

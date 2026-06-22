@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Flappy Christmas is a festive arcade adventure from Master Gamer where Santa battles enemies, collects snowballs, and faces the Ice Giant."
+    />
+    <title>Flappy Christmas | Master Gamer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=23" />
+  </head>
+  <body>
+    <canvas class="arcade-canvas" id="arcadeCanvas" aria-hidden="true"></canvas>
+
+    <header class="site-header">
+      <a class="brand" href="index.html#home" aria-label="Master Gamer home">
+        <img
+          class="brand-logo"
+          src="assets/site/mastergamer-logo.png"
+          alt="Master Gamer"
+        />
+        <span class="brand-copy">
+          <strong>Master Gamer</strong>
+          <small>Indie Games Australia</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="siteNav">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Menu</span>
+      </button>
+
+      <nav class="site-nav" id="siteNav" aria-label="Primary navigation">
+        <a href="index.html#games">Games</a>
+        <a href="index.html#play">Play</a>
+        <a href="index.html#support">Support</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="game-detail-hero flappy-christmas-detail-hero">
+        <img
+          src="assets/games/flappy-christmas/flappy-christmas-cover.png"
+          alt="Flappy Christmas cover art"
+          class="game-detail-cover"
+        />
+        <div class="section game-detail-copy">
+          <p class="eyebrow">Festive Arcade Adventure</p>
+          <h1>Flappy Christmas</h1>
+          <p class="hero-tagline">
+            A festive arcade adventure where Santa battles to save Christmas.
+          </p>
+          <p>
+            Guide Santa through a dangerous enchanted forest and prepare for an
+            epic showdown with the Ice Giant.
+          </p>
+          <div class="hero-actions"></div>
+        </div>
+      </section>
+
+      <section class="section game-detail-layout">
+        <div>
+          <p class="eyebrow">Overview</p>
+          <h2>Save Christmas. Beat the Ice Giant.</h2>
+          <p>The Ice Giant is trying to stop Christmas.</p>
+          <p>
+            Guide Santa through an enchanted forest filled with ghosts, ghouls,
+            scorpions, and dangerous enemies. Collect snowballs, unlock
+            power-ups, and battle your way to an epic showdown with the Ice
+            Giant.
+          </p>
+          <p>A festive arcade adventure for players of all ages.</p>
+        </div>
+
+        <div class="panel">
+          <h3>Features</h3>
+          <ul class="feature-list">
+            <li>Festive arcade adventure gameplay</li>
+            <li>Santa-themed flying action</li>
+            <li>Snowball power-ups</li>
+            <li>Enchanted forest enemies</li>
+            <li>Boss battle against the Ice Giant</li>
+            <li>Family-friendly Christmas fun</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Promo</p>
+          <h2>Flappy Christmas adventure</h2>
+        </div>
+        <img
+          class="game-promo-banner"
+          src="assets/games/flappy-christmas/flappy-christmas-banner.png"
+          alt="Flappy Christmas promotional banner"
+        />
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Screenshots</p>
+          <h2>See Flappy Christmas in action</h2>
+        </div>
+        <div class="screenshot-carousel wide-carousel" data-carousel>
+          <div class="screenshot-viewport">
+            <div class="screenshot-track">
+              <figure class="screenshot-slide">
+                <img src="assets/games/flappy-christmas/flappy-christmas-screenshot1.png" alt="Flappy Christmas title screen" />
+              </figure>
+              <figure class="screenshot-slide">
+                <img src="assets/games/flappy-christmas/flappy-christmas-screenshot2.png" alt="Flappy Christmas haunted forest gameplay" />
+              </figure>
+              <figure class="screenshot-slide">
+                <img src="assets/games/flappy-christmas/flappy-christmas-screenshot3.png" alt="Flappy Christmas spider hazard gameplay" />
+              </figure>
+              <figure class="screenshot-slide">
+                <img src="assets/games/flappy-christmas/flappy-christmas-screenshot4.png" alt="Flappy Christmas enemy encounter" />
+              </figure>
+              <figure class="screenshot-slide">
+                <img src="assets/games/flappy-christmas/flappy-christmas-screenshot5.png" alt="Flappy Christmas enchanted forest level" />
+              </figure>
+            </div>
+          </div>
+          <div class="carousel-controls">
+            <button type="button" class="carousel-button" data-carousel-prev aria-label="Previous screenshot">Previous</button>
+            <div class="carousel-dots" aria-label="Screenshot carousel navigation">
+              <button type="button" class="carousel-dot" aria-label="Show screenshot 1"></button>
+              <button type="button" class="carousel-dot" aria-label="Show screenshot 2"></button>
+              <button type="button" class="carousel-dot" aria-label="Show screenshot 3"></button>
+              <button type="button" class="carousel-dot" aria-label="Show screenshot 4"></button>
+              <button type="button" class="carousel-dot" aria-label="Show screenshot 5"></button>
+            </div>
+            <button type="button" class="carousel-button" data-carousel-next aria-label="Next screenshot">Next</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <img
+        class="footer-logo"
+        src="assets/site/mastergamer-logo.png"
+        alt="Master Gamer"
+      />
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="privacy.html">Privacy Policy</a>
+        <span>|</span>
+        <a href="terms.html">Terms of Use</a>
+        <span>|</span>
+        <a href="cookies.html">Cookie Policy</a>
+        <span>|</span>
+        <a href="humding-privacy.html">HumDing Privacy Policy</a>
+        <span>|</span>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <span class="footer-copy">Copyright &copy; Master Gamer</span>
+    </footer>
+
+    <script src="games.js?v=22"></script>
+    <script src="main.js?v=21"></script>
+  </body>
+</html>
+
+
