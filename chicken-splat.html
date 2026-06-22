@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Chicken Splat is a quirky arcade puzzle game where chickens take on troublesome sheep across 100 challenging levels."
+    />
+    <title>Chicken Splat | Master Gamer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=23" />
+  </head>
+  <body>
+    <canvas class="arcade-canvas" id="arcadeCanvas" aria-hidden="true"></canvas>
+
+    <header class="site-header">
+      <a class="brand" href="index.html#home" aria-label="Master Gamer home">
+        <img
+          class="brand-logo"
+          src="assets/site/mastergamer-logo.png"
+          alt="Master Gamer"
+        />
+        <span class="brand-copy">
+          <strong>Master Gamer</strong>
+          <small>Indie Games Australia</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="siteNav">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Menu</span>
+      </button>
+
+      <nav class="site-nav" id="siteNav" aria-label="Primary navigation">
+        <a href="index.html#games">Games</a>
+        <a href="index.html#play">Play</a>
+        <a href="index.html#support">Support</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="game-detail-hero chicken-splat-detail-hero">
+        <img
+          src="assets/games/chicken-splat/chicken-splat-cover.png"
+          alt="Chicken Splat cover art"
+          class="game-detail-cover"
+        />
+        <div class="section game-detail-copy">
+          <p class="eyebrow">Arcade Puzzle</p>
+          <h1>Chicken Splat</h1>
+          <p class="hero-tagline">Fling chickens. Splat sheep. Save the day.</p>
+          <p>
+            Guide your chickens through 100 increasingly challenging levels with
+            strategy, timing, and unique character abilities.
+          </p>
+          <div class="hero-actions"></div>
+        </div>
+      </section>
+
+      <section class="section game-detail-layout">
+        <div>
+          <p class="eyebrow">Overview</p>
+          <h2>One hundred levels of comic arcade strategy</h2>
+          <p>
+            Guide your chickens through 100 increasingly challenging levels as
+            you attempt to eliminate troublesome sheep using strategy, timing,
+            and unique character abilities.
+          </p>
+          <p>
+            Unlock special chickens, discover power-ups, and prepare for the
+            ultimate showdown against the Boss Sheep in Level 100.
+          </p>
+          <p>
+            A quirky arcade puzzle experience packed with humour and challenge.
+          </p>
+        </div>
+
+        <div class="panel">
+          <h3>Game Style</h3>
+          <ul class="feature-list">
+            <li>100 increasingly challenging levels</li>
+            <li>Special chickens with unique abilities</li>
+            <li>Power-ups and timing-based shots</li>
+            <li>Boss Sheep finale in Level 100</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Promotional Banner</p>
+          <h2>Fling chickens. Splat sheep.</h2>
+        </div>
+        <img
+          src="assets/games/chicken-splat/chicken-splat-banner.png"
+          alt="Chicken Splat promotional banner"
+          class="promo-banner"
+          loading="lazy"
+        />
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Screenshots</p>
+          <h2>See Chicken Splat in action</h2>
+        </div>
+        <div class="screenshot-carousel" data-carousel>
+          <div class="screenshot-viewport">
+            <div class="screenshot-track">
+              <figure class="screenshot-slide">
+                <img src="assets/games/chicken-splat/chicken-splat-screenshot1.png" alt="Chicken Splat level select screen" />
+              </figure>
+              <figure class="screenshot-slide">
+                <img src="assets/games/chicken-splat/chicken-splat-screenshot2.png" alt="Chicken Splat how to play screen" />
+              </figure>
+              <figure class="screenshot-slide">
+                <img src="assets/games/chicken-splat/chicken-splat-screenshot3.png" alt="Chicken Splat night level gameplay" />
+              </figure>
+              <figure class="screenshot-slide">
+                <img src="assets/games/chicken-splat/chicken-splat-screenshot4.png" alt="Chicken Splat daylight level gameplay" />
+              </figure>
+              <figure class="screenshot-slide">
+                <img src="assets/games/chicken-splat/chicken-splat-screenshot5.png" alt="Chicken Splat cannon shot gameplay" />
+              </figure>
+              <figure class="screenshot-slide">
+                <img src="assets/games/chicken-splat/chicken-splat-screenshot6.png" alt="Chicken Splat advanced level gameplay" />
+              </figure>
+            </div>
+          </div>
+          <div class="carousel-controls">
+            <button type="button" class="carousel-button" data-carousel-prev aria-label="Previous screenshot">Previous</button>
+            <div class="carousel-dots" aria-label="Screenshot carousel navigation">
+              <button type="button" class="carousel-dot" aria-label="Show screenshot 1"></button>
+              <button type="button" class="carousel-dot" aria-label="Show screenshot 2"></button>
+              <button type="button" class="carousel-dot" aria-label="Show screenshot 3"></button>
+              <button type="button" class="carousel-dot" aria-label="Show screenshot 4"></button>
+              <button type="button" class="carousel-dot" aria-label="Show screenshot 5"></button>
+              <button type="button" class="carousel-dot" aria-label="Show screenshot 6"></button>
+            </div>
+            <button type="button" class="carousel-button" data-carousel-next aria-label="Next screenshot">Next</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <img
+        class="footer-logo"
+        src="assets/site/mastergamer-logo.png"
+        alt="Master Gamer"
+      />
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="privacy.html">Privacy Policy</a>
+        <span>|</span>
+        <a href="terms.html">Terms of Use</a>
+        <span>|</span>
+        <a href="cookies.html">Cookie Policy</a>
+        <span>|</span>
+        <a href="humding-privacy.html">HumDing Privacy Policy</a>
+        <span>|</span>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <span class="footer-copy">Copyright &copy; Master Gamer</span>
+    </footer>
+
+    <script src="games.js?v=22"></script>
+    <script src="main.js?v=21"></script>
+  </body>
+</html>
+
+

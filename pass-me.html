@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Pass Me is a multiplayer memory challenge from Master Gamer for family and friends, with solo play, pattern recognition, and quick rounds."
+    />
+    <title>Pass Me | Master Gamer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=23" />
+  </head>
+  <body>
+    <canvas class="arcade-canvas" id="arcadeCanvas" aria-hidden="true"></canvas>
+
+    <header class="site-header">
+      <a class="brand" href="index.html#home" aria-label="Master Gamer home">
+        <img
+          class="brand-logo"
+          src="assets/site/mastergamer-logo.png"
+          alt="Master Gamer"
+        />
+        <span class="brand-copy">
+          <strong>Master Gamer</strong>
+          <small>Indie Games Australia</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="siteNav">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Menu</span>
+      </button>
+
+      <nav class="site-nav" id="siteNav" aria-label="Primary navigation">
+        <a href="index.html#games">Games</a>
+        <a href="index.html#play">Play</a>
+        <a href="index.html#support">Support</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="game-detail-hero pass-me-detail-hero">
+        <img
+          src="assets/games/pass-me/pass-me-cover.png"
+          alt="Pass Me cover art"
+          class="game-detail-cover"
+        />
+        <div class="section game-detail-copy">
+          <p class="eyebrow">Memory Challenge</p>
+          <h1>Pass Me</h1>
+          <p class="hero-tagline">A fun multiplayer memory challenge for friends and family.</p>
+          <p>
+            Remember the sequence, repeat it correctly, and pass the device to
+            the next player before the pressure builds.
+          </p>
+          <div class="hero-actions"></div>
+        </div>
+      </section>
+
+      <section class="section game-detail-layout">
+        <div>
+          <p class="eyebrow">Overview</p>
+          <h2>Remember it. Repeat it. Pass it on.</h2>
+          <p>
+            Pass Me is a fun multiplayer memory challenge designed for family
+            and friends.
+          </p>
+          <p>
+            Memorise sequences, repeat them correctly, and pass the device to
+            the next player. As rounds progress, patterns become increasingly
+            difficult until only one memory champion remains.
+          </p>
+          <p>
+            Play solo or compete with up to four players across categories
+            including colours, animals, faces, and objects.
+          </p>
+        </div>
+
+        <div class="panel">
+          <h3>Features</h3>
+          <ul class="feature-list">
+            <li>Single-player memory training</li>
+            <li>Multiplayer mode for up to four players</li>
+            <li>Pattern recognition gameplay</li>
+            <li>Categories including colours, faces, objects and animals</li>
+            <li>Quick rounds for family and friends</li>
+            <li>Easy to learn and fun to master</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Promotional Banner</p>
+          <h2>Remember it. Repeat it. Pass it on.</h2>
+        </div>
+        <img
+          src="assets/games/pass-me/pass-me-banner.png"
+          alt="Pass Me promotional banner"
+          class="promo-banner"
+          loading="lazy"
+        />
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Screenshots</p>
+          <h2>See Pass Me in action</h2>
+        </div>
+        <div class="screenshot-carousel wide-carousel" data-carousel>
+          <div class="screenshot-viewport">
+            <div class="screenshot-track">
+              <figure class="screenshot-slide">
+                <img src="assets/games/pass-me/pass-me-screenshot1.png" alt="Pass Me title screen" />
+              </figure>
+              <figure class="screenshot-slide">
+                <img src="assets/games/pass-me/pass-me-screenshot2.png" alt="Pass Me multiplayer setup" />
+              </figure>
+              <figure class="screenshot-slide">
+                <img src="assets/games/pass-me/pass-me-screenshot3.png" alt="Pass Me single-player skill setup" />
+              </figure>
+              <figure class="screenshot-slide">
+                <img src="assets/games/pass-me/pass-me-screenshot4.png" alt="Pass Me colour memory round" />
+              </figure>
+              <figure class="screenshot-slide">
+                <img src="assets/games/pass-me/pass-me-screenshot5.png" alt="Pass Me face memory round" />
+              </figure>
+              <figure class="screenshot-slide">
+                <img src="assets/games/pass-me/pass-me-screenshot6.png" alt="Pass Me shape memory round" />
+              </figure>
+              <figure class="screenshot-slide">
+                <img src="assets/games/pass-me/pass-me-screenshot7.png" alt="Pass Me animal memory round" />
+              </figure>
+            </div>
+          </div>
+          <div class="carousel-controls">
+            <button type="button" class="carousel-button" data-carousel-prev aria-label="Previous screenshot">Previous</button>
+            <div class="carousel-dots" aria-label="Screenshot carousel navigation">
+              <button type="button" class="carousel-dot" aria-label="Show screenshot 1"></button>
+              <button type="button" class="carousel-dot" aria-label="Show screenshot 2"></button>
+              <button type="button" class="carousel-dot" aria-label="Show screenshot 3"></button>
+              <button type="button" class="carousel-dot" aria-label="Show screenshot 4"></button>
+              <button type="button" class="carousel-dot" aria-label="Show screenshot 5"></button>
+              <button type="button" class="carousel-dot" aria-label="Show screenshot 6"></button>
+              <button type="button" class="carousel-dot" aria-label="Show screenshot 7"></button>
+            </div>
+            <button type="button" class="carousel-button" data-carousel-next aria-label="Next screenshot">Next</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <img
+        class="footer-logo"
+        src="assets/site/mastergamer-logo.png"
+        alt="Master Gamer"
+      />
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="privacy.html">Privacy Policy</a>
+        <span>|</span>
+        <a href="terms.html">Terms of Use</a>
+        <span>|</span>
+        <a href="cookies.html">Cookie Policy</a>
+        <span>|</span>
+        <a href="humding-privacy.html">HumDing Privacy Policy</a>
+        <span>|</span>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <span class="footer-copy">Copyright &copy; Master Gamer</span>
+    </footer>
+
+    <script src="games.js?v=22"></script>
+    <script src="main.js?v=21"></script>
+  </body>
+</html>
+
+

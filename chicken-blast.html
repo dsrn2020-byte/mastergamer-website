@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Chicken Blast is a fast-paced arcade adventure where you blast a chicken from a cannon, dodge obstacles, collect power-ups, and chase high scores."
+    />
+    <title>Chicken Blast | Master Gamer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=23" />
+  </head>
+  <body>
+    <canvas class="arcade-canvas" id="arcadeCanvas" aria-hidden="true"></canvas>
+
+    <header class="site-header">
+      <a class="brand" href="index.html#home" aria-label="Master Gamer home">
+        <img
+          class="brand-logo"
+          src="assets/site/mastergamer-logo.png"
+          alt="Master Gamer"
+        />
+        <span class="brand-copy">
+          <strong>Master Gamer</strong>
+          <small>Indie Games Australia</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="siteNav">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Menu</span>
+      </button>
+
+      <nav class="site-nav" id="siteNav" aria-label="Primary navigation">
+        <a href="index.html#games">Games</a>
+        <a href="index.html#play">Play</a>
+        <a href="index.html#support">Support</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="game-detail-hero chicken-blast-detail-hero">
+        <img
+          src="assets/games/chicken-blast/chicken-blast-cover.png"
+          alt="Chicken Blast character select screen"
+          class="game-detail-cover"
+        />
+        <div class="section game-detail-copy">
+          <p class="eyebrow">Arcade Adventure</p>
+          <h1>Chicken Blast</h1>
+          <p class="hero-tagline">Launch. Dodge. Fly farther.</p>
+          <p>
+            Blast your chicken from a cannon and escape an army of mischievous
+            monkeys in a fast-paced arcade adventure.
+          </p>
+          <div class="hero-actions"></div>
+        </div>
+      </section>
+
+      <section class="section game-detail-layout">
+        <div>
+          <p class="eyebrow">Overview</p>
+          <h2>Cannon-fired arcade chaos</h2>
+          <p>
+            Blast your chicken from a cannon and escape an army of mischievous
+            monkeys in this fast-paced arcade adventure.
+          </p>
+          <p>
+            Collect power-ups, dodge obstacles, and fly as far as possible while
+            chasing high scores and leaderboard glory.
+          </p>
+          <p>
+            Simple controls, colourful visuals, and endless gameplay make
+            Chicken Blast easy to pick up and hard to put down.
+          </p>
+        </div>
+
+        <div class="panel">
+          <h3>Game Style</h3>
+          <ul class="feature-list">
+            <li>Cannon-launch arcade action</li>
+            <li>Power-ups and obstacle dodging</li>
+            <li>High-score chasing</li>
+            <li>Colourful, fast replayable sessions</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Promotional Banner</p>
+          <h2>Chicken vs monkey mayhem</h2>
+        </div>
+        <img
+          src="assets/games/chicken-blast/chicken-blast-banner.png"
+          alt="Chicken Blast promotional banner"
+          class="promo-banner"
+          loading="lazy"
+        />
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Screenshots</p>
+          <h2>See Chicken Blast in action</h2>
+        </div>
+        <div class="screenshot-carousel wide-carousel" data-carousel>
+          <div class="screenshot-viewport">
+            <div class="screenshot-track">
+              <figure class="screenshot-slide">
+                <img src="assets/games/chicken-blast/chicken-blast-screenshot1.png" alt="Chicken Blast gameplay with coins and cannons" />
+              </figure>
+              <figure class="screenshot-slide">
+                <img src="assets/games/chicken-blast/chicken-blast-screenshot2.png" alt="Chicken Blast versus monkey screen" />
+              </figure>
+              <figure class="screenshot-slide">
+                <img src="assets/games/chicken-blast/chicken-blast-screenshot3.png" alt="Chicken Blast pirate level gameplay" />
+              </figure>
+              <figure class="screenshot-slide">
+                <img src="assets/games/chicken-blast/chicken-blast-screenshot4.png" alt="Chicken Blast ship obstacle gameplay" />
+              </figure>
+            </div>
+          </div>
+          <div class="carousel-controls">
+            <button type="button" class="carousel-button" data-carousel-prev aria-label="Previous screenshot">Previous</button>
+            <div class="carousel-dots" aria-label="Screenshot carousel navigation">
+              <button type="button" class="carousel-dot" aria-label="Show screenshot 1"></button>
+              <button type="button" class="carousel-dot" aria-label="Show screenshot 2"></button>
+              <button type="button" class="carousel-dot" aria-label="Show screenshot 3"></button>
+              <button type="button" class="carousel-dot" aria-label="Show screenshot 4"></button>
+            </div>
+            <button type="button" class="carousel-button" data-carousel-next aria-label="Next screenshot">Next</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <img
+        class="footer-logo"
+        src="assets/site/mastergamer-logo.png"
+        alt="Master Gamer"
+      />
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="privacy.html">Privacy Policy</a>
+        <span>|</span>
+        <a href="terms.html">Terms of Use</a>
+        <span>|</span>
+        <a href="cookies.html">Cookie Policy</a>
+        <span>|</span>
+        <a href="humding-privacy.html">HumDing Privacy Policy</a>
+        <span>|</span>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <span class="footer-copy">Copyright &copy; Master Gamer</span>
+    </footer>
+
+    <script src="games.js?v=22"></script>
+    <script src="main.js?v=21"></script>
+  </body>
+</html>
+
+

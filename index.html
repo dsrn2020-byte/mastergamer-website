@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="MasterGamer is an Australian indie game and app studio creating mobile games, browser-playable releases, videos, news, and player support."
+    />
+    <title>MasterGamer | Australian Indie Game Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=24" />
+  </head>
+  <body>
+    <canvas class="arcade-canvas" id="arcadeCanvas" aria-hidden="true"></canvas>
+
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="MasterGamer home">
+        <img
+          class="brand-logo"
+          src="assets/site/mastergamer-logo.png"
+          alt="Master Gamer"
+        />
+        <span class="brand-copy">
+          <strong>Master Gamer</strong>
+          <small>Indie Games Australia</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="siteNav">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Menu</span>
+      </button>
+
+      <nav class="site-nav" id="siteNav" aria-label="Primary navigation">
+        <a href="#games">Games</a>
+        <a href="#play">Play</a>
+        <a href="#videos">Videos</a>
+        <a href="news.html">News</a>
+        <a href="#support">Support</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#legal">Legal</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Australian indie game and app studio</p>
+            <h1>Master Gamer</h1>
+            <p class="hero-tagline">Fun. Accessible. Family-Friendly Games.</p>
+            <p>
+              Creating arcade, puzzle, card and casual games for mobile, browser
+              and PC players since 2018. Play online, discover new releases and
+              explore the growing Master Gamer collection.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#games">Explore Games</a>
+              <a class="button button-secondary" href="#play">Play Online</a>
+            </div>
+          </div>
+
+          <div class="hero-art" aria-label="Master Gamer featured games artwork">
+            <img
+              src="assets/site/mastergamer-hero.png"
+              alt="Master Gamer family-friendly games banner"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro-band" aria-label="Studio highlights">
+        <div class="stat">
+          <strong>13</strong>
+          <span>Games in the library</span>
+        </div>
+        <div class="stat">
+          <strong>Mobile</strong>
+          <span>App Store and Google Play ready</span>
+        </div>
+        <div class="stat">
+          <strong>Online</strong>
+          <span>Browser play when available</span>
+        </div>
+      </section>
+
+      <section class="section" id="games">
+        <div class="section-heading">
+          <p class="eyebrow">Games Library</p>
+          <h2>Explore the Master Gamer Collection</h2>
+          <p>
+            Discover arcade, puzzle, card, memory and casual games built for
+            mobile, browser and PC.
+          </p>
+          <p>
+            Each title includes game details, screenshots, platform links and
+            trailers where available.
+          </p>
+        </div>
+        <div class="games-grid" id="gamesGrid"></div>
+      </section>
+
+      <section class="section split-section" id="play">
+        <div class="play-intro">
+          <p class="eyebrow">Play Online</p>
+          <h2>Play Mastergamer titles directly in your browser.</h2>
+          <p>
+            No downloads required. Selected games and apps will be available to
+            launch instantly, with more browser builds coming soon.
+          </p>
+        </div>
+        <div class="panel play-panel">
+          <div class="play-group">
+            <h3>Available Now</h3>
+            <a class="play-card play-card-available" href="https://humding.com.au/login" target="_blank" rel="noopener">
+              <span>
+                <strong>Humding</strong>
+                <small>AI companion &amp; daily clarity tool</small>
+              </span>
+              <span class="button button-primary">Launch App</span>
+            </a>
+          </div>
+          <div class="play-group">
+            <h3>Coming Soon</h3>
+            <div class="coming-soon-grid" aria-label="Coming soon browser builds">
+              <article class="play-card play-card-preview">
+                <strong>Sevens</strong>
+                <span class="status-badge">Coming Soon</span>
+              </article>
+              <article class="play-card play-card-preview">
+                <strong>TinyFall</strong>
+                <span class="status-badge">Coming Soon</span>
+              </article>
+              <article class="play-card play-card-preview">
+                <strong>Chicken Flapper</strong>
+                <span class="status-badge">Coming Soon</span>
+              </article>
+              <article class="play-card play-card-preview">
+                <strong>Rock Paper Chicken</strong>
+                <span class="status-badge">Coming Soon</span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="videos">
+        <div class="section-heading">
+          <p class="eyebrow">Videos</p>
+          <h2>Trailers, gameplay, and updates</h2>
+        </div>
+        <div class="media-grid">
+          <article class="media-tile">
+            <span class="play-icon" aria-hidden="true"></span>
+            <h3>Latest Trailers</h3>
+            <p>Watch the newest Master Gamer release trailers.</p>
+            <a href="assets/videos/Sevens-trailer.mp4" target="_blank" rel="noopener">Watch Sevens</a>
+          </article>
+          <article class="media-tile">
+            <span class="play-icon" aria-hidden="true"></span>
+            <h3>Dev Clips</h3>
+            <p>See quick gameplay previews from newer mobile and browser titles.</p>
+            <a href="assets/videos/tinyfall-trailer.mp4" target="_blank" rel="noopener">Watch TinyFall</a>
+          </article>
+          <article class="media-tile">
+            <span class="play-icon" aria-hidden="true"></span>
+            <h3>Player Moments</h3>
+            <p>Browse game pages for trailers, screenshots, and gameplay galleries.</p>
+            <a href="#games">Browse Games</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="news">
+        <div class="section-heading news-heading">
+          <p class="eyebrow">News</p>
+          <h2>Latest News</h2>
+          <p>
+            Follow launch notes, release updates, studio announcements, and
+            highlights from the Master Gamer collection.
+          </p>
+          <a class="button button-secondary" href="news.html">View All Updates</a>
+        </div>
+        <div class="news-grid" id="latestNewsGrid"></div>
+      </section>
+
+      <section class="section support-section" id="support">
+        <div class="section-heading">
+          <p class="eyebrow">Support</p>
+          <h2>Player support and privacy help</h2>
+          <p>
+            Get help with gameplay, report technical issues, contact support, or
+            make a privacy request.
+          </p>
+        </div>
+        <div class="support-grid">
+          <article>
+            <h3>FAQ</h3>
+            <p>Find quick answers about game availability, mobile installs, browser play, and where to find updates.</p>
+          </article>
+          <article>
+            <h3>Contact Support</h3>
+            <p>Email <a href="mailto:info@mastergamer.com.au">info@mastergamer.com.au</a> with the game name, device, and a short description.</p>
+          </article>
+          <article>
+            <h3>Report a Bug</h3>
+            <p>Include steps to reproduce, screenshots if useful, game version, device model, and operating system.</p>
+          </article>
+          <article>
+            <h3>Technical Issues</h3>
+            <p>Restart the app, check for updates, confirm your internet connection, and note any error messages.</p>
+          </article>
+          <article>
+            <h3>Privacy Requests</h3>
+            <p>Use the <a href="data-request.html">Data Request Page</a> for access, correction, deletion, or other privacy enquiries.</p>
+          </article>
+          <article>
+            <h3>Store Purchases</h3>
+            <p>Purchases and refunds are handled by the App Store or Google Play under their platform policies.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2>Independent Game &amp; App Development Studio</h2>
+          <p>
+            Master Gamer is a Brisbane-based game and app development studio
+            creating fun, accessible, and engaging experiences across mobile,
+            browser, PC, and emerging platforms.
+          </p>
+          <p>
+            Since the release of our first title, Chicken Flapper, in 2018, we
+            have continued developing a diverse range of games and applications
+            spanning arcade action, puzzles, strategy, casual gaming, and
+            productivity tools.
+          </p>
+          <p>
+            Today, Master Gamer is home to a growing collection of original
+            games including Chicken Flapper, Sevens, TinyFall, HumDing and many
+            more.
+          </p>
+        </div>
+        <div class="about-grid">
+          <article class="panel">
+            <h3>Our Mission</h3>
+            <p>
+              Create entertaining experiences that are easy to learn, rewarding
+              to master, and enjoyable for players of all ages.
+            </p>
+          </article>
+          <article class="panel">
+            <h3>Brisbane, Australia</h3>
+            <p>
+              The studio operates from Brisbane and builds with a mobile-first,
+              independent mindset shaped by Australia's growing game development
+              community.
+            </p>
+          </article>
+        </div>
+        <div class="timeline">
+          <article>
+            <span>2018</span>
+            <h3>Chicken Flapper begins the catalogue</h3>
+            <p>The studio's arcade direction starts with fast tap-to-fly play and a focus on repeatable mobile sessions.</p>
+          </article>
+          <article>
+            <span>2019-2021</span>
+            <h3>Arcade experiments expand</h3>
+            <p>New releases explore timing, reaction, puzzle, comedy, and seasonal mechanics across the Master Gamer library.</p>
+          </article>
+          <article>
+            <span>2022-2026</span>
+            <h3>Games, apps, and emerging platforms</h3>
+            <p>The studio continues to expand into mobile, browser, PC, productivity tools, and future-ready experiences.</p>
+          </article>
+        </div>
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Featured Games</p>
+          <h2>Library highlights</h2>
+        </div>
+        <div class="featured-grid" id="featuredGames"></div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Reach Master Gamer</h2>
+          <p>
+            For support, press, privacy, business, and general enquiries, contact
+            the studio by email or use the contact form below.
+          </p>
+          <p class="contact-email">
+            <a href="mailto:info@mastergamer.com.au">info@mastergamer.com.au</a>
+          </p>
+          <div class="social-links" aria-label="Social media links">
+            <a href="#">YouTube</a>
+            <a href="#">TikTok</a>
+            <a href="#">Instagram</a>
+            <a href="#">X</a>
+          </div>
+        </div>
+        <form class="contact-form" action="#" method="post">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" placeholder="How can we help?"></textarea>
+          </label>
+          <button class="button button-primary" type="submit">Send Message</button>
+        </form>
+      </section>
+
+      <section class="section legal-section" id="legal">
+        <div class="section-heading">
+          <p class="eyebrow">Legal</p>
+          <h2>Policies, terms, and data requests</h2>
+          <p>
+            Separate legal pages are included for privacy, terms, cookies,
+            HumDing privacy, and data requests.
+          </p>
+        </div>
+        <div class="legal-links" aria-label="Legal document links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Use</a>
+          <a href="cookies.html">Cookie Policy</a>
+          <a href="humding-privacy.html">HumDing Privacy Policy</a>
+          <a href="data-request.html">Data Request Page</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <img
+        class="footer-logo"
+        src="assets/site/mastergamer-logo.png"
+        alt="Master Gamer"
+      />
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="privacy.html">Privacy Policy</a>
+        <span>|</span>
+        <a href="terms.html">Terms of Use</a>
+        <span>|</span>
+        <a href="cookies.html">Cookie Policy</a>
+        <span>|</span>
+        <a href="humding-privacy.html">HumDing Privacy Policy</a>
+        <span>|</span>
+        <a href="#contact">Contact</a>
+      </nav>
+      <span class="footer-copy">Copyright &copy; Master Gamer</span>
+    </footer>
+
+    <script src="games.js?v=22"></script>
+    <script src="news.js?v=1"></script>
+    <script src="main.js?v=22"></script>
+  </body>
+</html>
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Request | Master Gamer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=23" />
+  </head>
+  <body>
+    <canvas class="arcade-canvas" id="arcadeCanvas" aria-hidden="true"></canvas>
+    <header class="site-header">
+      <a class="brand" href="index.html#home" aria-label="Master Gamer home"><img class="brand-logo" src="assets/site/mastergamer-logo.png" alt="Master Gamer" /><span class="brand-copy"><strong>Master Gamer</strong><small>Indie Games Australia</small></span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="siteNav"><span></span><span></span><span></span><span class="sr-only">Menu</span></button>
+      <nav class="site-nav" id="siteNav" aria-label="Primary navigation"><a href="index.html#games">Games</a><a href="index.html#support">Support</a><a href="index.html#about">About</a><a href="index.html#contact">Contact</a><a href="index.html#legal">Legal</a></nav>
+    </header>
+    <main class="policy-page">
+      <p class="eyebrow">Privacy</p>
+      <h1>Data Request Page</h1>
+      <p class="policy-meta">Last updated: 20 June 2026</p>
+      <p>
+        Use this page to request access, correction, deletion, restriction, or
+        other privacy assistance for Master Gamer website, game, app, or support
+        information.
+      </p>
+      <div class="policy-grid">
+        <article class="policy-card"><h3>Access</h3><p>Ask what personal information may be associated with your request details.</p></article>
+        <article class="policy-card"><h3>Correction</h3><p>Request a correction if information held by Master Gamer is inaccurate.</p></article>
+        <article class="policy-card"><h3>Deletion</h3><p>Ask Master Gamer to delete information where deletion is available and lawful.</p></article>
+      </div>
+      <form class="contact-form request-form" action="mailto:info@mastergamer.com.au" method="post" enctype="text/plain">
+        <label>
+          Name
+          <input type="text" name="name" placeholder="Your name" />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="you@example.com" />
+        </label>
+        <label>
+          Request Type
+          <input type="text" name="request-type" placeholder="Access, correction, deletion, or other" />
+        </label>
+        <label>
+          Details
+          <textarea name="details" rows="6" placeholder="Include the game or service, platform, and any relevant account or support details."></textarea>
+        </label>
+        <button class="button button-primary" type="submit">Submit Request</button>
+      </form>
+      <p>
+        You can also email privacy requests directly to
+        <a href="mailto:info@mastergamer.com.au">info@mastergamer.com.au</a>.
+      </p>
+    </main>
+    <footer class="site-footer">
+      <img class="footer-logo" src="assets/site/mastergamer-logo.png" alt="Master Gamer" />
+      <nav class="footer-links" aria-label="Footer navigation"><a href="privacy.html">Privacy Policy</a><span>|</span><a href="terms.html">Terms of Use</a><span>|</span><a href="cookies.html">Cookie Policy</a><span>|</span><a href="humding-privacy.html">HumDing Privacy Policy</a><span>|</span><a href="index.html#contact">Contact</a></nav>
+      <span class="footer-copy">Copyright &copy; Master Gamer</span>
+    </footer>
+    <script src="main.js?v=21"></script>
+  </body>
+</html>
+
