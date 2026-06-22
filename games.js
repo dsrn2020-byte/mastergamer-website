@@ -128,7 +128,7 @@ const MASTERGAMER_GAMES = [
     links: {
       appStore: "https://apps.apple.com/au/app/humding/id6768580478",
       googlePlay: "https://play.google.com/store/apps/details?id=com.base69ffaa315dadf2c4ff53715b.app",
-      playOnline: { url: "https://humding.com.au/login", label: "Login | Humding" },
+      playOnline: { url: "https://humding.ai/", label: "Login | Humding" },
       trailer: null,
     },
   },
