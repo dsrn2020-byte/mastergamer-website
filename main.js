@@ -1,6 +1,7 @@
 const gamesGrid = document.querySelector("#gamesGrid");
 const navToggle = document.querySelector(".nav-toggle");
 const siteNav = document.querySelector("#siteNav");
+const contactForm = document.querySelector(".contact-form");
 const canvas = document.querySelector("#arcadeCanvas");
 const ctx = canvas?.getContext("2d");
 
@@ -329,6 +330,23 @@ function setupNavigation() {
   });
 }
 
+function setupContactForm() {
+  if (!contactForm) return;
+
+  contactForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(contactForm);
+    const body = [
+      `Name: ${formData.get("name") || ""}`,
+      `Email: ${formData.get("email") || ""}`,
+      `Message: ${formData.get("message") || ""}`,
+    ].join("\n\n");
+
+    window.location.href = `mailto:info@mastergamer.com.au?subject=${encodeURIComponent("Mastergamer Website Enquiry")}&body=${encodeURIComponent(body)}`;
+  });
+}
+
 function resizeCanvas() {
   if (!canvas || !ctx) return;
   const ratio = window.devicePixelRatio || 1;
@@ -373,6 +391,7 @@ renderNewsCards("#latestNewsGrid", 3);
 renderNewsCards("#newsPageGrid");
 setupNavigation();
 setupScreenshotCarousel();
+setupContactForm();
 resizeCanvas();
 drawArcadeGrid();
 
