@@ -92,7 +92,7 @@ const MASTERGAMER_GAMES = [
     links: {
       appStore: "https://apps.apple.com/au/app/tinyfall/id6774491647",
       googlePlay: "https://play.google.com/store/apps/details?id=com.base6a041961dce7911d73a44175.app",
-      playOnline: "coming-soon",
+      playOnline: "https://tinyfall.mastergamer.com.au/",
       trailer: "assets/videos/tinyfall-trailer.mp4",
     },
   },
