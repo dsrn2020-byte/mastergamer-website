@@ -735,6 +735,18 @@ h3 {
   text-transform: uppercase;
 }
 
+.status-badge-link {
+  text-decoration: none;
+  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.status-badge-link:hover,
+.status-badge-link:focus-visible {
+  border-color: rgba(37, 245, 255, 0.82);
+  box-shadow: 0 0 18px rgba(37, 245, 255, 0.2);
+  transform: translateY(-1px);
+}
+
 @media (max-width: 540px) {
   .play-card {
     align-items: flex-start;

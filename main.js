@@ -28,6 +28,19 @@ function createActionLink(value, label, className = "") {
   return `<a class="button ${className}" href="${action.url}"${linkTargetAttributes(action.url)}>${linkLabel}</a>`;
 }
 
+function createBadgeMarkup(game, options = {}) {
+  if (!game.badge) return "";
+
+  const previewAction = normaliseAction(game.links?.playOnline);
+  const canLinkPreview = options.linkPreview && previewAction?.url && game.badge === "PREVIEW BUILD";
+
+  if (canLinkPreview) {
+    return `<a class="status-badge status-badge-link" href="${previewAction.url}"${linkTargetAttributes(previewAction.url)} aria-label="Preview Chicken Flapper II build">${game.badge}</a>`;
+  }
+
+  return `<span class="status-badge">${game.badge}</span>`;
+}
+
 function createGameActionLinks(game, options = {}) {
   const links = game.links || {};
   const actions = [
@@ -88,7 +101,7 @@ function createGameCard(game, index) {
       ${icon}
       <span class="game-meta">
         <strong>${game.title}</strong>
-        ${game.badge ? `<span class="status-badge">${game.badge}</span>` : ""}
+        ${createBadgeMarkup(game)}
         ${game.subtitle ? `<em>${game.subtitle}</em>` : ""}
         <span>${game.summary}</span>
       </span>
@@ -214,7 +227,7 @@ function renderFeaturedGames() {
       ${createIconMarkup(game, "game-icon")}
       <div>
         <h3>${game.title}</h3>
-        ${game.badge ? `<span class="status-badge">${game.badge}</span>` : ""}
+        ${createBadgeMarkup(game, { linkPreview: true })}
         <p>${game.summary}</p>
       </div>
     `;
@@ -252,7 +265,7 @@ function renderHeroFeaturedGames() {
       ${createIconMarkup(game, "game-icon hero-game-icon")}
       <div class="hero-game-copy">
         <h3>${displayTitle}</h3>
-        ${game.badge ? `<span class="status-badge">${game.badge}</span>` : ""}
+        ${createBadgeMarkup(game, { linkPreview: true })}
         ${game.subtitle ? `<strong>${game.subtitle}</strong>` : ""}
         <p>${game.summary}</p>
       </div>
