@@ -31,6 +31,42 @@ const MASTERGAMER_GAMES = [
     },
   },
   {
+    title: "Chicken Flapper II: Never Ending Journey",
+    initials: "CF2",
+    accent: "#2bdcff",
+    featured: true,
+    platforms: ["Web"],
+    subtitle: "Preview Build",
+    badge: "PREVIEW BUILD",
+    summary: "A colourful vertical arcade shooter with chickens, spaceships, bosses, and Hyperdrive chaos.",
+    description:
+      "Blast off into a fast, colourful vertical arcade shooter where chickens, spaceships, golden eggs, power-ups, bosses, and chaos collide.\n\nPilot your chicken-powered starfighter through waves of enemy ships, collect golden eggs, grab powerful upgrades, survive intense boss battles, and launch into Hyperdrive bonus runs as the journey gets faster, stranger, and more explosive.\n\nWith vibrant space backdrops, arcade-style action, special power-ups, shield boosts, spread shots, screen-clearing bombs, and late-game super weapons, Chicken Flapper II is built for quick fun, high scores, and classic shoot-em-up energy.\n\nThe game also features a wonderful original soundtrack that brings the adventure to life--a bright, energetic theme that gives the whole game its sense of motion, excitement, and never-ending journey through space.\n\nSimple to play, hard to master, and packed with personality, Chicken Flapper II is a cosmic chicken adventure made for players who love old-school arcade action with a modern mobile twist.",
+    features: [
+      "Fast vertical arcade shooter action",
+      "Enemy ship waves and boss battles",
+      "Golden eggs, power-ups, shields, bombs, and spread shots",
+      "Hyperdrive bonus runs",
+      "Original energetic soundtrack",
+      "Preview browser build",
+    ],
+    media: {
+      icon: "assets/games/chicken-flapper-ii/chicken-flapper2-icon.png",
+      banner: "assets/games/chicken-flapper-ii/chicken-flapper2-icon.png",
+      cover: "assets/games/chicken-flapper-ii/chicken-flapper2-icon.png",
+      screenshots: [],
+    },
+    detailPage: "chicken-flapper-ii.html",
+    links: {
+      appStore: null,
+      googlePlay: null,
+      playOnline: {
+        url: "https://chickenflapperii.mastergamer.com.au/",
+        label: "Preview Online",
+      },
+      trailer: null,
+    },
+  },
+  {
     title: "Sevens",
     initials: "S7",
     accent: "#2bdcff",

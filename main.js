@@ -88,6 +88,7 @@ function createGameCard(game, index) {
       ${icon}
       <span class="game-meta">
         <strong>${game.title}</strong>
+        ${game.badge ? `<span class="status-badge">${game.badge}</span>` : ""}
         ${game.subtitle ? `<em>${game.subtitle}</em>` : ""}
         <span>${game.summary}</span>
       </span>
@@ -213,6 +214,7 @@ function renderFeaturedGames() {
       ${createIconMarkup(game, "game-icon")}
       <div>
         <h3>${game.title}</h3>
+        ${game.badge ? `<span class="status-badge">${game.badge}</span>` : ""}
         <p>${game.summary}</p>
       </div>
     `;
@@ -222,6 +224,7 @@ function renderFeaturedGames() {
 
 function getFeaturedGames() {
   const featuredOrder = [
+    "Chicken Flapper II: Never Ending Journey",
     "Sevens",
     "TinyFall",
     "HumDing",
@@ -249,6 +252,7 @@ function renderHeroFeaturedGames() {
       ${createIconMarkup(game, "game-icon hero-game-icon")}
       <div class="hero-game-copy">
         <h3>${displayTitle}</h3>
+        ${game.badge ? `<span class="status-badge">${game.badge}</span>` : ""}
         ${game.subtitle ? `<strong>${game.subtitle}</strong>` : ""}
         <p>${game.summary}</p>
       </div>
