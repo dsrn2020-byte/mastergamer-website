@@ -67,6 +67,44 @@ const MASTERGAMER_GAMES = [
     },
   },
   {
+    title: "Wing Chun Chicken",
+    initials: "WCC",
+    accent: "#ffd44a",
+    featured: true,
+    platforms: ["Web"],
+    subtitle: "Retro Arcade / Kung Fu Fighter",
+    badge: "PLAY ONLINE",
+    summary:
+      "A retro arcade kung fu chicken fighter. Tap to fly-kick, double tap to punch, unleash KIAI power, clear waves, collect power-ups and battle bosses across 100 levels.",
+    description:
+      "A retro arcade kung fu chicken fighter. Tap to fly-kick, double tap to punch, unleash KIAI power, clear waves, collect power-ups and battle bosses across 100 levels.\n\nPlay directly in your browser with keyboard, mouse, or touch controls, then jump into fast wave combat built for quick arcade sessions.",
+    features: [
+      "Playable online browser build",
+      "Retro arcade kung fu combat",
+      "Fly-kicks, punches, and KIAI power",
+      "Power-ups and wave clearing",
+      "Boss battles across 100 levels",
+      "Keyboard, mouse, and touch support",
+    ],
+    media: {
+      icon: "assets/games/wing-chun-chicken/wing-chun-chicken-icon.png",
+      banner: "assets/games/wing-chun-chicken/wing-chun-chicken-icon.png",
+      cover: "assets/games/wing-chun-chicken/wing-chun-chicken-icon.png",
+      screenshots: [],
+    },
+    detailPage: "games/wing-chun-chicken.html",
+    detailLabel: "View Game",
+    links: {
+      appStore: null,
+      googlePlay: null,
+      playOnline: {
+        url: "/games/wing-chun-chicken/play/",
+        label: "Play Online",
+      },
+      trailer: null,
+    },
+  },
+  {
     title: "Sevens",
     initials: "S7",
     accent: "#2bdcff",

@@ -51,11 +51,11 @@ function createGameActionLinks(game, options = {}) {
   ];
 
   if (options.includeLearnMore && game.detailPage) {
-    actions.push(`<a class="button button-secondary" href="${game.detailPage}">Learn More</a>`);
+    actions.push(`<a class="button button-secondary" href="${game.detailPage}">${game.detailLabel || "Learn More"}</a>`);
   }
 
   if (options.includeBackLink) {
-    actions.push(`<a class="button button-secondary" href="index.html#games">Back to Library</a>`);
+    actions.push(`<a class="button button-secondary" href="${options.backHref || "index.html#games"}">Back to Library</a>`);
   }
 
   return actions.filter(Boolean).join("");
@@ -238,6 +238,7 @@ function renderFeaturedGames() {
 function getFeaturedGames() {
   const featuredOrder = [
     "Chicken Flapper II: Never Ending Journey",
+    "Wing Chun Chicken",
     "Sevens",
     "TinyFall",
     "HumDing",
@@ -285,8 +286,13 @@ function renderDetailPageActions() {
   const actions = document.querySelector(".game-detail-hero .hero-actions");
   if (!actions) return;
 
-  const pageName = window.location.pathname.split("/").pop() || "index.html";
-  const game = MASTERGAMER_GAMES.find((item) => item.detailPage === pageName);
+  const currentPath = window.location.pathname.replace(/^\/+/, "") || "index.html";
+  const pageName = currentPath.split("/").pop() || "index.html";
+  const game = MASTERGAMER_GAMES.find((item) => {
+    if (!item.detailPage) return false;
+    const detailPage = item.detailPage.replace(/^\/+/, "");
+    return detailPage === currentPath || detailPage === pageName || detailPage.split("/").pop() === pageName;
+  });
   if (!game) return;
 
   const platformButtons = createPlatformButtons(game);
@@ -303,7 +309,11 @@ function renderDetailPageActions() {
     detailPlatforms?.remove();
   }
 
-  actions.innerHTML = createGameActionLinks(game, { includeBackLink: true });
+  const depth = currentPath.includes("/") ? currentPath.split("/").length - 1 : 0;
+  actions.innerHTML = createGameActionLinks(game, {
+    includeBackLink: true,
+    backHref: `${"../".repeat(depth)}index.html#games`,
+  });
 }
 
 function setupScreenshotCarousel() {

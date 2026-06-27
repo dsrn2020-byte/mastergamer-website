@@ -1081,6 +1081,18 @@ textarea:focus {
     linear-gradient(135deg, rgba(39, 166, 255, 0.14), rgba(255, 56, 100, 0.1));
 }
 
+.wing-chun-chicken-detail-hero .game-detail-cover {
+  object-fit: contain;
+  padding: 1rem;
+  background:
+    radial-gradient(circle at 58% 38%, rgba(255, 212, 74, 0.18), transparent 34%),
+    linear-gradient(135deg, rgba(39, 166, 255, 0.18), rgba(184, 92, 255, 0.12));
+}
+
+.wing-chun-chicken-detail-hero::after {
+  background: linear-gradient(90deg, rgba(3, 6, 17, 0.94), rgba(3, 6, 17, 0.6), rgba(3, 6, 17, 0.22));
+}
+
 .game-promo-banner {
   background: rgba(4, 8, 24, 0.68);
   border: 1px solid rgba(100, 224, 255, 0.28);
