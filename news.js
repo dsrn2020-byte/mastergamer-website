@@ -1,5 +1,14 @@
 const MASTERGAMER_NEWS = [
   {
+    title: "Wing Chun Chicken – Play It Here First",
+    date: "2026-06-27",
+    image: "assets/games/wing-chun-chicken/wing-chun-chicken-icon.png",
+    category: "Game News / Coming Soon",
+    summary:
+      "Wing Chun Chicken is coming soon to Android and iOS — but you can play it here first on MasterGamer. Jump into this retro kung fu chicken arcade fighter now.",
+    url: "wing-chun-chicken-news.html",
+  },
+  {
     title: "Master Gamer Website Launch",
     date: "2026-06-20",
     image: "assets/site/mastergamer-hero.png",

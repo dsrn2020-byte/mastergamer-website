@@ -137,7 +137,7 @@ const MASTERGAMER_GAMES = [
     links: {
       appStore: "https://apps.apple.com/au/app/7s-sevens/id6777825705",
       googlePlay: "https://play.google.com/store/apps/details?id=com.base6a2233f69d637c03cc852909.app",
-      playOnline: "coming-soon",
+      playOnline: "https://sevens.mastergamer.com.au",
       trailer: "assets/videos/Sevens-trailer.mp4",
     },
   },
