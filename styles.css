@@ -750,6 +750,31 @@ h3 {
   gap: 0.8rem;
 }
 
+.play-preview-icon {
+  aspect-ratio: 1;
+  border: 1px solid rgba(255, 48, 88, 0.42);
+  border-radius: 8px;
+  box-shadow: 0 0 22px rgba(255, 37, 76, 0.18), 0 0 28px rgba(43, 220, 255, 0.1);
+  display: block;
+  height: 84px;
+  object-fit: cover;
+  width: 84px;
+}
+
+.play-card-horror {
+  background:
+    linear-gradient(135deg, rgba(12, 16, 31, 0.98), rgba(5, 8, 16, 0.98)),
+    radial-gradient(circle at 18% 8%, rgba(255, 37, 76, 0.22), transparent 34%);
+  border-color: rgba(255, 48, 88, 0.3);
+  box-shadow: inset 0 0 18px rgba(255, 37, 76, 0.06);
+}
+
+.play-card-horror .status-badge {
+  border-color: rgba(255, 48, 88, 0.6);
+  box-shadow: 0 0 18px rgba(255, 37, 76, 0.18);
+  color: #ff6b7c;
+}
+
 .status-badge {
   border: 1px solid rgba(184, 92, 255, 0.42);
   border-radius: 999px;
