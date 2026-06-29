@@ -105,6 +105,44 @@ const MASTERGAMER_GAMES = [
     },
   },
   {
+    title: "Head Down",
+    initials: "HD",
+    accent: "#ff304f",
+    featured: true,
+    category: "Playable Prototypes",
+    platforms: ["Web"],
+    subtitle: "Playable Prototype \u2014 Acts 1 & 2",
+    badge: "PLAYABLE PROTOTYPE",
+    summary:
+      "A cinematic interactive horror game where every choice matters. Watch the scene, make your move, and survive the house.",
+    description:
+      "Head Down is a fast-reaction interactive horror experience inspired by classic laserdisc adventure games. Each scene plays like a nightmare unfolding in real time. When the controller appears, you only have seconds to choose: left, right, forward, back, or use. Choose correctly and you survive. Choose wrong and the house takes you.",
+    features: [
+      "Playable prototype featuring Acts 1 & 2",
+      "Fast-reaction interactive horror scenes",
+      "Classic laserdisc adventure inspiration",
+      "Choice-driven survival moments",
+      "Play directly in your browser",
+    ],
+    media: {
+      icon: "assets/games/head-down/head-down-icon.png",
+      banner: "assets/games/head-down/head-down-icon.png",
+      cover: "assets/games/head-down/head-down-icon.png",
+      screenshots: [],
+    },
+    detailPage: "games/head-down.html",
+    detailLabel: "View Game",
+    links: {
+      appStore: null,
+      googlePlay: null,
+      playOnline: {
+        url: "/games/head-down/",
+        label: "PLAY NOW",
+      },
+      trailer: null,
+    },
+  },
+  {
     title: "Sevens",
     initials: "S7",
     accent: "#2bdcff",
