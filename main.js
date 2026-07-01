@@ -8,6 +8,7 @@ const ctx = canvas?.getContext("2d");
 function normaliseAction(value) {
   if (!value || value === "#") return null;
   if (value === "coming-soon") return { comingSoon: true };
+  if (typeof value === "object" && value.comingSoon) return value;
   if (typeof value === "object" && value.url) return value;
   return { url: value };
 }
@@ -21,7 +22,8 @@ function createActionLink(value, label, className = "") {
   if (!action) return "";
 
   if (action.comingSoon) {
-    return `<span class="button button-disabled ${className}" aria-disabled="true">Coming Soon</span>`;
+    const comingSoonLabel = action.label || `${label} Coming Soon`;
+    return `<span class="button button-disabled ${className}" aria-disabled="true">${comingSoonLabel}</span>`;
   }
 
   const linkLabel = action.label || label;
@@ -74,7 +76,12 @@ function createPlatformButtons(game) {
       const action = normaliseAction(platform.value);
       if (!action) return "";
 
-      const url = action.comingSoon ? "index.html#play" : action.url;
+      if (action.comingSoon) {
+        const comingSoonLabel = action.platformLabel || `${platform.label} Coming Soon`;
+        return `<span class="platform-button platform-${platform.key} platform-coming-soon" aria-disabled="true">${comingSoonLabel}</span>`;
+      }
+
+      const url = action.url;
       return `<a class="platform-button platform-${platform.key}" href="${url}"${linkTargetAttributes(url)}>${platform.label}</a>`;
     })
     .filter(Boolean)
@@ -239,6 +246,7 @@ function getFeaturedGames() {
   const featuredOrder = [
     "Chicken Flapper II: Never Ending Journey",
     "Wing Chun Chicken",
+    "Kill Everything: Zombie Block",
     "Sevens",
     "TinyFall",
     "HumDing",

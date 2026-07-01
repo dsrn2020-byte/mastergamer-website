@@ -143,6 +143,50 @@ const MASTERGAMER_GAMES = [
     },
   },
   {
+    title: "Kill Everything: Zombie Block",
+    initials: "ZB",
+    accent: "#7dff5a",
+    featured: true,
+    category: "Coming Soon",
+    platforms: ["Coming Soon"],
+    subtitle: "Coming Soon",
+    badge: "COMING SOON",
+    summary:
+      "A blocky zombie survival shooter where you blast through undead enemies, dodge danger, and fight to survive the night.",
+    description:
+      "Kill Everything: Zombie Block is a fast arcade zombie survival game with chunky block-style characters, neon horror energy, and quick action gameplay. Fight off waves of undead enemies, survive the chaos, and keep moving before the horde catches you.",
+    features: [
+      "Block-style arcade zombie survival",
+      "Fast action gameplay",
+      "Undead enemy waves",
+      "Neon horror arcade energy",
+      "Play online build coming soon",
+    ],
+    media: {
+      icon: "assets/games/zombie-block/kill-everything-zombie-block-icon.png",
+      banner: "assets/games/zombie-block/kill-everything-zombie-block-icon.png",
+      cover: "assets/games/zombie-block/kill-everything-zombie-block-icon.png",
+      screenshots: [],
+    },
+    detailPage: null,
+    links: {
+      appStore: {
+        comingSoon: true,
+        label: "iOS Coming Soon",
+      },
+      googlePlay: {
+        comingSoon: true,
+        label: "Google Play Coming Soon",
+      },
+      playOnline: {
+        comingSoon: true,
+        label: "Coming Soon",
+        platformLabel: "Play Online Soon",
+      },
+      trailer: null,
+    },
+  },
+  {
     title: "Sevens",
     initials: "S7",
     accent: "#2bdcff",
