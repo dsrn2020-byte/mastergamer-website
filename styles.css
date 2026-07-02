@@ -888,6 +888,51 @@ h3 {
   justify-self: start;
 }
 
+.news-promo-card {
+  align-items: center;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(43, 220, 255, 0.18), transparent 28%),
+    linear-gradient(135deg, rgba(12, 18, 42, 0.96), rgba(8, 11, 28, 0.98));
+  border: 1px solid rgba(43, 220, 255, 0.3);
+  border-radius: 8px;
+  box-shadow: 0 0 30px rgba(43, 220, 255, 0.12), inset 0 0 24px rgba(155, 92, 255, 0.08);
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.news-promo-card img {
+  aspect-ratio: 1;
+  border: 1px solid rgba(255, 218, 126, 0.32);
+  border-radius: 8px;
+  box-shadow: 0 0 28px rgba(43, 220, 255, 0.2);
+  display: block;
+  object-fit: cover;
+  width: min(132px, 42vw);
+}
+
+.news-promo-copy {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.news-promo-copy h3 {
+  font-size: 1.35rem;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.news-promo-copy p {
+  color: var(--muted);
+  margin: 0;
+}
+
+.news-promo-copy .button {
+  justify-self: start;
+}
+
 .news-grid {
   display: grid;
   gap: 1rem;
@@ -1640,6 +1685,10 @@ textarea:focus {
   .timeline,
   .news-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .news-promo-card {
+    grid-template-columns: auto 1fr;
   }
 
   .games-grid {
