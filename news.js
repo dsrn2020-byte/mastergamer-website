@@ -1,5 +1,15 @@
 const MASTERGAMER_NEWS = [
   {
+    title: "MasterGamer Acquires LifePrint.ai",
+    date: "2026-07-02",
+    image: "assets/site/lifeprint-ai-icon.png",
+    category: "Company News",
+    status: "Latest News",
+    summary:
+      "MasterGamer has acquired LifePrint.ai, an AI-powered web platform focused on personalised digital experiences and meaningful AI companions.",
+    url: "lifeprint-ai-news.html",
+  },
+  {
     title: "Wing Chun Chicken – Play It Here First",
     date: "2026-06-27",
     image: "assets/games/wing-chun-chicken/wing-chun-chicken-icon.png",
