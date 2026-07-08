@@ -173,15 +173,17 @@ const MASTERGAMER_GAMES = [
       appStore: {
         comingSoon: true,
         label: "iOS Coming Soon",
+        platformLabel: "iOS Coming Soon",
       },
       googlePlay: {
         comingSoon: true,
         label: "Google Play Coming Soon",
+        platformLabel: "Android Coming Soon",
       },
       playOnline: {
         url: "https://zombie-block.mastergamer.com.au/",
         label: "PLAY LIVE ONLINE",
-        platformLabel: "Play Online: Live Now",
+        platformLabel: "PLAY ONLINE LIVE",
       },
       trailer: null,
     },
