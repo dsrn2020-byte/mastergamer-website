@@ -82,7 +82,8 @@ function createPlatformButtons(game) {
       }
 
       const url = action.url;
-      return `<a class="platform-button platform-${platform.key}" href="${url}"${linkTargetAttributes(url)}>${platform.label}</a>`;
+      const platformLabel = action.platformLabel || platform.label;
+      return `<a class="platform-button platform-${platform.key}" href="${url}"${linkTargetAttributes(url)}>${platformLabel}</a>`;
     })
     .filter(Boolean)
     .join("");
@@ -246,7 +247,7 @@ function getFeaturedGames() {
   const featuredOrder = [
     "Chicken Flapper II: Never Ending Journey",
     "Wing Chun Chicken",
-    "Kill Everything: Zombie Block",
+    "Zombie Block: Kill Everything",
     "Sevens",
     "TinyFall",
     "HumDing",
