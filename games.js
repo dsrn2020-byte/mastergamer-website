@@ -148,7 +148,7 @@ const MASTERGAMER_GAMES = [
     accent: "#7dff5a",
     featured: true,
     category: "Playable Games",
-    platforms: ["Web"],
+    platforms: ["PLAY ONLINE LIVE", "iOS Coming Soon", "Android Coming Soon"],
     subtitle: "Play Online",
     badge: "LIVE NOW",
     summary:
