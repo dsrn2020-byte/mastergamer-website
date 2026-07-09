@@ -162,6 +162,11 @@ const MASTERGAMER_GAMES = [
       "Air strikes and special zombie blocks",
       "Final boss battle against Block Zero",
     ],
+    browserControls: [
+      "Use the arrow keys to move.",
+      "Press space bar to shoot/action.",
+      "Use the mouse to aim/select where supported.",
+    ],
     media: {
       icon: "assets/games/zombie-block/kill-everything-zombie-block-icon.png",
       banner: "assets/games/zombie-block/kill-everything-zombie-block-icon.png",

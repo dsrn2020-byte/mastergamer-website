@@ -102,6 +102,11 @@ function createGameCard(game, index) {
   const features = game.features?.length
     ? `<ul class="feature-list">${game.features.map((feature) => `<li>${feature}</li>`).join("")}</ul>`
     : "";
+  const browserControls = game.browserControls?.length
+    ? `<div class="browser-controls"><strong>Browser Controls:</strong><ul>${game.browserControls
+        .map((control) => `<li>${control}</li>`)
+        .join("")}</ul></div>`
+    : "";
   const actionLinks = createGameActionLinks(game, { includeLearnMore: true });
 
   card.innerHTML = `
@@ -119,6 +124,7 @@ function createGameCard(game, index) {
       ${banner}
       <div class="platform-badges" aria-label="Available platforms">${platforms}</div>
       ${description}
+      ${browserControls}
       ${features}
       <div class="game-links">
         ${actionLinks}
