@@ -1,5 +1,25 @@
 const MASTERGAMER_NEWS = [
   {
+    title: "Three New MasterGamer Games Submitted to Apple and Google Play",
+    date: "2026-07-17",
+    image: "assets/games/chicken-flapper-ii/chicken-flapper2-icon.png",
+    category: "Game Releases",
+    status: "Coming Soon to Mobile",
+    summary:
+      "Chicken Flapper II, Zombie Block, and Wing Chun Chicken have been submitted to Apple and Google Play and remain subject to store approval.",
+    url: "three-new-games-submitted.html",
+  },
+  {
+    title: "Soccer Block Manager: The Ted Wasso Way &mdash; Prototype Coming Soon",
+    date: "2026-07-16",
+    image: "assets/site/mastergamer-logo.png",
+    category: "Development Update",
+    status: "Online Prototype Coming Soon",
+    summary:
+      "A new block-style football management prototype is in development, with squad building, captaincy, tactics, chemistry, and Block Spirit systems.",
+    url: "soccer-block-manager-news.html",
+  },
+  {
     title: "MasterGamer Acquires LifePrint.ai",
     date: "2026-07-02",
     image: "assets/site/lifeprint-ai-icon.png",
