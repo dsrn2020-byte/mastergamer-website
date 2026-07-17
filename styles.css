@@ -838,6 +838,64 @@ h3 {
   color: #9dff85;
 }
 
+.play-card-head-down {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 78% 18%, rgba(255, 36, 64, 0.2), transparent 18%),
+    linear-gradient(145deg, rgba(17, 4, 24, 0.98), rgba(4, 7, 18, 0.98) 62%, rgba(28, 4, 16, 0.96));
+  border-color: rgba(184, 92, 255, 0.52);
+  box-shadow:
+    0 0 24px rgba(110, 38, 190, 0.22),
+    inset 0 0 28px rgba(255, 36, 64, 0.08);
+}
+
+.play-card-head-down::after {
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.035) 0,
+      rgba(255, 255, 255, 0.035) 1px,
+      transparent 1px,
+      transparent 5px
+    );
+  content: "";
+  opacity: 0.18;
+  pointer-events: none;
+}
+
+.head-down-copy {
+  position: relative;
+  z-index: 1;
+}
+
+.head-down-meta {
+  color: var(--blue);
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  margin-top: 0.28rem;
+  text-transform: uppercase;
+}
+
+.play-card-head-down .status-badge {
+  position: relative;
+  z-index: 1;
+  border-color: rgba(255, 36, 64, 0.54);
+  color: #ff9eb0;
+}
+
+.head-down-play-link {
+  position: relative;
+  z-index: 1;
+  align-self: flex-start;
+  margin-top: 0.1rem;
+  text-decoration: none;
+}
+
 .status-badge {
   border: 1px solid rgba(184, 92, 255, 0.42);
   border-radius: 999px;
