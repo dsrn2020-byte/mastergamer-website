@@ -35,9 +35,9 @@ const MASTERGAMER_GAMES = [
     initials: "CF2",
     accent: "#2bdcff",
     featured: true,
-    platforms: ["PLAY ONLINE LIVE", "iOS Coming Soon", "Android Coming Soon"],
-    subtitle: "Preview Build",
-    badge: "PREVIEW BUILD",
+    platforms: ["PLAY ONLINE LIVE", "Google Play Available", "iOS Coming Soon"],
+    subtitle: "Available Now",
+    badge: "AVAILABLE NOW",
     summary: "A colourful vertical arcade shooter with chickens, spaceships, bosses, and Hyperdrive chaos.",
     description:
       "Blast off into a fast, colourful vertical arcade shooter where chickens, spaceships, golden eggs, power-ups, bosses, and chaos collide.\n\nPilot your chicken-powered starfighter through waves of enemy ships, collect golden eggs, grab powerful upgrades, survive intense boss battles, and launch into Hyperdrive bonus runs as the journey gets faster, stranger, and more explosive.\n\nWith vibrant space backdrops, arcade-style action, special power-ups, shield boosts, spread shots, screen-clearing bombs, and late-game super weapons, Chicken Flapper II is built for quick fun, high scores, and classic shoot-em-up energy.\n\nThe game also features a wonderful original soundtrack that brings the adventure to life--a bright, energetic theme that gives the whole game its sense of motion, excitement, and never-ending journey through space.\n\nSimple to play, hard to master, and packed with personality, Chicken Flapper II is a cosmic chicken adventure made for players who love old-school arcade action with a modern mobile twist.",
@@ -47,7 +47,7 @@ const MASTERGAMER_GAMES = [
       "Golden eggs, power-ups, shields, bombs, and spread shots",
       "Hyperdrive bonus runs",
       "Original energetic soundtrack",
-      "Preview browser build",
+      "Playable browser build",
     ],
     media: {
       icon: "assets/games/chicken-flapper-ii/chicken-flapper2-icon.png",
@@ -58,7 +58,11 @@ const MASTERGAMER_GAMES = [
     detailPage: "chicken-flapper-ii.html",
     links: {
       appStore: null,
-      googlePlay: null,
+      googlePlay: {
+        url: "https://play.google.com/store/apps/details?id=com.base69cf541a1e6dff0242a27744.app",
+        label: "Google Play",
+        platformLabel: "ANDROID",
+      },
       playOnline: {
         url: "https://chickenflapperii.mastergamer.com.au/",
         label: "Preview Online",
@@ -148,9 +152,9 @@ const MASTERGAMER_GAMES = [
     accent: "#7dff5a",
     featured: true,
     category: "Playable Games",
-    platforms: ["PLAY ONLINE LIVE", "iOS Coming Soon", "Android Coming Soon"],
-    subtitle: "Play Online",
-    badge: "LIVE NOW",
+    platforms: ["PLAY ONLINE LIVE", "Google Play Available", "iOS Coming Soon"],
+    subtitle: "Available Now",
+    badge: "AVAILABLE NOW",
     summary:
       "A fast block-art zombie defence game. Survive 100 levels, defend the barricade, command allies, trigger air strikes, and face Block Zero.",
     description:
@@ -173,7 +177,7 @@ const MASTERGAMER_GAMES = [
       cover: "assets/games/zombie-block/kill-everything-zombie-block-icon.png",
       screenshots: [],
     },
-    detailPage: null,
+    detailPage: "zombie-block.html",
     links: {
       appStore: {
         comingSoon: true,
@@ -181,9 +185,9 @@ const MASTERGAMER_GAMES = [
         platformLabel: "iOS Coming Soon",
       },
       googlePlay: {
-        comingSoon: true,
-        label: "Google Play Coming Soon",
-        platformLabel: "Android Coming Soon",
+        url: "https://play.google.com/store/apps/details?id=com.base6a45bf99c7dfd7bf2491637b.app",
+        label: "Google Play",
+        platformLabel: "ANDROID",
       },
       playOnline: {
         url: "https://zombie-block.mastergamer.com.au/",

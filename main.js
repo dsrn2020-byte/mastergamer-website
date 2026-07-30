@@ -14,7 +14,7 @@ function normaliseAction(value) {
 }
 
 function linkTargetAttributes(url) {
-  return /^https?:/i.test(url) || /\.mp4$/i.test(url) ? ' target="_blank" rel="noopener"' : "";
+  return /^https?:/i.test(url) || /\.mp4$/i.test(url) ? ' target="_blank" rel="noopener noreferrer"' : "";
 }
 
 function createActionLink(value, label, className = "") {

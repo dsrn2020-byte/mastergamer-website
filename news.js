@@ -1,12 +1,22 @@
 const MASTERGAMER_NEWS = [
   {
-    title: "Three New MasterGamer Games Submitted to Apple and Google Play",
+    title: "Chicken Flapper II and Zombie Block Now Live on Google Play",
+    date: "2026-07-30",
+    image: "assets/games/chicken-flapper-ii/chicken-flapper2-icon.png",
+    category: "Game Releases",
+    status: "Available Now on Google Play",
+    summary:
+      "Chicken Flapper II: Never Ending Journey and Zombie Block: Kill Everything are now available to download on Google Play.",
+    url: "google-play-releases.html",
+  },
+  {
+    title: "Three New MasterGamer Mobile Releases Update",
     date: "2026-07-17",
     image: "assets/games/chicken-flapper-ii/chicken-flapper2-icon.png",
     category: "Game Releases",
-    status: "Coming Soon to Mobile",
+    status: "Release Update",
     summary:
-      "Chicken Flapper II, Zombie Block, and Wing Chun Chicken have been submitted to Apple and Google Play and remain subject to store approval.",
+      "Chicken Flapper II and Zombie Block are now live on Google Play, while Wing Chun Chicken remains subject to the app-store review process.",
     url: "three-new-games-submitted.html",
   },
   {
