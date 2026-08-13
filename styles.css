@@ -793,6 +793,14 @@ h3 {
   gap: 0.8rem;
 }
 
+.coming-soon-grid .play-card-preview {
+  height: 100%;
+}
+
+.coming-soon-grid .play-card-preview .button {
+  margin-top: auto;
+}
+
 .play-preview-icon {
   aspect-ratio: 1;
   border: 1px solid rgba(255, 48, 88, 0.42);

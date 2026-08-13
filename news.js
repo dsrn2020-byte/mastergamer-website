@@ -20,14 +20,24 @@ const MASTERGAMER_NEWS = [
     url: "three-new-games-submitted.html",
   },
   {
-    title: "Soccer Block Manager: The Ted Wasso Way &mdash; Prototype Coming Soon",
-    date: "2026-07-16",
-    image: "assets/site/mastergamer-logo.png",
-    category: "Development Update",
-    status: "Online Prototype Coming Soon",
+    title: "Soccer Block Manager &mdash; Can You Take a Team of Blocks to the Top?",
+    date: "2026-08-14",
+    image: "assets/games/soccer-block-manager/soccer-block-manager-icon.png",
+    category: "Football / Management / Strategy",
+    status: "Coming Soon",
     summary:
-      "A new block-style football management prototype is in development, with squad building, captaincy, tactics, chemistry, and Block Spirit systems.",
+      "A new block-style football management experience is coming to MasterGamer. Build the squad, create tactics, prepare your own plays and lead your club from the lower divisions to glory.",
     url: "soccer-block-manager-news.html",
+  },
+  {
+    title: "Block Defender &mdash; Coming Soon",
+    date: "2026-08-13",
+    image: "assets/games/block-defender/block-defender-icon.png",
+    category: "Arcade / Action / Space Combat",
+    status: "Coming Soon",
+    summary:
+      "The invasion has begun. Take control of your defender, battle enemy fighters and massive airborne threats, and hold the line through increasingly intense arcade combat.",
+    url: "block-defender-news.html",
   },
   {
     title: "MasterGamer Acquires LifePrint.ai",

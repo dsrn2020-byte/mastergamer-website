@@ -589,4 +589,58 @@ const MASTERGAMER_GAMES = [
       trailer: "assets/videos/slap-santa-trailer.mp4",
     },
   },
+  {
+    title: "Soccer Block Manager: The Ted Wassoo Way",
+    initials: "SBM",
+    accent: "#3fdcff",
+    category: "Football / Management / Strategy",
+    featured: false,
+    platforms: [],
+    badge: "COMING SOON",
+    summary:
+      "Build your squad, choose your tactics, develop team chemistry and lead an unlikely team of blocks from the lower divisions all the way to football glory.",
+    description:
+      "Build your squad, choose your tactics, develop team chemistry and lead an unlikely team of blocks from the lower divisions all the way to football glory.",
+    media: {
+      icon: "assets/games/soccer-block-manager/soccer-block-manager-icon.png",
+      banner: "assets/games/soccer-block-manager/soccer-block-manager-icon.png",
+      cover: "assets/games/soccer-block-manager/soccer-block-manager-icon.png",
+      screenshots: [],
+    },
+    detailPage: "soccer-block-manager-news.html",
+    detailLabel: "Watch This Space",
+    links: {
+      appStore: null,
+      googlePlay: null,
+      playOnline: null,
+      trailer: null,
+    },
+  },
+  {
+    title: "Block Defender",
+    initials: "BD",
+    accent: "#ff7a24",
+    category: "Arcade / Action / Space Combat",
+    featured: false,
+    platforms: [],
+    badge: "COMING SOON",
+    summary:
+      "Pilot your defender through increasingly intense waves of enemy fighters, gunships and massive airborne threats. Dodge incoming fire, destroy enemy weapons and survive the chaos.",
+    description:
+      "Pilot your defender through increasingly intense waves of enemy fighters, gunships and massive airborne threats. Dodge incoming fire, destroy enemy weapons and survive the chaos.",
+    media: {
+      icon: "assets/games/block-defender/block-defender-icon.png",
+      banner: "assets/games/block-defender/block-defender-icon.png",
+      cover: "assets/games/block-defender/block-defender-icon.png",
+      screenshots: [],
+    },
+    detailPage: "block-defender-news.html",
+    detailLabel: "Watch This Space",
+    links: {
+      appStore: null,
+      googlePlay: null,
+      playOnline: null,
+      trailer: null,
+    },
+  },
 ];
