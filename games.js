@@ -35,8 +35,8 @@ const MASTERGAMER_GAMES = [
     initials: "CF2",
     accent: "#2bdcff",
     featured: true,
-    platforms: ["PLAY ONLINE LIVE", "Google Play Available", "iOS Coming Soon"],
-    subtitle: "Available Now",
+    platforms: ["Google Play Available", "Browser Version Coming Soon", "iOS Coming Soon"],
+    subtitle: "Available on Google Play",
     badge: "AVAILABLE NOW",
     summary: "A colourful vertical arcade shooter with chickens, spaceships, bosses, and Hyperdrive chaos.",
     description:
@@ -47,7 +47,7 @@ const MASTERGAMER_GAMES = [
       "Golden eggs, power-ups, shields, bombs, and spread shots",
       "Hyperdrive bonus runs",
       "Original energetic soundtrack",
-      "Playable browser build",
+      "Browser version coming soon",
     ],
     media: {
       icon: "assets/games/chicken-flapper-ii/chicken-flapper2-icon.png",
@@ -64,8 +64,9 @@ const MASTERGAMER_GAMES = [
         platformLabel: "ANDROID",
       },
       playOnline: {
-        url: "https://chickenflapperii.mastergamer.com.au/",
-        label: "Preview Online",
+        comingSoon: true,
+        label: "Browser Version Coming Soon",
+        platformLabel: "WEB VERSION COMING SOON",
       },
       trailer: null,
     },

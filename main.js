@@ -37,7 +37,7 @@ function createBadgeMarkup(game, options = {}) {
   const canLinkPreview = options.linkPreview && previewAction?.url && game.badge === "PREVIEW BUILD";
 
   if (canLinkPreview) {
-    return `<a class="status-badge status-badge-link" href="${previewAction.url}"${linkTargetAttributes(previewAction.url)} aria-label="Preview Chicken Flapper II build">${game.badge}</a>`;
+    return `<a class="status-badge status-badge-link" href="${previewAction.url}"${linkTargetAttributes(previewAction.url)} aria-label="Preview ${game.title}">${game.badge}</a>`;
   }
 
   return `<span class="status-badge">${game.badge}</span>`;
