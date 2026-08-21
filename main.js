@@ -175,12 +175,37 @@ function getSortedNews() {
   );
 }
 
+function createNewsArtwork(article) {
+  const images = Array.isArray(article.images) && article.images.length
+    ? article.images
+    : [article.image];
+  const classes = ["news-artwork"];
+
+  if (images.length > 1) {
+    classes.push("news-artwork-multi", `news-artwork-${images.length}`);
+  }
+
+  if (article.imageFit === "contain") {
+    classes.push("news-artwork-contain");
+  }
+
+  const artwork = images.map((source, index) => {
+    const alt = Array.isArray(article.imageAlts) && article.imageAlts[index]
+      ? article.imageAlts[index]
+      : `${article.title}${images.length > 1 ? ` image ${index + 1}` : ""}`;
+
+    return `<img src="${source}" alt="${alt}" loading="lazy" />`;
+  }).join("");
+
+  return `<span class="${classes.join(" ")}">${artwork}</span>`;
+}
+
 function createNewsCard(article) {
   const card = document.createElement("article");
   card.className = "news-card";
   card.innerHTML = `
     <a class="news-image-link" href="${article.url}" aria-label="Read ${article.title}">
-      <img src="${article.image}" alt="${article.title}" loading="lazy" />
+      ${createNewsArtwork(article)}
     </a>
     <div class="news-card-copy">
       <time datetime="${article.date}">${formatDisplayDate(article.date)}</time>

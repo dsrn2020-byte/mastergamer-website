@@ -827,12 +827,17 @@ h3 {
 }
 
 .play-card-zombie {
+  grid-template-columns: 90px minmax(0, 1fr) auto;
   background:
     linear-gradient(135deg, rgba(8, 26, 20, 0.98), rgba(12, 8, 18, 0.98)),
     radial-gradient(circle at 88% 12%, rgba(125, 255, 90, 0.18), transparent 34%),
     radial-gradient(circle at 12% 86%, rgba(255, 48, 48, 0.12), transparent 38%);
   border-color: rgba(125, 255, 90, 0.28);
   box-shadow: inset 0 0 18px rgba(125, 255, 90, 0.05), 0 12px 26px rgba(0, 0, 0, 0.24);
+}
+
+.play-card-zombie > span:nth-child(2) {
+  min-width: 0;
 }
 
 .play-card-zombie .play-preview-icon {
@@ -936,6 +941,18 @@ h3 {
 
   .play-card .button {
     width: 100%;
+  }
+
+  .play-card-zombie {
+    grid-template-columns: 1fr;
+  }
+
+  .play-card-zombie .play-preview-icon {
+    justify-self: start;
+  }
+
+  .play-card-zombie .button {
+    justify-self: stretch;
   }
 }
 
@@ -1046,17 +1063,54 @@ h3 {
 }
 
 .news-image-link {
+  aspect-ratio: 16 / 9;
   background:
     radial-gradient(circle at 24% 22%, rgba(155, 92, 255, 0.16), transparent 36%),
     rgba(2, 4, 11, 0.62);
-  display: block;
+  display: grid;
+  overflow: hidden;
+  place-items: center;
 }
 
-.news-card img {
-  aspect-ratio: 16 / 9;
+.news-artwork {
+  display: grid;
+  height: 100%;
+  width: 100%;
+}
+
+.news-artwork img {
   display: block;
-  height: auto;
+  height: 100%;
+  min-height: 0;
   object-fit: cover;
+  width: 100%;
+}
+
+.news-artwork-contain img {
+  object-fit: contain;
+  padding: 0.75rem;
+}
+
+.news-artwork-multi {
+  align-items: center;
+  gap: 0.65rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  padding: 0.75rem;
+}
+
+.news-artwork-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.news-artwork-multi img,
+.news-artwork-multi.news-artwork-contain img {
+  aspect-ratio: 1;
+  background: rgba(3, 7, 22, 0.78);
+  border: 1px solid rgba(83, 219, 255, 0.2);
+  border-radius: 8px;
+  height: auto;
+  object-fit: contain;
+  padding: 0.25rem;
   width: 100%;
 }
 
@@ -1065,6 +1119,18 @@ h3 {
   display: grid;
   gap: 0.75rem;
   padding: 1rem;
+}
+
+.head-down-tips {
+  background:
+    linear-gradient(145deg, rgba(20, 4, 10, 0.96), rgba(4, 7, 18, 0.98)),
+    rgba(3, 5, 13, 0.92);
+  border-color: rgba(255, 50, 76, 0.36);
+  box-shadow: inset 0 0 22px rgba(255, 30, 55, 0.05);
+}
+
+.head-down-tips strong {
+  color: #ff8093;
 }
 
 .news-card time {

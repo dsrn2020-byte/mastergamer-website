@@ -3,6 +3,12 @@ const MASTERGAMER_NEWS = [
     title: "Chicken Flapper II and Zombie Block Now Live on Google Play",
     date: "2026-07-30",
     image: "assets/games/chicken-flapper-ii/chicken-flapper2-icon.png",
+    images: [
+      "assets/games/chicken-flapper-ii/chicken-flapper2-icon.png",
+      "assets/games/zombie-block/kill-everything-zombie-block-icon.png",
+    ],
+    imageAlts: ["Chicken Flapper II icon", "Zombie Block icon"],
+    imageFit: "contain",
     category: "Game Releases",
     status: "Available Now on Google Play",
     summary:
@@ -13,6 +19,17 @@ const MASTERGAMER_NEWS = [
     title: "Three New MasterGamer Mobile Releases Update",
     date: "2026-07-17",
     image: "assets/games/chicken-flapper-ii/chicken-flapper2-icon.png",
+    images: [
+      "assets/games/chicken-flapper-ii/chicken-flapper2-icon.png",
+      "assets/games/zombie-block/kill-everything-zombie-block-icon.png",
+      "assets/games/wing-chun-chicken/wing-chun-chicken-icon.png",
+    ],
+    imageAlts: [
+      "Chicken Flapper II icon",
+      "Zombie Block icon",
+      "Wing Chun Chicken icon",
+    ],
+    imageFit: "contain",
     category: "Game Releases",
     status: "Release Update",
     summary:
@@ -23,6 +40,7 @@ const MASTERGAMER_NEWS = [
     title: "Soccer Block Manager &mdash; Can You Take a Team of Blocks to the Top?",
     date: "2026-08-14",
     image: "assets/games/soccer-block-manager/soccer-block-manager-icon.png",
+    imageFit: "contain",
     category: "Football / Management / Strategy",
     status: "Coming Soon",
     summary:
@@ -33,6 +51,7 @@ const MASTERGAMER_NEWS = [
     title: "Block Defender &mdash; Coming Soon",
     date: "2026-08-13",
     image: "assets/games/block-defender/block-defender-icon.png",
+    imageFit: "contain",
     category: "Arcade / Action / Space Combat",
     status: "Coming Soon",
     summary:
@@ -43,6 +62,7 @@ const MASTERGAMER_NEWS = [
     title: "MasterGamer Acquires LifePrint.ai",
     date: "2026-07-02",
     image: "assets/site/lifeprint-ai-icon.png",
+    imageFit: "contain",
     category: "Company News",
     status: "Latest News",
     summary:
@@ -53,6 +73,7 @@ const MASTERGAMER_NEWS = [
     title: "Wing Chun Chicken – Play It Here First",
     date: "2026-06-27",
     image: "assets/games/wing-chun-chicken/wing-chun-chicken-icon.png",
+    imageFit: "contain",
     category: "Game News / Coming Soon",
     summary:
       "Wing Chun Chicken is coming soon to Android and iOS — but you can play it here first on MasterGamer. Jump into this retro kung fu chicken arcade fighter now.",
