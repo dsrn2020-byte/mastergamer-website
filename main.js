@@ -120,9 +120,9 @@ function createGameCard(game, index) {
       </span>
       <span class="expand-symbol" aria-hidden="true"></span>
     </button>
+    <div class="platform-badges" aria-label="Available platforms">${platforms}</div>
     <div class="game-details" id="game-panel-${index}">
       ${banner}
-      <div class="platform-badges" aria-label="Available platforms">${platforms}</div>
       ${description}
       ${browserControls}
       ${features}
@@ -268,6 +268,7 @@ function renderFeaturedGames() {
         <h3>${game.title}</h3>
         ${createBadgeMarkup(game, { linkPreview: true })}
         <p>${game.summary}</p>
+        <div class="platform-badges" aria-label="Available platforms">${createPlatformButtons(game)}</div>
       </div>
     `;
     featuredGrid.appendChild(item);
