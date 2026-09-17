@@ -24,8 +24,8 @@ const MASTERGAMER_GAMES = [
     },
     detailPage: "chicken-flapper.html",
     links: {
-      appStore: null,
-      googlePlay: null,
+      appStore: "https://apps.apple.com/au/app/chicken-flapper/id1591897659",
+      googlePlay: "https://play.google.com/store/apps/details?id=com.chicken.flap",
       playOnline: null,
       trailer: "assets/videos/chicken-flapper-trailer.mp4",
     },
@@ -35,8 +35,8 @@ const MASTERGAMER_GAMES = [
     initials: "CF2",
     accent: "#2bdcff",
     featured: true,
-    platforms: ["Google Play Available", "Browser Version Coming Soon", "iOS Coming Soon"],
-    subtitle: "Available on Google Play",
+    platforms: ["Google Play Available", "Browser Version Coming Soon", "iOS Available"],
+    subtitle: "Available on App Store and Google Play",
     badge: "AVAILABLE NOW",
     summary: "A colourful vertical arcade shooter with chickens, spaceships, bosses, and Hyperdrive chaos.",
     description:
@@ -57,7 +57,7 @@ const MASTERGAMER_GAMES = [
     },
     detailPage: "chicken-flapper-ii.html",
     links: {
-      appStore: null,
+      appStore: "https://apps.apple.com/us/app/chicken-flapper-ii/id6790076781",
       googlePlay: {
         url: "https://play.google.com/store/apps/details?id=com.base69cf541a1e6dff0242a27744.app",
         label: "Google Play",
@@ -76,7 +76,7 @@ const MASTERGAMER_GAMES = [
     initials: "WCC",
     accent: "#ffd44a",
     featured: true,
-    platforms: ["Web"],
+    platforms: ["iOS", "Android", "Web"],
     subtitle: "Retro Arcade / Kung Fu Fighter",
     badge: "PLAY ONLINE",
     summary:
@@ -100,8 +100,8 @@ const MASTERGAMER_GAMES = [
     detailPage: "games/wing-chun-chicken.html",
     detailLabel: "View Game",
     links: {
-      appStore: null,
-      googlePlay: null,
+      appStore: "https://apps.apple.com/us/app/wing-chun-chicken/id6790622005",
+      googlePlay: "https://play.google.com/store/apps/details?id=com.base6a558b8dba364f63cc0203d3.app",
       playOnline: {
         url: "/games/wing-chun-chicken/play/",
         label: "Play Online",
@@ -153,7 +153,7 @@ const MASTERGAMER_GAMES = [
     accent: "#7dff5a",
     featured: true,
     category: "Playable Games",
-    platforms: ["PLAY ONLINE LIVE", "Google Play Available", "iOS Coming Soon"],
+    platforms: ["PLAY ONLINE LIVE", "Google Play Available", "iOS Available"],
     subtitle: "Available Now",
     badge: "AVAILABLE NOW",
     summary:
@@ -180,11 +180,7 @@ const MASTERGAMER_GAMES = [
     },
     detailPage: "zombie-block.html",
     links: {
-      appStore: {
-        comingSoon: true,
-        label: "iOS Coming Soon",
-        platformLabel: "iOS Coming Soon",
-      },
+      appStore: "https://apps.apple.com/us/app/zombie-block-kill-everything/id6790059193",
       googlePlay: {
         url: "https://play.google.com/store/apps/details?id=com.base6a45bf99c7dfd7bf2491637b.app",
         label: "Google Play",
@@ -390,7 +386,7 @@ const MASTERGAMER_GAMES = [
     },
     detailPage: "chicken-splat.html",
     links: {
-      appStore: "https://apps.apple.com/au/app/pass-me/id6499293372",
+      appStore: "https://apps.apple.com/au/app/chicken-splat/id6467542194",
       googlePlay: "https://play.google.com/store/apps/details?id=com.chicken.slap",
       playOnline: null,
       trailer: "assets/videos/chicken-splat-trailer.mp4",
