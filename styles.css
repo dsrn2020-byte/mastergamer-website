@@ -1911,3 +1911,116 @@ textarea:focus {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
+
+/* Team presentation: scoped to the homepage team area. */
+.team-section {
+  scroll-margin-top: 6rem;
+}
+
+.team-group + .team-group {
+  margin-top: 3rem;
+}
+
+.team-group > h3 {
+  border-left: 3px solid #ff405b;
+  color: #f5f7ff;
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  line-height: 1.4;
+  margin: 0 0 1.5rem;
+  padding-left: 1rem;
+}
+
+.team-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.team-card {
+  background: linear-gradient(135deg, #171d28, #0c111b);
+  border: 1px solid #344252;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  min-width: 0;
+}
+
+.team-card-heading {
+  align-items: center;
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: 120px minmax(0, 1fr);
+}
+
+.team-portrait {
+  aspect-ratio: 4 / 5;
+  background: #151c26;
+  border: 1px solid #50647b;
+  border-radius: 6px;
+  display: block;
+  height: auto;
+  object-fit: cover;
+  object-position: center top;
+  width: 100%;
+}
+
+.team-card h4 {
+  color: #f5f7ff;
+  font-family: Orbitron, sans-serif;
+  font-size: 1.15rem;
+  line-height: 1.4;
+  margin: 0 0 0.4rem;
+}
+
+.team-card .team-role {
+  color: #2bdcff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.team-bio {
+  color: #c4ccda;
+  font-size: 0.95rem;
+  margin: 1.25rem 0;
+}
+
+.team-email {
+  align-self: flex-start;
+  color: #f5f7ff;
+  font-size: 0.9rem;
+  margin-top: auto;
+  min-height: 44px;
+  overflow-wrap: anywhere;
+  padding: 0.6rem 0;
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+}
+
+.team-email:hover {
+  color: #2bdcff;
+}
+
+.team-email:focus-visible {
+  border-radius: 2px;
+  outline: 2px solid #2bdcff;
+  outline-offset: 4px;
+}
+
+@media (min-width: 900px) {
+  .team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .team-card {
+    padding: 1.25rem;
+  }
+
+  .team-card-heading {
+    gap: 1rem;
+    grid-template-columns: 88px minmax(0, 1fr);
+  }
+}
