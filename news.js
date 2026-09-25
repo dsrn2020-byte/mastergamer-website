@@ -70,13 +70,13 @@ const MASTERGAMER_NEWS = [
     url: "lifeprint-ai-news.html",
   },
   {
-    title: "Wing Chun Chicken – Play It Here First",
+    title: "Wing Chun Chicken – Mobile Game Announcement",
     date: "2026-06-27",
     image: "assets/games/wing-chun-chicken/wing-chun-chicken-icon.png",
     imageFit: "contain",
     category: "Game News / Coming Soon",
     summary:
-      "Wing Chun Chicken is coming soon to Android and iOS — but you can play it here first on MasterGamer. Jump into this retro kung fu chicken arcade fighter now.",
+      "Announcing Wing Chun Chicken, a retro kung fu chicken arcade fighter coming soon to Android and iOS. Visit the game page for current availability.",
     url: "wing-chun-chicken-news.html",
   },
   {

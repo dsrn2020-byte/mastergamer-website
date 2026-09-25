@@ -1,11 +1,11 @@
-/* Edit game descriptions, media paths, store links, online play, and trailer paths here. */
+/* Edit game descriptions, media paths, store links and trailer paths here. */
 const MASTERGAMER_GAMES = [
   {
     title: "Chicken Flapper: Haunted Forest",
     initials: "CF",
     accent: "#9b5cff",
     featured: true,
-    platforms: ["iOS", "Android", "Web"],
+    platforms: ["iOS", "Android"],
     subtitle: "Have You Got What It Takes?",
     summary: "A fast-paced haunted forest arcade shooter packed with action and challenge.",
     description:
@@ -35,7 +35,7 @@ const MASTERGAMER_GAMES = [
     initials: "CF2",
     accent: "#2bdcff",
     featured: true,
-    platforms: ["Google Play Available", "Browser Version Coming Soon", "iOS Available"],
+    platforms: ["iOS", "Android"],
     subtitle: "Available on App Store and Google Play",
     badge: "AVAILABLE NOW",
     summary: "A colourful vertical arcade shooter with chickens, spaceships, bosses, and Hyperdrive chaos.",
@@ -47,7 +47,6 @@ const MASTERGAMER_GAMES = [
       "Golden eggs, power-ups, shields, bombs, and spread shots",
       "Hyperdrive bonus runs",
       "Original energetic soundtrack",
-      "Browser version coming soon",
     ],
     media: {
       icon: "assets/games/chicken-flapper-ii/chicken-flapper2-icon.png",
@@ -63,11 +62,7 @@ const MASTERGAMER_GAMES = [
         label: "Google Play",
         platformLabel: "ANDROID",
       },
-      playOnline: {
-        comingSoon: true,
-        label: "Browser Version Coming Soon",
-        platformLabel: "WEB VERSION COMING SOON",
-      },
+      playOnline: null,
       trailer: null,
     },
   },
@@ -76,20 +71,18 @@ const MASTERGAMER_GAMES = [
     initials: "WCC",
     accent: "#ffd44a",
     featured: true,
-    platforms: ["iOS", "Android", "Web"],
+    platforms: ["iOS", "Android"],
     subtitle: "Retro Arcade / Kung Fu Fighter",
-    badge: "PLAY ONLINE",
+    badge: "AVAILABLE NOW",
     summary:
       "A retro arcade kung fu chicken fighter. Tap to fly-kick, double tap to punch, unleash KIAI power, clear waves, collect power-ups and battle bosses across 100 levels.",
     description:
-      "A retro arcade kung fu chicken fighter. Tap to fly-kick, double tap to punch, unleash KIAI power, clear waves, collect power-ups and battle bosses across 100 levels.\n\nPlay directly in your browser with keyboard, mouse, or touch controls, then jump into fast wave combat built for quick arcade sessions.",
+      "A retro arcade kung fu chicken fighter. Tap to fly-kick, double tap to punch, unleash KIAI power, clear waves, collect power-ups and battle bosses across 100 levels.",
     features: [
-      "Playable online browser build",
       "Retro arcade kung fu combat",
       "Fly-kicks, punches, and KIAI power",
       "Power-ups and wave clearing",
       "Boss battles across 100 levels",
-      "Keyboard, mouse, and touch support",
     ],
     media: {
       icon: "assets/games/wing-chun-chicken/wing-chun-chicken-icon.png",
@@ -102,48 +95,7 @@ const MASTERGAMER_GAMES = [
     links: {
       appStore: "https://apps.apple.com/us/app/wing-chun-chicken/id6790622005",
       googlePlay: "https://play.google.com/store/apps/details?id=com.base6a558b8dba364f63cc0203d3.app",
-      playOnline: {
-        url: "/games/wing-chun-chicken/play/",
-        label: "Play Online",
-      },
-      trailer: null,
-    },
-  },
-  {
-    title: "Head Down",
-    initials: "HD",
-    accent: "#ff304f",
-    featured: true,
-    category: "Playable Prototypes",
-    platforms: ["Web"],
-    subtitle: "Playable Prototype \u2014 Acts 1 & 2",
-    badge: "PLAYABLE PROTOTYPE",
-    summary:
-      "A cinematic interactive horror game where every choice matters. Watch the scene, make your move, and survive the house.",
-    description:
-      "Head Down is a fast-reaction interactive horror experience inspired by classic laserdisc adventure games. Each scene plays like a nightmare unfolding in real time. When the controller appears, you only have seconds to choose: left, right, forward, back, or use. Choose correctly and you survive. Choose wrong and the house takes you.",
-    features: [
-      "Playable prototype featuring Acts 1 & 2",
-      "Fast-reaction interactive horror scenes",
-      "Classic laserdisc adventure inspiration",
-      "Choice-driven survival moments",
-      "Play directly in your browser",
-    ],
-    media: {
-      icon: "assets/games/head-down/head-down-icon.png",
-      banner: "assets/games/head-down/head-down-icon.png",
-      cover: "assets/games/head-down/head-down-icon.png",
-      screenshots: [],
-    },
-    detailPage: "games/head-down.html",
-    detailLabel: "View Game",
-    links: {
-      appStore: null,
-      googlePlay: null,
-      playOnline: {
-        url: "/games/head-down/",
-        label: "PLAY NOW",
-      },
+      playOnline: null,
       trailer: null,
     },
   },
@@ -153,7 +105,7 @@ const MASTERGAMER_GAMES = [
     accent: "#7dff5a",
     featured: true,
     category: "Playable Games",
-    platforms: ["PLAY ONLINE LIVE", "Google Play Available", "iOS Available"],
+    platforms: ["iOS", "Android"],
     subtitle: "Available Now",
     badge: "AVAILABLE NOW",
     summary:
@@ -161,16 +113,10 @@ const MASTERGAMER_GAMES = [
     description:
       "A fast block-art zombie defence game. Survive 100 levels, defend the barricade, command CPU allies, trigger air strikes, fight special zombie blocks, and face the final boss Block Zero.",
     features: [
-      "Live online browser build",
       "100 levels of block-art zombie defence",
       "Barricade defence and CPU allies",
       "Air strikes and special zombie blocks",
       "Final boss battle against Block Zero",
-    ],
-    browserControls: [
-      "Use the arrow keys to move.",
-      "Press space bar to shoot/action.",
-      "Use the mouse to aim/select where supported.",
     ],
     media: {
       icon: "assets/games/zombie-block/kill-everything-zombie-block-icon.png",
@@ -186,11 +132,7 @@ const MASTERGAMER_GAMES = [
         label: "Google Play",
         platformLabel: "ANDROID",
       },
-      playOnline: {
-        url: "https://zombie-block.mastergamer.com.au/",
-        label: "PLAY LIVE ONLINE",
-        platformLabel: "PLAY ONLINE LIVE",
-      },
+      playOnline: null,
       trailer: null,
     },
   },
@@ -199,7 +141,7 @@ const MASTERGAMER_GAMES = [
     initials: "S7",
     accent: "#2bdcff",
     featured: true,
-    platforms: ["iOS", "Android", "Web"],
+    platforms: ["iOS", "Android"],
     summary: "A strategic card game where every 7 starts the battle for the table.",
     description:
       "Mastergamer 7's brings the classic card game Sevens to life with modern visuals, intelligent AI opponents, and strategic gameplay.\n\nBuild each suit outward from the 7, manage your hand carefully, and outplay your opponents as you race to clear your cards and score points.\n\nEasy to learn. Difficult to master. Endless replayability.",
@@ -227,7 +169,7 @@ const MASTERGAMER_GAMES = [
     links: {
       appStore: "https://apps.apple.com/au/app/7s-sevens/id6777825705",
       googlePlay: "https://play.google.com/store/apps/details?id=com.base6a2233f69d637c03cc852909.app",
-      playOnline: "https://sevens.mastergamer.com.au",
+      playOnline: null,
       trailer: "assets/videos/Sevens-trailer.mp4",
     },
   },
@@ -236,7 +178,7 @@ const MASTERGAMER_GAMES = [
     initials: "TF",
     accent: "#ff4fd8",
     featured: true,
-    platforms: ["iOS", "Android", "Web"],
+    platforms: ["iOS", "Android"],
     summary: "A colourful block-clearing puzzle game built for quick arcade fun.",
     description:
       "TinyFall is a colourful block-clearing puzzle game built for quick arcade fun.\n\nTap groups of matching blocks before the stack reaches the top. Every move matters--single blocks won't clear, so strategy and timing are key.\n\nChoose from Easy, Medium, Hard, or Pro modes and challenge yourself to achieve higher scores and faster clears.\n\nPop fast. Stack smart. Don't crack.",
@@ -256,7 +198,7 @@ const MASTERGAMER_GAMES = [
     links: {
       appStore: "https://apps.apple.com/au/app/tinyfall/id6774491647",
       googlePlay: "https://play.google.com/store/apps/details?id=com.base6a041961dce7911d73a44175.app",
-      playOnline: "https://tinyfall.mastergamer.com.au/",
+      playOnline: null,
       trailer: "assets/videos/tinyfall-trailer.mp4",
     },
   },
@@ -265,7 +207,7 @@ const MASTERGAMER_GAMES = [
     initials: "HD",
     accent: "#7cff6b",
     featured: true,
-    platforms: ["iOS", "Android", "Web"],
+    platforms: ["iOS", "Android"],
     summary: "A calm AI companion for thoughts, reminders, daily planning, and clarity.",
     description:
       "HumDing is a calm AI companion designed to help organise thoughts, ideas, reminders, and daily planning.\n\nCapture information through text or voice and let HumDing transform scattered thoughts into structured daily clarity.\n\nDesigned to reduce mental clutter and help you focus on what matters most.",
@@ -292,7 +234,7 @@ const MASTERGAMER_GAMES = [
     links: {
       appStore: "https://apps.apple.com/au/app/humding/id6768580478",
       googlePlay: "https://play.google.com/store/apps/details?id=com.base69ffaa315dadf2c4ff53715b.app",
-      playOnline: { url: "https://humding.ai/", label: "Login | Humding" },
+      playOnline: null,
       trailer: null,
     },
   },
@@ -300,7 +242,7 @@ const MASTERGAMER_GAMES = [
     title: "Chicken Blast",
     initials: "CB",
     accent: "#ffb84f",
-    platforms: ["iOS", "Android", "Web"],
+    platforms: ["Android"],
     summary: "Blast your chicken from a cannon and escape mischievous monkeys.",
     description:
       "Blast your chicken from a cannon and escape an army of mischievous monkeys in this fast-paced arcade adventure.\n\nCollect power-ups, dodge obstacles, and fly as far as possible while chasing high scores and leaderboard glory.\n\nSimple controls, colourful visuals, and endless gameplay make Chicken Blast easy to pick up and hard to put down.",
@@ -367,7 +309,7 @@ const MASTERGAMER_GAMES = [
     title: "Chicken Splat",
     initials: "CS",
     accent: "#ff5a6f",
-    platforms: ["iOS", "Android", "Web"],
+    platforms: ["iOS", "Android"],
     summary: "Guide chickens through 100 sheep-splatting arcade puzzle levels.",
     description:
       "Guide your chickens through 100 increasingly challenging levels as you attempt to eliminate troublesome sheep using strategy, timing, and unique character abilities.\n\nUnlock special chickens, discover power-ups, and prepare for the ultimate showdown against the Boss Sheep in Level 100.\n\nA quirky arcade puzzle experience packed with humour and challenge.",
@@ -453,7 +395,7 @@ const MASTERGAMER_GAMES = [
     initials: "RPC",
     accent: "#f4f85a",
     category: "Classic Games / Archive Games",
-    platforms: ["iOS", "Android", "Web"],
+    platforms: ["iOS", "Android"],
     summary: "A quirky twist on Rock, Paper, Scissors where chickens rule the championship.",
     description:
       "Take the classic Rock, Paper, Scissors formula and turn it into a quirky championship adventure.\n\nBattle your way through tournaments, challenge friends in local multiplayer, and compete to become the ultimate Rock Paper Chicken Champion.\n\nLuck, timing, and a little bit of madness await.",
@@ -489,7 +431,7 @@ const MASTERGAMER_GAMES = [
     subtitle: "Adventure Awaits Beneath the Surface",
     initials: "CR",
     accent: "#27a6ff",
-    platforms: ["iOS", "Android", "Web"],
+    platforms: ["Android"],
     summary: "A side-scrolling underground adventure in search of lost gold.",
     description:
       "Deep beneath the earth lies the legendary lost gold of Alcatraz, hidden within a maze of ancient caves, deadly traps, and forgotten treasures.\n\nAs the Cave Runner, you'll dodge hazards, leap across dangerous terrain, avoid collapsing caverns, and battle your way through increasingly challenging underground worlds in search of untold riches.\n\nEvery level brings new obstacles, greater dangers, and bigger rewards as you push deeper into the darkness.",
@@ -516,17 +458,33 @@ const MASTERGAMER_GAMES = [
     },
     detailPage: "cave-runner.html",
     links: {
-      appStore: "https://apps.apple.com/au/app/indiana-moans/id1601931715",
+      appStore: null,
       googlePlay: "https://play.google.com/store/apps/details?id=com.cave.run",
       playOnline: null,
       trailer: "assets/videos/cave-runner-trailer.mp4",
     },
   },
   {
+    title: "Indiana Moans",
+    initials: "IM",
+    accent: "#27a6ff",
+    category: "Classic Games / Archive Games",
+    platforms: ["iOS"],
+    subtitle: "Legacy title",
+    summary: "A legacy Master Gamer title available on iOS.",
+    description: "Indiana Moans is a legacy Master Gamer title available on the App Store.",
+    links: {
+      appStore: "https://apps.apple.com/au/app/indiana-moans/id1601931715",
+      googlePlay: null,
+      playOnline: null,
+      trailer: null,
+    },
+  },
+  {
     title: "Flappy Christmas",
     initials: "FC",
     accent: "#5ed7ff",
-    platforms: ["iOS", "Android", "Web"],
+    platforms: ["Android"],
     summary: "A festive arcade adventure where Santa battles to save Christmas.",
     description:
       "The Ice Giant is trying to stop Christmas.\n\nGuide Santa through an enchanted forest filled with ghosts, ghouls, scorpions, and dangerous enemies. Collect snowballs, unlock power-ups, and battle your way to an epic showdown with the Ice Giant.\n\nA festive arcade adventure for players of all ages.",
@@ -592,7 +550,7 @@ const MASTERGAMER_GAMES = [
     accent: "#3fdcff",
     category: "Football / Management / Strategy",
     featured: false,
-    platforms: [],
+    platforms: ["iOS Coming Soon", "Android Coming Soon"],
     badge: "COMING SOON",
     summary:
       "Build your squad, choose your tactics, develop team chemistry and lead an unlikely team of blocks from the lower divisions all the way to football glory.",
@@ -607,8 +565,8 @@ const MASTERGAMER_GAMES = [
     detailPage: "soccer-block-manager-news.html",
     detailLabel: "Watch This Space",
     links: {
-      appStore: null,
-      googlePlay: null,
+      appStore: { comingSoon: true },
+      googlePlay: { comingSoon: true },
       playOnline: null,
       trailer: null,
     },
@@ -619,7 +577,7 @@ const MASTERGAMER_GAMES = [
     accent: "#ff7a24",
     category: "Arcade / Action / Space Combat",
     featured: false,
-    platforms: [],
+    platforms: ["iOS Coming Soon", "Android Coming Soon"],
     badge: "COMING SOON",
     summary:
       "Pilot your defender through increasingly intense waves of enemy fighters, gunships and massive airborne threats. Dodge incoming fire, destroy enemy weapons and survive the chaos.",
@@ -634,8 +592,8 @@ const MASTERGAMER_GAMES = [
     detailPage: "block-defender-news.html",
     detailLabel: "Watch This Space",
     links: {
-      appStore: null,
-      googlePlay: null,
+      appStore: { comingSoon: true },
+      googlePlay: { comingSoon: true },
       playOnline: null,
       trailer: null,
     },

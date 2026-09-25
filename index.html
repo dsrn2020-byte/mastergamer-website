@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="MasterGamer is an Australian indie game and app studio creating mobile games, browser-playable releases, videos, news, and player support."
+      content="MasterGamer is an Australian indie game and app studio creating mobile games and apps, videos, news, and player support."
     />
     <title>MasterGamer | Australian Indie Game Studio</title>
     <link rel="icon" href="favicon.ico?v=20260625" sizes="any" />
@@ -20,7 +20,7 @@
       href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=24" />
+    <link rel="stylesheet" href="styles.css?v=mobile-only-20260925" />
   </head>
   <body>
     <canvas class="arcade-canvas" id="arcadeCanvas" aria-hidden="true"></canvas>
@@ -65,27 +65,26 @@
             <h1>Master Gamer</h1>
             <p class="hero-tagline">Fun. Accessible. Family-Friendly Games.</p>
             <p>
-              Creating arcade, puzzle, card and casual games for mobile, browser
-              and PC players since 2018. Play online, discover new releases and
+              Creating mobile games and apps since 2018. Discover new releases and
               explore the growing Master Gamer collection.
             </p>
             <div class="hero-actions">
               <a class="button button-primary" href="#games">Explore Games</a>
-              <a class="button button-secondary" href="#play">Play Online</a>
             </div>
           </div>
 
-          <div class="hero-art" aria-label="Master Gamer featured games artwork">
+          <div class="hero-art hero-art-mobile" aria-label="Master Gamer featured games artwork">
             <img
               src="assets/site/mastergamer-hero.png"
               alt="Master Gamer family-friendly games banner"
             />
+          </div>
         </div>
       </section>
 
       <section class="section intro-band" aria-label="Studio highlights">
         <div class="stat">
-            <strong>20</strong>
+            <strong>19</strong>
           <span>Games in the library</span>
         </div>
         <div class="stat">
@@ -93,8 +92,8 @@
           <span>App Store and Google Play ready</span>
         </div>
         <div class="stat">
-          <strong>Online</strong>
-          <span>Browser play when available</span>
+          <strong>Games &amp; Apps</strong>
+          <span>Arcade, puzzles and productivity</span>
         </div>
       </section>
 
@@ -104,7 +103,7 @@
           <h2>Explore the Master Gamer Collection</h2>
           <p>
             Discover arcade, puzzle, card, memory and casual games built for
-            mobile, browser and PC.
+            mobile devices.
           </p>
           <p>
             Each title includes game details, screenshots, platform links and
@@ -114,119 +113,11 @@
         <div class="games-grid" id="gamesGrid"></div>
       </section>
 
-      <section class="section split-section" id="play">
-        <div class="play-intro">
-          <p class="eyebrow">Play Online</p>
-          <h2>Play Mastergamer titles directly in your browser.</h2>
-          <p>
-            No downloads required. Selected games and apps will be available to
-            launch instantly, with more browser builds coming soon.
-          </p>
-        </div>
-        <div class="panel play-panel">
-          <div class="play-group">
-            <h3>Available Now</h3>
-            <a class="play-card play-card-available" href="https://humding.ai/" target="_blank" rel="noopener">
-              <span>
-                <strong>Humding</strong>
-                <small>AI companion &amp; daily clarity tool</small>
-              </span>
-              <span class="button button-primary">Launch App</span>
-            </a>
-            <a class="play-card play-card-available" href="https://sevens.mastergamer.com.au" target="_blank" rel="noopener">
-              <span>
-                <strong>Sevens</strong>
-                <small>A strategic card game where every 7 starts the battle for the table.</small>
-              </span>
-              <span class="button button-primary">Play Online</span>
-            </a>
-            <a class="play-card play-card-available" href="https://tinyfall.mastergamer.com.au/" target="_blank" rel="noopener">
-              <span>
-                <strong>TinyFall</strong>
-                <small>A colourful block-clearing puzzle game built for quick arcade fun.</small>
-              </span>
-              <span class="button button-primary">Play Now</span>
-            </a>
-            <a class="play-card play-card-available" href="/games/wing-chun-chicken/play/" aria-label="Play Wing Chun Chicken online">
-              <span>
-                <strong>Wing Chun Chicken</strong>
-                <small>A retro arcade kung fu chicken fighter with KIAI power, waves, power-ups and boss battles.</small>
-                <span class="status-badge">Play Online</span>
-              </span>
-              <span class="button button-primary">Play Online</span>
-            </a>
-            <a class="play-card play-card-available play-card-zombie" href="https://zombie-block.mastergamer.com.au/" target="_blank" rel="noopener noreferrer" aria-label="Play Zombie Block Kill Everything online">
-              <img src="assets/games/zombie-block/kill-everything-zombie-block-icon.png" alt="Zombie Block: Kill Everything icon" class="play-preview-icon" loading="lazy">
-              <span>
-                <strong>Zombie Block: Kill Everything</strong>
-                <small>A fast block-art zombie defence game. Survive 100 levels, defend the barricade, command allies, trigger air strikes, and face Block Zero.</small>
-                <small class="play-controls">Web controls: Arrow keys, space bar, and mouse.</small>
-                <span class="status-badge">AVAILABLE NOW</span>
-              </span>
-              <span class="button button-primary">PLAY LIVE ONLINE</span>
-            </a>
-          </div>
-          <div class="play-group">
-            <h3>Featured Prototypes &amp; Upcoming</h3>
-            <div class="coming-soon-grid" aria-label="Featured prototypes and upcoming games">
-              <article class="play-card play-card-preview">
-                <img
-                  class="play-preview-icon"
-                  src="assets/games/chicken-flapper-ii/chicken-flapper2-icon.png"
-                  alt="Chicken Flapper II game icon"
-                  loading="lazy"
-                />
-                <strong>Chicken Flapper II: Never Ending Journey</strong>
-                <small>Available on App Store and Google Play. A directly hosted MasterGamer browser build is planned.</small>
-                <span class="status-badge">BROWSER VERSION COMING SOON</span>
-                <a class="button button-secondary" href="chicken-flapper-ii.html">VIEW GAME</a>
-              </article>
-              <article class="play-card play-card-preview play-card-horror play-card-head-down">
-                <img src="assets/games/head-down/head-down-icon.png" alt="Head Down horror game icon" class="play-preview-icon" loading="lazy">
-                <div class="head-down-copy">
-                  <strong>Head Down</strong>
-                  <span class="head-down-meta">Playable Prototype &middot; Play Online</span>
-                  <small>A cinematic interactive horror game where every choice matters. Watch the scene, make your move, and survive the house.</small>
-                </div>
-                <span class="status-badge">Playable Prototype</span>
-                <a class="button button-primary head-down-play-link" href="/games/head-down/">PLAY NOW</a>
-              </article>
-              <article class="play-card play-card-preview">
-                <img
-                  class="play-preview-icon"
-                  src="assets/games/soccer-block-manager/soccer-block-manager-icon.png"
-                  alt="Soccer Block Manager: The Ted Wassoo Way"
-                />
-                <strong>Soccer Block Manager: The Ted Wassoo Way</strong>
-                <small>
-                  A new block-style football management experience is coming to
-                  MasterGamer. Build the squad, create tactics, prepare your own
-                  plays and lead your club from the lower divisions to glory.
-                </small>
-                <span class="status-badge">COMING SOON</span>
-                <a class="button button-secondary" href="soccer-block-manager-news.html">
-                  WATCH THIS SPACE
-                </a>
-              </article>
-              <article class="play-card play-card-preview">
-                <img
-                  class="play-preview-icon"
-                  src="assets/games/block-defender/block-defender-icon.png"
-                  alt="Block Defender"
-                />
-                <strong>Block Defender</strong>
-                <small>
-                  The invasion has begun. Take control of your defender, battle
-                  enemy fighters and massive airborne threats, and hold the line
-                  through increasingly intense arcade combat.
-                </small>
-                <span class="status-badge">COMING SOON</span>
-                <a class="button button-secondary" href="block-defender-news.html">
-                  WATCH THIS SPACE
-                </a>
-              </article>
-            </div>
-          </div>
+      <section class="section" id="play">
+        <div class="panel">
+          <h2>Available on Mobile</h2>
+          <p>Browse the Master Gamer library for current App Store and Google Play releases. Browser versions are temporarily unavailable while selected titles are migrated to independent app builds.</p>
+          <a class="button button-primary" href="#games">Browse Games</a>
         </div>
       </section>
 
@@ -245,7 +136,7 @@
           <article class="media-tile">
             <span class="play-icon" aria-hidden="true"></span>
             <h3>Dev Clips</h3>
-            <p>See quick gameplay previews from newer mobile and browser titles.</p>
+            <p>See quick gameplay previews from mobile titles.</p>
             <a href="assets/videos/tinyfall-trailer.mp4" target="_blank" rel="noopener">Watch TinyFall</a>
           </article>
           <article class="media-tile">
@@ -299,7 +190,7 @@
         <div class="support-grid">
           <article>
             <h3>FAQ</h3>
-            <p>Find quick answers about game availability, mobile installs, browser play, and where to find updates.</p>
+            <p>Find quick answers about game availability, mobile installs, and where to find updates.</p>
           </article>
           <article>
             <h3>Contact Support</h3>
@@ -330,8 +221,7 @@
           <h2>Independent Game &amp; App Development Studio</h2>
           <p>
             Master Gamer is a Brisbane-based game and app development studio
-            creating fun, accessible, and engaging experiences across mobile,
-            browser, PC, and emerging platforms.
+            creating fun, accessible, and engaging experiences through mobile games and apps.
           </p>
           <p>
             Since the release of our first title, Chicken Flapper, in 2018, we
@@ -376,7 +266,7 @@
           <article>
             <span>2022-2026</span>
             <h3>Games, apps, and emerging platforms</h3>
-            <p>The studio continues to expand into mobile, browser, PC, productivity tools, and future-ready experiences.</p>
+            <p>The studio continues to develop mobile games, apps, and productivity tools.</p>
           </article>
         </div>
         <div class="section-heading compact-heading">
@@ -473,8 +363,8 @@
       <span class="footer-copy">Copyright &copy; Master Gamer</span>
     </footer>
 
-    <script src="games.js?v=store-links-20260917"></script>
+    <script src="games.js?v=mobile-only-20260925"></script>
     <script src="news.js?v=2"></script>
-    <script src="main.js?v=store-links-20260917"></script>
+    <script src="main.js?v=mobile-only-20260925"></script>
   </body>
 </html>

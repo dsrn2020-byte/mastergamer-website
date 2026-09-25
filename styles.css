@@ -243,6 +243,13 @@ h3 {
   width: 100%;
 }
 
+/* Hide the legacy platform labels in the homepage artwork; preserve the source image. */
+.hero-art-mobile img {
+  aspect-ratio: 2.12 / 1;
+  object-fit: cover;
+  object-position: top;
+}
+
 .eyebrow {
   color: var(--blue);
   font-weight: 800;
