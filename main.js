@@ -30,15 +30,8 @@ function createActionLink(value, label, className = "") {
   return `<a class="button ${className}" href="${action.url}"${linkTargetAttributes(action.url)}>${linkLabel}</a>`;
 }
 
-function createBadgeMarkup(game, options = {}) {
+function createBadgeMarkup(game) {
   if (!game.badge) return "";
-
-  const previewAction = normaliseAction(game.links?.playOnline);
-  const canLinkPreview = options.linkPreview && previewAction?.url && game.badge === "PREVIEW BUILD";
-
-  if (canLinkPreview) {
-    return `<a class="status-badge status-badge-link" href="${previewAction.url}"${linkTargetAttributes(previewAction.url)} aria-label="Preview ${game.title}">${game.badge}</a>`;
-  }
 
   return `<span class="status-badge">${game.badge}</span>`;
 }
@@ -48,7 +41,6 @@ function createGameActionLinks(game, options = {}) {
   const actions = [
     createActionLink(links.appStore, "App Store"),
     createActionLink(links.googlePlay, "Google Play"),
-    createActionLink(links.playOnline, "Play Online"),
     createActionLink(links.trailer, "Watch Trailer"),
   ];
 
@@ -68,7 +60,6 @@ function createPlatformButtons(game) {
   const platforms = [
     { key: "ios", label: "IOS", value: links.appStore },
     { key: "android", label: "ANDROID", value: links.googlePlay },
-    { key: "web", label: "WEB", value: links.playOnline },
   ];
 
   return platforms
@@ -102,11 +93,6 @@ function createGameCard(game, index) {
   const features = game.features?.length
     ? `<ul class="feature-list">${game.features.map((feature) => `<li>${feature}</li>`).join("")}</ul>`
     : "";
-  const browserControls = game.browserControls?.length
-    ? `<div class="browser-controls"><strong>Browser Controls:</strong><ul>${game.browserControls
-        .map((control) => `<li>${control}</li>`)
-        .join("")}</ul></div>`
-    : "";
   const actionLinks = createGameActionLinks(game, { includeLearnMore: true });
 
   card.innerHTML = `
@@ -124,7 +110,6 @@ function createGameCard(game, index) {
     <div class="game-details" id="game-panel-${index}">
       ${banner}
       ${description}
-      ${browserControls}
       ${features}
       <div class="game-links">
         ${actionLinks}
@@ -266,7 +251,7 @@ function renderFeaturedGames() {
       ${createIconMarkup(game, "game-icon")}
       <div>
         <h3>${game.title}</h3>
-        ${createBadgeMarkup(game, { linkPreview: true })}
+        ${createBadgeMarkup(game)}
         <p>${game.summary}</p>
         <div class="platform-badges" aria-label="Available platforms">${createPlatformButtons(game)}</div>
       </div>
@@ -301,18 +286,17 @@ function renderHeroFeaturedGames() {
     card.style.setProperty("--accent", game.accent);
     const displayTitle = game.title.replace(":", "");
     const learnMoreHref = game.detailPage || "#games";
-    const playAction = createActionLink(game.links?.playOnline, "Play", "button-primary");
 
     card.innerHTML = `
       ${createIconMarkup(game, "game-icon hero-game-icon")}
       <div class="hero-game-copy">
         <h3>${displayTitle}</h3>
-        ${createBadgeMarkup(game, { linkPreview: true })}
+        ${createBadgeMarkup(game)}
         ${game.subtitle ? `<strong>${game.subtitle}</strong>` : ""}
         <p>${game.summary}</p>
       </div>
       <div class="hero-game-actions">
-        ${playAction || `<a class="button button-primary" href="${learnMoreHref}">View Game</a>`}
+        <a class="button button-primary" href="${learnMoreHref}">View Game</a>
         <a class="button button-secondary" href="${learnMoreHref}">Learn More</a>
       </div>
     `;
