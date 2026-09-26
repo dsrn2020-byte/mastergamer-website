@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AdPilot AI | Master Gamer</title>
+    <meta name="description" content="AdPilot AI is Master Gamer&#x27;s advertising monitoring and decision-support application, providing controlled campaign analysis with human oversight." />
+    <link rel="icon" href="favicon.ico?v=20260625" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=20260625" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?v=20260625" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png?v=20260625" />
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png?v=20260625" />
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png?v=20260625" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=23" />
+  </head>
+  <body>
+    <canvas class="arcade-canvas" id="arcadeCanvas" aria-hidden="true"></canvas>
+    <header class="site-header">
+      <a class="brand" href="index.html#home" aria-label="Master Gamer home">
+        <img class="brand-logo" src="assets/site/mastergamer-logo.png" alt="Master Gamer" />
+        <span class="brand-copy"><strong>Master Gamer</strong><small>Indie Games Australia</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="siteNav"><span></span><span></span><span></span><span class="sr-only">Menu</span></button>
+      <nav class="site-nav" id="siteNav" aria-label="Primary navigation">
+        <a href="index.html#games">Games</a>
+        <a href="index.html#support">Support</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="index.html#legal">Legal</a>
+      </nav>
+    </header>
+    <main class="policy-page">
+      <p class="eyebrow">Master Gamer Application</p>
+      <h1>AdPilot AI</h1>
+      <p>Controlled advertising intelligence with human oversight.</p>
+      <p>AdPilot AI is an advertising monitoring and decision-support application developed as part of Master Gamer's application portfolio. It helps authorised users monitor advertising campaigns, collect performance evidence and prepare structured optimisation recommendations.</p>
+      <p>AdPilot AI connects to supported advertising platforms using authorised platform APIs. For Google Ads, users authorise access through Google OAuth without providing their Google password to AdPilot.</p>
+      <h2>How AdPilot AI Works</h2>
+      <div class="support-grid">
+        <article><h3>Connect Securely</h3><p>Authorised users connect supported advertising accounts using the platform's official authentication process.</p></article>
+        <article><h3>Monitor</h3><p>AdPilot collects authorised campaign configuration, status and performance information to monitor campaign delivery and build an evidence history.</p></article>
+        <article><h3>Analyse</h3><p>Campaign evidence may be analysed to identify changes in performance and prepare structured recommendations.</p></article>
+        <article><h3>Human Control</h3><p>AI-generated analysis does not independently control advertising spend. AdPilot is designed around human oversight and deterministic safety controls.</p></article>
+      </div>
+      <h2>Google Ads Data Access</h2>
+      <p>When an authorised user connects a Google Ads account, AdPilot AI may access Google Ads account and campaign information made available through the permissions granted by that user. This can include account and campaign identifiers, campaign configuration and status, budgets, advertising and creative metadata, and performance information such as impressions, clicks, conversions, conversion value and spend.</p>
+      <p>This information is used to provide AdPilot's campaign monitoring, evidence, analysis, reporting and recommendation features.</p>
+      <aside class="policy-card" aria-labelledby="google-access-heading">
+        <h3 id="google-access-heading">Current Google Ads Access</h3>
+        <p>AdPilot's current Google Ads integration is used for read-only monitoring and evidence collection. It does not automatically change Google Ads campaigns.</p>
+      </aside>
+      <h2>Privacy and Control</h2>
+      <p>Users remain in control of their connected accounts and may revoke AdPilot's Google access through their Google Account permissions. More information about how AdPilot accesses, uses, stores and protects Google data is provided in the Master Gamer Privacy Policy.</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="/privacy">Privacy Policy</a>
+        <a class="button button-secondary" href="/terms">Terms of Use</a>
+      </div>
+      <h2>Access</h2>
+      <p>AdPilot AI is currently in controlled rollout. Application access is limited to authorised users.</p>
+      <p>For AdPilot AI privacy, support or access enquiries, contact <a href="mailto:info@mastergamer.com.au">info@mastergamer.com.au</a>.</p>
+    </main>
+    <footer class="site-footer">
+      <img class="footer-logo" src="assets/site/mastergamer-logo.png" alt="Master Gamer" />
+      <nav class="footer-links" aria-label="Footer navigation"><a href="/privacy">Privacy Policy</a><span>|</span><a href="/terms">Terms of Use</a><span>|</span><a href="cookies.html">Cookie Policy</a><span>|</span><a href="humding-privacy.html">HumDing Privacy Policy</a><span>|</span><a href="index.html#contact">Contact</a></nav>
+      <span class="footer-copy">Copyright &copy; Master Gamer</span>
+    </footer>
+    <script src="main.js?v=21"></script>
+  </body>
+</html>
