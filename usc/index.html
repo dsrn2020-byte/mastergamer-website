@@ -303,7 +303,22 @@ p { margin: 0; }
 .dots { display: flex; justify-content: center; gap: 8px; }
 .dots i { width: 8px; height: 8px; border-radius: 50%; background: var(--line); }
 .dots i.on { background: var(--sky); width: 22px; border-radius: 4px; }
-#homehelp { width: 36px; height: 36px; }
+
+.topbar .wm-row { min-width: 0; }
+.wm-sub { white-space: nowrap; }
+@media (max-width: 420px) { .topbar .wm-u { font-size: 19px; } .topbar .wm-sub { font-size: 7.5px; letter-spacing: .22em; } .topbar .wm-mark { height: 36px; } }
+@media (max-width: 359px) { .topbar .wm-u { font-size: 16px; } .topbar .wm-sub { font-size: 6.5px; letter-spacing: .16em; } .topbar .wm-mark { height: 30px; } .learnbtn { padding: 0 11px 0 9px; font-size: 13px; } .learnbtn .lm-x { display: none; } }
+.learnbtn { display: inline-flex; align-items: center; gap: 7px; height: 38px; padding: 0 14px 0 12px; border-radius: 999px; background: color-mix(in srgb, var(--sky) 16%, transparent); border: 1px solid color-mix(in srgb, var(--sky) 45%, transparent); color: var(--sky); font-weight: 700; font-size: 14px; white-space: nowrap; flex: none; }
+.learnbtn svg { width: 18px; height: 18px; }
+.hub { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.hubtile { background: var(--surface); border-radius: var(--r); padding: 14px; text-align: left; display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.hubtile h3 { font-size: 15px; }
+.hubtile p { font-size: 13px; color: var(--muted); overflow-wrap: anywhere; }
+.hubtile.feature { grid-column: 1 / -1; background: linear-gradient(160deg, #1f2e3a 0%, var(--surface) 70%); border: 1px solid #2b3d4b; padding: 18px; }
+.hubtile.feature h3 { font-size: 20px; }
+.hubtile.feature p { font-size: 14px; }
+.hubgo { display: inline-flex; align-items: center; gap: 4px; color: var(--sky); font-weight: 700; font-size: 14px; margin-top: 6px; }
+
 
 
 /* About */
@@ -489,8 +504,8 @@ SCREENS.home = (v) => {
   const teamRank = teamStandings().findIndex(t => t.mine) + 1;
   const parts = [['Warm-up', 'Call the Cue'], ['Main set', 'Circuit Recall'], ['Finisher', 'Plate Sudoku · x2']];
   v.appendChild(el(`<div class="stack">
-    <div class="topbar">${wordmark()}<span class="row" style="gap:8px"><button class="iconbtn" id="homehelp" aria-label="Help and FAQ">${ICON_Q}</button><span class="chip orange">${S.streak.count && (S.streak.last === today || S.streak.last === yesterday()) ? S.streak.count + '-day streak' : 'Start a streak'}</span></span></div>
-    <div class="stack-s"><p class="eyebrow">${esc(prettyDate())}</p><h1>${greet}, ${esc(first)}.</h1></div>
+    <div class="topbar">${wordmark()}<button class="learnbtn" id="homehelp" aria-label="Learn more">${ICON_BOOK}<span>Learn<span class="lm-x"> more</span></span></button></div>
+    <div class="stack-s"><div class="spread"><p class="eyebrow">${esc(prettyDate())}</p><span class="chip orange">${S.streak.count && (S.streak.last === today || S.streak.last === yesterday()) ? S.streak.count + '-day streak' : 'Start a streak'}</span></div><h1>${greet}, ${esc(first)}.</h1></div>
     <section class="card daily stack">
       <div class="spread"><span class="eyebrow">Today's Brain Session</span><span class="chip sky">${!isMember() ? 'Practice' : done ? 'Counted' : 'About 3 min'}</span></div>
       ${done && isMember() ? `<div class="stack-s"><span class="big-score">${done.score.toLocaleString('en-AU')}</span><p class="muted">Your score today. Ranked #${todayRank()} of ${EXAMPLES.length + 1} so far. New session at midnight.</p></div>`
@@ -639,15 +654,14 @@ SCREENS.profile = (v) => {
       <dt>Account</dt><dd>${isMember() ? 'USC member' : 'Guest'}</dd>
       <dt>Levels 41 to 100</dt><dd>${isMember() ? 'Included, no ads' : S.pack ? 'Unlocked' : S.ads ? 'With ads' : 'Locked'}</dd>
       <dt>Days shown up</dt><dd>${days}</dd>
-      <dt>Current streak</dt><dd>${S.streak.count} days</dd>
+      <dt>Current streak</dt><dd>${S.streak.count && (S.streak.last === ymd() || S.streak.last === yesterday()) ? S.streak.count : 0} days</dd>
       <dt>Best Brain Session</dt><dd>${bestDaily.toLocaleString('en-AU')}</dd>
       <dt>Stars</dt><dd>${totalStars()} / 300</dd>
     </dl></section>
     <section class="stack-s"><h3>Personal bests</h3>
       <div class="card"><dl class="kv">${WORLDS.map(w => { let b = 0; for (let l = 1; l <= 10; l++) b = Math.max(b, S.best[w.id + '-' + l] || 0); return `<dt>${esc(w.name)}</dt><dd>${b ? b.toLocaleString('en-AU') : '–'}</dd>`; }).join('')}</dl></div>
     </section>
-    <button class="btn ghost block" id="whyme">Why brain training?</button>
-    <button class="btn ghost block" id="helpbtn">${ICON_Q.replace('<svg', '<svg style="width:20px;height:20px"')} Help and FAQ</button>
+    <button class="btn ghost block" id="helpbtn">${ICON_BOOK.replace('<svg', '<svg style="width:20px;height:20px"')} Learn more</button>
     <section class="stack-s"><h3>Demo controls</h3>
       <button class="btn ghost block" id="swap">Switch to ${isMember() ? 'guest' : 'member'} view</button>
       ${!isMember() && !S.pack ? `<button class="btn ghost block" id="buy">${S.ads ? 'Remove ads' : 'Unlock levels 41 to 100'} · ${PRICE}</button>` : ''}
@@ -665,7 +679,7 @@ SCREENS.profile = (v) => {
   $('#out', v).addEventListener('click', () => { S.user = null; save(); go('login'); });
   $('#credits', v).addEventListener('click', () => go('credits'));
   $('#helpbtn', v).addEventListener('click', () => go('help'));
-  $('#whyme', v).addEventListener('click', () => go('about', { from: 'profile' }));
+
 };
 
 
@@ -705,7 +719,7 @@ SCREENS.welcome = (v) => {
   draw();
 };
 
-SCREENS.about = (v, { from = 'home', id } = {}) => {
+SCREENS.about = (v, { from = 'home', id, helpFrom } = {}) => {
   const byGame = g => WORLDS.find(w => w.game === g).name;
   const abilities = [
     ['Working memory', 'Holding information in mind and using it, like a mental notepad.', ['circuit', 'tempo', 'sudoku']],
@@ -769,7 +783,7 @@ SCREENS.about = (v, { from = 'home', id } = {}) => {
 
     <button class="btn sky block" id="totrain">Start training</button>
   </div>`));
-  $('#back', v).addEventListener('click', () => from === 'world' ? go('world', { id }) : go(from));
+  $('#back', v).addEventListener('click', () => from === 'world' ? go('world', { id }) : from === 'help' ? go('help', { from: helpFrom || 'profile' }) : go(from));
   $('#totrain', v).addEventListener('click', () => go('worlds'));
 };
 
@@ -788,19 +802,28 @@ SCREENS.help = (v, { from = 'profile' } = {}) => {
     ['Who do I ask for help?', 'Talk to any USC coach, or email zac@universalsc.com.au.']
   ];
   v.appendChild(el(`<div class="stack">
-    <div class="gamebar"><button class="iconbtn" id="back" aria-label="Back">${ICON_BACK}</button><div class="gametitle"><b>Help and FAQ</b></div><span style="width:40px"></span></div>
-    <div class="stack-s">${faq.map(q => `<details class="faq"><summary>${esc(q[0])}</summary><p>${esc(q[1])}</p></details>`).join('')}</div>
-    <section class="stack-s"><h3>How to play each world</h3><div class="stack-s" id="games"></div></section>
-    <button class="btn ghost block" id="whyhelp">Why brain training?</button>
-    <button class="btn ghost block" id="tour">Replay the welcome tour</button>
+    <div class="gamebar"><button class="iconbtn" id="back" aria-label="Back">${ICON_BACK}</button><div class="gametitle"><b>Learn more</b></div><span style="width:40px"></span></div>
+    <div class="stack-s"><h1>Get the most from your Brain Session</h1><p class="muted">Why it works, how each world plays, and answers to common questions.</p></div>
+    <div class="hub">
+      <button class="hubtile feature" id="whyhelp"><span class="eyebrow">Start here</span><h3>Why brain training</h3><p>How the app trains your memory and focus, the USC way, and why it matters at every age.</p><span class="hubgo">Read more ${ICON_BACK.replace('<svg', '<svg style="width:16px;height:16px;transform:rotate(180deg)"')}</span></button>
+      <button class="hubtile" id="jumpworlds"><h3>How to play</h3><p>Rules for all 10 worlds.</p></button>
+      <button class="hubtile" id="jumpfaq"><h3>Questions</h3><p>Streaks, seasons, teams, guests.</p></button>
+      <button class="hubtile" id="tour"><h3>Welcome tour</h3><p>The 3-card intro again.</p></button>
+      <button class="hubtile" id="hubcoach"><h3>Ask a coach</h3><p>zac@universalsc.com.au</p></button>
+    </div>
+    <section class="stack-s" id="sec-worlds"><h2>How to play each world</h2><div class="stack-s" id="games"></div></section>
+    <section class="stack-s" id="sec-faq"><h2>Questions</h2>${faq.map(q => `<details class="faq"><summary>${esc(q[0])}</summary><p>${esc(q[1])}</p></details>`).join('')}</section>
   </div>`));
+  $('#jumpworlds', v).addEventListener('click', () => $('#sec-worlds', v).scrollIntoView({ behavior: 'smooth', block: 'start' }));
+  $('#jumpfaq', v).addEventListener('click', () => $('#sec-faq', v).scrollIntoView({ behavior: 'smooth', block: 'start' }));
+  $('#hubcoach', v).addEventListener('click', () => { const last = $('#sec-faq details:last-of-type', v); last.open = true; last.scrollIntoView({ behavior: 'smooth', block: 'center' }); });
   WORLDS.forEach(w => {
     const d = el(`<details class="faq"><summary><span>${w.id}. ${esc(w.name)} <span class="muted" style="font-weight:400">· ${esc(w.subject)}</span></span></summary><p>${esc(w.how)}</p>${howtoHtml(w.game)}</details>`);
     $('#games', v).appendChild(d);
   });
   $('#back', v).addEventListener('click', () => go(from));
   $('#tour', v).addEventListener('click', () => go('welcome'));
-  $('#whyhelp', v).addEventListener('click', () => go('about', { from: 'help' }));
+  $('#whyhelp', v).addEventListener('click', () => go('about', { from: 'help', helpFrom: from }));
 };
 
 SCREENS.credits = (v) => {
@@ -846,6 +869,7 @@ function starsRule(game, l) {
   return '';
 }
 function howtoHtml(game) { return `<ol class="howto">${HOWTO[game].map(t => `<li>${esc(t)}</li>`).join('')}</ol>`; }
+const ICON_BOOK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/><path d="M9 8h7M9 11.5h5"/></svg>';
 const ICON_Q = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.6 9.3a2.5 2.5 0 0 1 4.8.9c0 1.7-2.4 2.1-2.4 3.6"/><path d="M12 17h.01"/></svg>';
 function helpSheet(w, level) {
   const old = $('#help-sheet'); if (old) old.remove();
@@ -942,13 +966,13 @@ SCREENS.daily = (v) => {
   const today = ymd();
   const counted = isMember() && !S.daily[today];
   const scores = [];
-  let started = false, finished = false;
-  const record = (total, parts) => {
-    S.daily[today] = { score: total, parts };
-    if (S.streak.last === yesterday()) S.streak.count++; else if (S.streak.last !== today) S.streak.count = 1;
-    S.streak.last = today; save();
+  let started = false;
+  const prevDay = (() => { const d = new Date(today + 'T00:00:00'); d.setDate(d.getDate() - 1); return ymd(d); })();
+  const record = (partial) => {
+    const parts = [0, 1, 2].map(j => scores[j] || 0);
+    S.daily[today] = { score: parts.reduce((a, b) => a + b, 0), parts, partial };
+    save();
   };
-  onCleanup(() => { if (counted && started && !finished) { const parts = [0, 1, 2].map(j => scores[j] || 0); record(parts.reduce((a, b) => a + b, 0), parts); } });
   const PARTS = [
     { label: 'Warm-up', name: 'Call the Cue', game: 'cue', opts: { level: 5, trials: 20 } },
     { label: 'Main set', name: 'Circuit Recall', game: 'circuit', opts: { level: 4, daily: true } },
@@ -968,22 +992,27 @@ SCREENS.daily = (v) => {
       <span class="chip ${counted ? 'sky' : ''}" style="align-self:flex-start">${counted ? 'This session counts' : 'Practice run'}</span>
       <div class="parts">${PARTS.map((q, j) => `<div class="part ${j < i ? 'done' : ''}"><span>${q.label}</span><b>${q.name}</b>${j < i ? `<span class="num">${scores[j]}</span>` : ''}</div>`).join('')}</div>
       <div class="stack-s"><span class="eyebrow">${i === 0 ? 'Session' : 'Next up'} · ${i + 1} of 3</span><h2>${p.label}: ${p.name}</h2><p class="muted">${esc(WORLDS.find(w => w.game === p.game).how)}${p.mult ? ' Finisher points count double.' : ''}</p></div>
-      ${counted && i === 0 ? '<p class="note">This session counts once you start. Leaving part-way scores what you have so far.</p>' : ''}
+      ${counted && i === 0 ? '<p class="note">This session counts once you start. Leaving or closing the app part-way keeps what you have scored so far.</p>' : ''}
       <button class="btn sky block" id="go">Start ${p.label.toLowerCase()}</button></div>`);
     stage.appendChild(card);
     $('#go', card).addEventListener('click', () => {
+      if (counted && !started) {
+        if (S.streak.last === prevDay) S.streak.count++; else if (S.streak.last !== today) S.streak.count = 1;
+        S.streak.last = today;
+        record(true);
+      }
       started = true;
       stage.innerHTML = ''; sub.textContent = p.label + ' · ' + p.name;
       GAMES[p.game](stage, Object.assign({}, p.opts, { rng: rngFrom('daily-' + today + '-' + i), mode: 'daily', onDone: res => {
         scores.push(res.score * (p.mult || 1));
+        if (counted) record(i < 2);
         if (i < 2) between(i + 1); else finish();
       } }));
     });
   };
   const finish = () => {
     const total = scores.reduce((a, b) => a + b, 0);
-    finished = true;
-    if (counted) record(total, scores);
+    if (counted) record(false);
     sub.textContent = prettyDate();
     stage.innerHTML = '';
     const rank = counted ? todayRank() : 1 + EXAMPLES.filter(n => exampleToday(n) > total).length;
@@ -1255,7 +1284,7 @@ const STATIONS = [
   { n: 'Run lane', i: '<path d="M4 20c4-8 12-8 16-16M8 20c3-5 7-7 12-9"/>' }
 ];
 GAMES.circuit = (stage, { level, rng, onDone, mode, daily }) => {
-  const target = daily ? 20 : 3 + level;
+  const target = daily ? 20 : level === 10 ? 12 : 3 + level;
   const speed = Math.max(380, 760 - level * 35);
   const chunk = level === 10;
   const startLives = daily ? 2 : 3;
@@ -1571,6 +1600,7 @@ GAMES.tempo = (stage, { level, rng, onDone }) => {
     });
     T.later(() => setInput(true), t + unit);
   };
+  pads.forEach(b => b.addEventListener('keydown', e => { if ((e.key === 'Enter' || e.key === ' ') && !e.repeat) { e.preventDefault(); b.dispatchEvent(new PointerEvent('pointerdown', { bubbles: true, cancelable: true })); } }));
   pads.forEach(b => b.addEventListener('pointerdown', e => {
     e.preventDefault();
     if (!input) return;
@@ -1662,7 +1692,7 @@ GAMES.reading = (stage, { level, rng, onDone }) => {
   $('#done', root).addEventListener('click', ask);
   function finish() {
     const acc = correct / qs.length;
-    const st = acc === 1 ? 3 : acc >= 0.75 ? 2 : acc >= 0.5 ? 1 : 0;
+    const st = acc === 1 ? 3 : correct >= qs.length - 1 ? 2 : acc >= 0.5 ? 1 : 0;
     onDone({ score: Math.round(acc * 1000), stars: st, detail: `${correct} of ${qs.length} recalled.${st === 0 ? ' Clear the level with half or more.' : ''}` });
   }
 };
@@ -1699,7 +1729,7 @@ GAMES.code = (stage, { level, rng, onDone }) => {
     const q = plan[k]; root.innerHTML = '';
     const card = el(`<div class="stack"><div class="hud"><span>Question <b>${k + 1}</b> / ${plan.length}</span><span>Correct <b>${correct}</b></span><span>Limit <b>${(limit / 1000).toFixed(1)}s</b></span></div>
       <div class="cuestage">${q.dir === 'sw' ? `<span style="width:110px;height:110px;display:block">${GLYPHS[q.sym]}</span>` : `<span class="cueword">${CODE_WORDS[q.sym]}</span>`}<div class="timer"></div></div>
-      <div class="codeopts ${q.dir}">${q.opts.map(o => `<button class="opt" data-o="${o}">${q.dir === 'sw' ? CODE_WORDS[o] : GLYPHS[o]}</button>`).join('')}</div></div>`);
+      <div class="codeopts ${q.dir}">${q.opts.map((o, oi) => `<button class="opt" data-o="${o}" aria-label="${q.dir === 'sw' ? CODE_WORDS[o] : 'Symbol ' + (oi + 1)}">${q.dir === 'sw' ? CODE_WORDS[o] : GLYPHS[o]}</button>`).join('')}</div></div>`);
     root.appendChild(card);
     const bar = $('.timer', card); bar.style.width = '100%';
     requestAnimationFrame(() => requestAnimationFrame(() => { bar.style.transition = `width ${limit}ms linear`; bar.style.width = '0'; }));
@@ -1742,11 +1772,12 @@ GAMES.breath = (stage, { level, rng, onDone }) => {
   const setP = v => { pressed = v; hp.classList.toggle('down', v); };
   hp.addEventListener('pointerdown', e => { e.preventDefault(); setP(true); });
   ['pointerup', 'pointerleave', 'pointercancel'].forEach(ev => hp.addEventListener(ev, () => setP(false)));
-  const onKey = e => { if (e.code === 'Space') { e.preventDefault(); setP(e.type === 'keydown'); } };
+  let breathingNow = false;
+  const onKey = e => { if (!breathingNow || e.code !== 'Space') return; e.preventDefault(); setP(e.type === 'keydown'); };
   document.addEventListener('keydown', onKey); document.addEventListener('keyup', onKey);
   onCleanup(() => { document.removeEventListener('keydown', onKey); document.removeEventListener('keyup', onKey); });
   const breathe = () => {
-    $('#go2', root).remove();
+    $('#go2', root).remove(); breathingNow = true;
     const steps = []; for (let c = 0; c < cycles; c++) pattern.forEach(p => steps.push(p));
     let t = 0, phase = null;
     steps.forEach(([kind, secs], i) => {
@@ -1760,11 +1791,11 @@ GAMES.breath = (stage, { level, rng, onDone }) => {
     });
     const iv = setInterval(() => { if (!phase) return; samples++; if ((phase === 'out') !== pressed) match++; }, 100);
     onCleanup(() => clearInterval(iv));
-    T.later(() => { clearInterval(iv); phase = null; focus(); }, t);
+    T.later(() => { clearInterval(iv); phase = null; breathingNow = false; setP(false); focus(); }, t);
   };
   const focus = () => {
     root.innerHTML = '';
-    const sync = samples ? match / samples : 0;
+    const raw = samples ? match / samples : 0, sync = clamp((raw - 0.5) / 0.5, 0, 1);
     const card = el(`<div class="stack"><div class="hud"><span>Part <b>2</b> / 2</span><span>Breathing sync <b>${Math.round(sync * 100)}%</b></span></div>
       <div class="card stack-s"><h2>Focus set</h2><p class="muted">Digits will appear one at a time. Tap for every digit except <b style="color:var(--orange)">3</b>. When you see a 3, do nothing.</p></div>
       <button class="btn sky block" id="go3">Start focus set</button></div>`);
@@ -1778,23 +1809,31 @@ GAMES.breath = (stage, { level, rng, onDone }) => {
       <div class="cuestage"><span class="cueword" id="dg" style="font-size:96px"></span></div>
       <button class="holdpad" id="tap">Tap</button></div>`);
     root.appendChild(card);
-    let i = -1, tapped = false, ok = 0;
+    let i = -1, tapped = false, ok = 0, goN = 0, goHit = 0, noN = 0, noHold = 0;
     const show = () => {
-      if (i >= 0) { const right = digits[i] === 3 ? !tapped : tapped; if (right) ok++; $('#dc', card).textContent = ok; }
+      if (i >= 0) {
+        const isThree = digits[i] === 3, right = isThree ? !tapped : tapped;
+        if (isThree) { noN++; if (right) noHold++; } else { goN++; if (right) goHit++; }
+        if (right) ok++; $('#dc', card).textContent = ok;
+      }
       i++; tapped = false;
-      if (i >= trials) return finish(sync, ok / trials);
+      if (i >= trials) { const acc = 0.5 * (goN ? goHit / goN : 1) + 0.5 * (noN ? noHold / noN : 1); return finish(sync, acc); }
       $('#di', card).textContent = i + 1;
       const dg = $('#dg', card); dg.textContent = digits[i]; dg.style.opacity = 1;
       T.later(() => { dg.style.opacity = 0.15; }, gap * 0.7);
       T.later(show, gap);
     };
-    $('#tap', card).addEventListener('pointerdown', e => { e.preventDefault(); if (i >= 0 && i < trials) { tapped = true; e.currentTarget.classList.add('down'); const t = e.currentTarget; T.later(() => t.classList.remove('down'), 120); } });
+    const tapBtn = $('#tap', card);
+    const doTap = () => { if (i >= 0 && i < trials) { tapped = true; tapBtn.classList.add('down'); T.later(() => tapBtn.classList.remove('down'), 120); } };
+    tapBtn.addEventListener('pointerdown', e => { e.preventDefault(); doTap(); });
+    tapBtn.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); if (!e.repeat) doTap(); } });
+    T.later(() => tapBtn.focus(), 50);
     T.later(show, 600);
   };
   const finish = (sync, acc) => {
     const score = Math.round(sync * 400 + acc * 600);
     const st = score >= 850 ? 3 : score >= 700 ? 2 : score >= 500 ? 1 : 0;
-    onDone({ score, stars: st, detail: `Breathing sync ${Math.round(sync * 100)}%, focus set ${Math.round(acc * 100)}% correct.${st === 0 ? ' Clear the level with 500 or more.' : ''}` });
+    onDone({ score, stars: st, detail: `Breathing sync ${Math.round(sync * 100)}%, focus set ${Math.round(acc * 100)}% (taps on digits and holds on 3s count equally).${st === 0 ? ' Clear the level with 500 or more.' : ''}` });
   };
   $('#go2', root).addEventListener('click', breathe);
 };
