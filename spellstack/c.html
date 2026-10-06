@@ -1,41 +1,50 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8">
+<!doctype html><html><head><meta charset="utf-8">
+<meta name="referrer" content="no-referrer">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Spell Stack Challenge</title>
 <style>
 body{margin:0;font-family:-apple-system,Segoe UI,Roboto,sans-serif;background:#151d2a;color:#f6f1e6;display:flex;min-height:100vh;align-items:center;justify-content:center;text-align:center}
 .card{padding:32px;max-width:340px}h1{font-size:22px;letter-spacing:.04em}
-p{opacity:.85;line-height:1.5}a.btn{display:block;margin:12px auto;padding:14px 22px;border-radius:14px;background:#ffc145;color:#3a2a0c;font-weight:800;text-decoration:none}
+p{opacity:.85;line-height:1.5}[hidden]{display:none!important}a.btn{display:block;margin:12px auto;padding:14px 22px;border-radius:14px;background:#ffc145;color:#3a2a0c;font-weight:800;text-decoration:none}
 a.ghost{background:none;color:#f6f1e6;opacity:.7;text-decoration:underline;font-weight:600}
 </style></head><body><div class="card">
 <h1 id="t">SPELL STACK CHALLENGE</h1>
 <p id="d">Someone challenged you to Spell Stack.</p>
 <a class="btn" id="open" href="#">Open in Spell Stack</a>
-<a class="ghost" href="https://mastergamer.com.au">Get the game</a>
+<a class="ghost" href="https://apps.apple.com/app/id6818916044">Get Spell Stack for iPhone</a>
 <p style="font-size:12px;opacity:.5">If the game is installed, the button opens this exact board.</p>
 </div><script>
-function updateInvitation(){
-  var h=location.hash||'';
-  document.getElementById('open').href='spellstack://challenge'+h;
-try{
-  if(h.indexOf('#result=')===0){
-    var rp=JSON.parse(atob(h.slice(8).replace(/-/g,'+').replace(/_/g,'/')));
-    var rn=((rp.result&&rp.result.displayName)||'A friend').replace(/[<>&]/g,'');
-    document.getElementById('t').textContent=(rn+' SENT THEIR SCORE').toUpperCase();
-    document.getElementById('d').textContent=rn+' scored '+(rp.result&&rp.result.score)+'. Open Spell Stack to see the verdict.';
-    document.getElementById('open').href='spellstack://challenge'+h;
-  } else if(h.indexOf('#challenge=')===0){
-    var p=JSON.parse(atob(h.slice(11).replace(/-/g,'+').replace(/_/g,'/')));
-    var n=((p.creator&&p.creator.displayName)||'A friend').replace(/[<>&]/g,'');
-    document.getElementById('t').textContent=(n+' CHALLENGED YOU').toUpperCase();
-    var s=p.creator&&p.creator.result&&p.creator.result.score;
-    document.getElementById('d').textContent=(s!=null)?('Score to beat: '+s):'Their score is hidden. Play the same board to reveal it.';
+const title = document.getElementById('t');
+const detail = document.getElementById('d');
+const openButton = document.getElementById('open');
+openButton.hidden = true;
+try {
+  const hash = location.hash || '';
+  if (hash.length > 65536) throw new Error('Invalid link');
+  const match = /^#(challenge|result)=([A-Za-z0-9_-]+)$/.exec(hash);
+  if (!match) throw new Error('Invalid link');
+  const bytes = Uint8Array.from(atob(match[2].replace(/-/g, '+').replace(/_/g, '/')), c => c.charCodeAt(0));
+  const payload = JSON.parse(new TextDecoder('utf-8', {fatal:true}).decode(bytes));
+  const isResult = match[1] === 'result';
+  const name = isResult ? payload.result?.displayName : payload.creator?.displayName;
+  if (typeof name !== 'string' || name.length > 80) throw new Error('Invalid name');
+  if (isResult) {
+    if (payload.v !== 1 || payload.kind !== 'result' || typeof payload.challengeId !== 'string' || !Number.isFinite(payload.result?.score) || payload.result.score < 0) throw new Error('Invalid result');
+    title.textContent = (name + ' SENT THEIR SCORE').toUpperCase();
+    detail.textContent = name + ' scored ' + payload.result.score.toLocaleString() + '. Open Spell Stack to see the result.';
+  } else {
+    if (!payload.challengeId || !payload.seed || !payload.creator || !payload.gameId) throw new Error('Invalid challenge');
+    title.textContent = (name + ' CHALLENGED YOU').toUpperCase();
+    const score = payload.creator.result?.score;
+    detail.textContent = payload.scoreVisibility === 'shown' && Number.isFinite(score)
+      ? 'Score to beat: ' + score.toLocaleString()
+      : 'Their score is hidden. Play the same board to reveal it.';
   }
-  if(h.indexOf('#result=')!==0) document.getElementById('open').href='spellstack://challenge'+(h?h:'');
-}catch(e){}
+  openButton.href = 'spellstack://challenge' + hash;
+  openButton.hidden = false;
+} catch (_) {
+  title.textContent = 'LINK UNAVAILABLE';
+  detail.textContent = 'This challenge link is incomplete or invalid. Ask your friend to send it again.';
+  openButton.removeAttribute('href');
 }
-updateInvitation();
-window.addEventListener('hashchange',updateInvitation);
 </script></body></html>
-<!-- Static copy of the worker landing page. For the fully serverless
-     (text-only) mode: upload to https://www.mastergamer.com.au/spellstack/c.html
-     and set CONFIG.network.shareLinkBase to that URL (challengeApi stays empty). -->
