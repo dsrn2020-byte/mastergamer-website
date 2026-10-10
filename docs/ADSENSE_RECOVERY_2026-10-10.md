@@ -23,3 +23,11 @@ Evaluate acquired-player cohort net ad plus purchase revenue against marketing c
 Priorities: reliable real ad IDs, consent and app-ads.txt; paid entitlement and restore; optional player-initiated rewards; interstitials only at natural breaks with measured frequency; restricted banners. Test mediation only after adequate traffic and source SDK readiness. Judge experiments on total revenue and retention together.
 
 Use small campaign budgets and measured cohorts before scaling. Release, purchase and retention failures come before increased marketing. Review subscriptions and duplicated administrative work against delivered revenue.
+
+## AdMob baseline observed 10 October 2026
+
+Authenticated Home, Last 7 days vs previous 7 days: A$0.16 estimated earnings; 212 requests; 39 impressions; match rate 54.72%; eCPM A$4.20. Today A$0.00, yesterday A$0.02, month-to-date A$0.23, last month A$0.97. These are ad earnings only, not net company ROI or purchase proceeds.
+
+Displayed top performers: TinyFall Android A$0.05/16 impressions; Stoned iOS A$0.04/3; Zombie Block iOS A$0.04/2; Pass Me iOS A$0.02/3; Chicken Blast Android A$0.01/7. Rounded amounts and very small traffic must not be used to choose scalable winners.
+
+Investigate unmatched requests and matched-but-unshown ads by app, platform, format, country and consent/readiness/error logs. Aggregate figures cannot establish the cause. Review actual store proceeds and acquisition cohorts before scaling paid promotion. AdMob recommends sellers.json transparency and integration testing; neither recommendation establishes a current serving block.
