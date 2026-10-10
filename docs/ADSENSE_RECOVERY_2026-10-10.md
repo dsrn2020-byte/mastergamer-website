@@ -1,4 +1,4 @@
-﻿# AdSense recovery — 10 October 2026
+# AdSense recovery — 10 October 2026
 
 Account: pub-9948942335447395. Site: mastergamer.com.au.
 
@@ -12,7 +12,7 @@ Auto ads retained. Anchor, side rail and vignette formats disabled and Apply now
 
 Publisher tag restored only on index, news and five editorial news pages. No tag added to game landing pages, legal pages, embedded games or Spell Stack challenge links. Website privacy and cookie notices updated.
 
-Pending: Google ads.txt rescan status, actual ad impressions/earnings, regional consent rendering and post-deploy visual check. No claim of increased ROI or cleared inactivity warning.
+Post-deploy HTTP checks passed: homepage/news each contain one correct publisher tag; privacy notice updated; ads.txt and app-ads.txt return 200; Spell Stack challenge contains no ad tag. Google rescan confirmed Ads.txt found and publisher ID present. Sites now reports Authorized. Alert banner may lag. Pending: actual ad impressions/earnings, regional consent rendering and post-deploy visual check. No claim of increased ROI or cleared inactivity warning.
 
 ## ROI operating plan
 
