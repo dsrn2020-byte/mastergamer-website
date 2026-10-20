@@ -2024,3 +2024,23 @@ textarea:focus {
     grid-template-columns: 88px minmax(0, 1fr);
   }
 }
+
+/* October catalogue refresh */
+.collection-nav{display:flex;flex-wrap:wrap;gap:.75rem;margin:1.5rem 0 2rem}
+.collection-nav a{padding:.7rem 1rem;border:1px solid rgba(43,220,255,.3);border-radius:999px;color:#eaf8ff;text-decoration:none;background:rgba(43,220,255,.06)}
+.collection-nav a:hover,.collection-nav a:focus-visible{background:rgba(43,220,255,.18)}
+.games-category-heading{scroll-margin-top:110px;padding-top:1.5rem}
+.games-category-heading h3{margin:0 0 .65rem;font-size:clamp(1.4rem,3vw,2rem)}
+.games-category-heading h3 span{font-family:Inter,sans-serif;font-size:.85rem;margin-left:1rem;color:#9faec9}
+.games-category-heading p{font-family:Inter,sans-serif;font-size:1rem;font-weight:400;color:#aebbd0;max-width:760px;line-height:1.7;margin:0}
+.status-new{color:#8ff0ca}.status-upcoming{color:#e1b4ff}.status-legacy{color:#ffd58b}
+.news-category{display:block;font-size:.75rem;text-transform:uppercase;letter-spacing:.13em;color:#75e2e6;margin-bottom:.65rem}
+.release-page-heading{padding-bottom:1rem}.release-page-heading h1{font-size:clamp(2rem,5vw,3.8rem);max-width:950px;line-height:1.15}.release-page-heading>p:last-child{max-width:760px;color:#bac6da;line-height:1.8}
+.release-page-heading time{color:#92a3bd;font-size:.85rem}
+.release-list{display:grid;gap:1.3rem;padding-top:1rem}
+.release-tile{display:grid;grid-template-columns:150px 1fr;gap:1.75rem;padding:1.75rem;border:1px solid rgba(160,183,225,.18);border-radius:20px;background:linear-gradient(120deg,rgba(25,35,57,.85),rgba(10,15,29,.9));scroll-margin-top:110px}
+.release-tile-art{display:grid;place-items:center;align-self:start}.release-tile-art img{width:150px;aspect-ratio:1;object-fit:contain;border-radius:20px}.release-monogram{display:grid;place-items:center;width:140px;aspect-ratio:1;border:1px solid var(--accent);border-radius:24px;color:var(--accent);font:700 2.5rem Orbitron,sans-serif;background:rgba(0,0,0,.25)}
+.release-tile h2{margin:.4rem 0 .8rem;font-size:clamp(1.3rem,3vw,1.9rem)}.release-tile-copy>p:not(.eyebrow){color:#b3c1d6;line-height:1.7}.release-actions{display:flex;flex-wrap:wrap;align-items:center;gap:.8rem;margin-top:1.2rem}.text-link{color:#9de7f0;padding:.7rem 0}.availability-note{color:#aabbd0;line-height:1.8}
+.legacy-intro{padding:2rem}.legacy-art-strip{display:flex;gap:1rem;flex-wrap:wrap;margin:2rem 0}.legacy-art-strip img{width:100px;height:100px;object-fit:contain;border-radius:18px}
+.closed-loop-hero{display:grid;grid-template-columns:1.5fr 1fr;gap:3rem;align-items:center}.closed-loop-hero>img{width:100%;max-width:360px;border-radius:28px}.closed-loop-hero h1{font-size:clamp(2.5rem,6vw,4.5rem)}.closed-loop-hero p{line-height:1.8}
+@media(max-width:600px){.release-tile{grid-template-columns:1fr;padding:1.3rem;gap:1rem}.release-tile-art{justify-self:start}.release-tile-art img,.release-monogram{width:90px}.closed-loop-hero{grid-template-columns:1fr}.closed-loop-hero>img{max-width:240px}.collection-nav a{font-size:.85rem}}
