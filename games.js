@@ -818,6 +818,10 @@ const MASTERGAMER_GAMES = [
     "platforms": [],
     "detailPage": "coming-soon.html#rumble-tumble",
     "detailLabel": "Release updates",
+    "media": {
+      "icon": "assets/games/rumble-tumble/rumble-tumble-icon.png",
+      "banner": "assets/games/rumble-tumble/rumble-tumble-icon.png"
+    },
     "links": {
       "appStore": null,
       "googlePlay": null,
