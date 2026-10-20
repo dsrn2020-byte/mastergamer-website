@@ -1,4 +1,4 @@
-/* Game catalogue: release groups, descriptions, artwork and verified store links. */
+/* Game catalogue: release groups, descriptions, artwork and store links. */
 const MASTERGAMER_GAMES = [
   {
     "title": "Chicken Flapper: Haunted Forest",
@@ -545,7 +545,10 @@ const MASTERGAMER_GAMES = [
     },
     "id": "indiana-moans",
     "collection": "legacy",
-    "badge": "UPDATED CLASSIC"
+    "badge": "UPDATED CLASSIC",
+    "media": {
+      "icon": "assets/games/indiana-moans/indiana-moans-icon.jpg"
+    }
   },
   {
     "title": "Flappy Christmas",
@@ -598,7 +601,7 @@ const MASTERGAMER_GAMES = [
     "summary": "A festive tapping adventure packed with fast, funny holiday battles.",
     "description": "Get ready for a festive tapping adventure in Slap Santa.\n\nJourney through a playful Christmas world filled with cheeky elves, magical fairies, spirited reindeer, and plenty of holiday mischief. Test your reflexes in fast, funny slap battles where every tap counts.\n\nWin battles, collect bonuses, boost your slapping power, and unlock new surprises as the world becomes brighter, wilder, and more festive.\n\nWith a final showdown against Santa himself, Slap Santa delivers light-hearted holiday fun for players of all ages.\n\nYour finger's journey to Santa starts now.",
     "media": {
-      "icon": "assets/games/slap-santa/slap-santa-icon.png",
+      "icon": "assets/games/slap-santa/slap-santa-art.webp",
       "banner": "assets/games/slap-santa/slap-santa-banner.png",
       "cover": "assets/games/slap-santa/slap-santa-cover.png",
       "screenshots": [
@@ -770,6 +773,10 @@ const MASTERGAMER_GAMES = [
       "googlePlay": null,
       "playOnline": null,
       "trailer": null
+    },
+    "media": {
+      "icon": "assets/games/wambush/wambush-art.webp",
+      "banner": "assets/games/wambush/wambush-art.webp"
     }
   },
   {
@@ -791,6 +798,10 @@ const MASTERGAMER_GAMES = [
       "googlePlay": null,
       "playOnline": null,
       "trailer": null
+    },
+    "media": {
+      "icon": "assets/games/jingle-tingle/jingle-tingle-art.webp",
+      "banner": "assets/games/jingle-tingle/jingle-tingle-art.webp"
     }
   },
   {
@@ -834,6 +845,10 @@ const MASTERGAMER_GAMES = [
       "googlePlay": null,
       "playOnline": null,
       "trailer": null
+    },
+    "media": {
+      "icon": "assets/games/watcher-in-the-dark/watcher-in-the-dark-art.webp",
+      "banner": "assets/games/watcher-in-the-dark/watcher-in-the-dark-art.webp"
     }
   }
 ];

@@ -134,7 +134,7 @@ function createGameCard(game, index) {
 
 function createIconMarkup(game, className) {
   if (game.media?.icon) {
-    return `<span class="${className}" aria-hidden="true"><img src="${game.media.icon}" alt="" /></span>`;
+    return `<span class="${className} artwork-${game.id || "default"}" aria-hidden="true"><img src="${game.media.icon}" alt="" /></span>`;
   }
 
   return `<span class="${className}" aria-hidden="true">${game.initials}</span>`;
