@@ -33,7 +33,7 @@ function createActionLink(value, label, className = "") {
 function createBadgeMarkup(game) {
   if (!game.badge) return "";
 
-  return `<span class="status-badge">${game.badge}</span>`;
+  return `<span class="status-badge status-${game.collection || "available"}">${game.badge}</span>`;
 }
 
 function createGameActionLinks(game, options = {}) {
@@ -58,8 +58,8 @@ function createGameActionLinks(game, options = {}) {
 function createPlatformButtons(game) {
   const links = game.links || {};
   const platforms = [
-    { key: "ios", label: "IOS", value: links.appStore },
-    { key: "android", label: "ANDROID", value: links.googlePlay },
+    { key: "ios", label: "App Store", value: links.appStore },
+    { key: "android", label: "Google Play", value: links.googlePlay },
   ];
 
   return platforms
@@ -73,7 +73,7 @@ function createPlatformButtons(game) {
       }
 
       const url = action.url;
-      const platformLabel = action.platformLabel || platform.label;
+      const platformLabel = action.label || platform.label;
       return `<a class="platform-button platform-${platform.key}" href="${url}"${linkTargetAttributes(url)}>${platformLabel}</a>`;
     })
     .filter(Boolean)
@@ -83,6 +83,7 @@ function createPlatformButtons(game) {
 function createGameCard(game, index) {
   const card = document.createElement("article");
   card.className = "game-card";
+  card.id = game.id || `game-${index}`;
   card.style.setProperty("--accent", game.accent);
   const platforms = createPlatformButtons(game);
   const icon = createIconMarkup(game, "game-icon");
@@ -119,10 +120,12 @@ function createGameCard(game, index) {
 
   const toggle = card.querySelector(".game-toggle");
   const details = card.querySelector(".game-details");
+  details.inert = true;
 
   toggle.addEventListener("click", () => {
     const isOpen = card.classList.toggle("is-open");
     toggle.setAttribute("aria-expanded", String(isOpen));
+    details.inert = !isOpen;
     details.style.maxHeight = isOpen ? `${details.scrollHeight}px` : "0px";
   });
 
@@ -193,6 +196,7 @@ function createNewsCard(article) {
       ${createNewsArtwork(article)}
     </a>
     <div class="news-card-copy">
+      ${article.category ? `<span class="news-category">${article.category}</span>` : ""}
       <time datetime="${article.date}">${formatDisplayDate(article.date)}</time>
       <h3>${article.title}</h3>
       <p>${article.summary}</p>
@@ -213,23 +217,22 @@ function renderNewsCards(selector, limit) {
 
 function renderGames() {
   if (!gamesGrid || typeof MASTERGAMER_GAMES === "undefined") return;
+  const newOrder = ["TinyFall","Sevens","Zombie Block: Kill Everything","Wing Chun Chicken","Closed Loop"];
   const groups = [
-    {
-      title: "Featured Games",
-      games: MASTERGAMER_GAMES.filter((game) => game.featured),
-    },
-    {
-      title: "Classic Games / Archive Games",
-      games: MASTERGAMER_GAMES.filter((game) => !game.featured),
-    },
+    {id: "new-releases", title: "New Releases", description: "Fresh favourites, ready to download. Choose the store available for your device.", games: newOrder.map(title => MASTERGAMER_GAMES.find(game => game.title === title)).filter(Boolean)},
+    {id: "coming-soon", title: "Coming Soon", description: "The next wave of Master Gamer games. Spell Stack is already on Android, with iOS coming soon.", games: MASTERGAMER_GAMES.filter(game => game.collection === "upcoming").sort((a,b) => a.launchOrder-b.launchOrder)},
+    {id: "more-to-play", title: "More to Play", description: "Keep exploring the Master Gamer collection.", games: MASTERGAMER_GAMES.filter(game => game.collection === "more")},
+    {id: "updated-classics", title: "Updated Classics", description: "Our legacy games have been updated. Revisit the originals and check each store for the latest version available to you.", games: MASTERGAMER_GAMES.filter(game => game.collection === "legacy")},
+    {id: "in-development", title: "Also in Development", description: "More from the studio, with release news to follow.", games: MASTERGAMER_GAMES.filter(game => game.collection === "development")},
   ];
 
   let cardIndex = 0;
   groups.forEach((group) => {
     if (!group.games.length) return;
-    const heading = document.createElement("h3");
+    const heading = document.createElement("div");
     heading.className = "games-category-heading";
-    heading.textContent = group.title;
+    heading.id = group.id;
+    heading.innerHTML = `<h3>${group.title}<span>${group.games.length}</span></h3><p>${group.description}</p>`;
     gamesGrid.appendChild(heading);
 
     group.games.forEach((game) => {
@@ -237,6 +240,13 @@ function renderGames() {
       cardIndex += 1;
     });
   });
+}
+
+function restoreCatalogueAnchor() {
+  const id = decodeURIComponent(window.location.hash.slice(1));
+  if (!id || !gamesGrid) return;
+  const target = document.getElementById(id);
+  if (target && gamesGrid.contains(target)) target.scrollIntoView();
 }
 
 function renderFeaturedGames() {
@@ -262,11 +272,12 @@ function renderFeaturedGames() {
 
 function getFeaturedGames() {
   const featuredOrder = [
-    "Chicken Flapper II: Never Ending Journey",
-    "Wing Chun Chicken",
-    "Zombie Block: Kill Everything",
-    "Sevens",
     "TinyFall",
+    "Sevens",
+    "Zombie Block: Kill Everything",
+    "Wing Chun Chicken",
+    "Closed Loop",
+    "Chicken Flapper II: Never Ending Journey",
     "HumDing",
     "Chicken Flapper: Haunted Forest",
   ];
@@ -436,6 +447,7 @@ function drawArcadeGrid(time = 0) {
 }
 
 renderGames();
+restoreCatalogueAnchor();
 renderFeaturedGames();
 renderHeroFeaturedGames();
 renderDetailPageActions();

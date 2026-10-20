@@ -20,7 +20,7 @@
       href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=our-team-portraits-20260925" />
+    <link rel="stylesheet" href="styles.css?v=refresh-20261020" />
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9948942335447395" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -48,7 +48,7 @@
 
       <nav class="site-nav" id="siteNav" aria-label="Primary navigation">
         <a href="#games">Games</a>
-        <a href="#play">Play</a>
+        <a href="#coming-soon">Coming Soon</a>
         <a href="#videos">Videos</a>
         <a href="news.html">News</a>
         <a href="#support">Support</a>
@@ -65,20 +65,21 @@
           <div class="hero-copy">
             <p class="eyebrow">Australian indie game and app studio</p>
             <h1>Master Gamer</h1>
-            <p class="hero-tagline">Fun. Accessible. Family-Friendly Games.</p>
+            <p class="hero-tagline">Pick up. Play. Come back for more.</p>
             <p>
-              Creating mobile games and apps since 2018. Discover new releases and
-              explore the growing Master Gamer collection.
+              Fresh puzzles, arcade action and a few surprises in the dark.
+              Discover what is new, what is next, and the classics you love.
             </p>
             <div class="hero-actions">
-              <a class="button button-primary" href="#games">Explore Games</a>
+              <a class="button button-primary" href="#new-releases">Play the New Releases</a>
+              <a class="button button-secondary" href="#coming-soon">See What’s Coming</a>
             </div>
           </div>
 
           <div class="hero-art hero-art-mobile" aria-label="Master Gamer featured games artwork">
             <img
               src="assets/site/mastergamer-hero.png"
-              alt="Master Gamer family-friendly games banner"
+              alt="Master Gamer games collection"
             />
           </div>
         </div>
@@ -86,17 +87,30 @@
 
       <section class="section intro-band" aria-label="Studio highlights">
         <div class="stat">
-            <strong>19</strong>
-          <span>Games in the library</span>
+            <strong>5 new releases</strong>
+          <span>Find your next favourite</span>
         </div>
         <div class="stat">
-          <strong>Mobile</strong>
-          <span>App Store and Google Play ready</span>
+          <strong>Coming soon</strong>
+          <span>Six titles to look forward to</span>
         </div>
         <div class="stat">
-          <strong>Games &amp; Apps</strong>
-          <span>Arcade, puzzles and productivity</span>
+          <strong>Classics updated</strong>
+          <span>Rediscover the originals</span>
         </div>
+      </section>
+
+      <section class="section" id="news">
+        <div class="section-heading news-heading">
+          <p class="eyebrow">News</p>
+          <h2>Fresh from the studio</h2>
+          <p>
+            New releases to play now, the next games on the horizon, and
+            a fresh chapter for our classics.
+          </p>
+          <a class="button button-secondary" href="news.html">View All Updates</a>
+        </div>
+        <div class="news-grid" id="latestNewsGrid"></div>
       </section>
 
       <section class="section" id="games">
@@ -108,17 +122,18 @@
             mobile devices.
           </p>
           <p>
-            Each title includes game details, screenshots, platform links and
-            trailers where available.
+            Jump straight to new releases, upcoming games or our updated classics.
+            Store buttons take you directly to each available release.
           </p>
         </div>
+        <nav class="collection-nav" aria-label="Browse game collections"><a href="#new-releases">New Releases</a><a href="#coming-soon">Coming Soon</a><a href="#updated-classics">Updated Classics</a><a href="#more-to-play">More to Play</a></nav>
         <div class="games-grid" id="gamesGrid"></div>
       </section>
 
       <section class="section" id="play">
         <div class="panel">
           <h2>Available on Mobile</h2>
-          <p>Browse the Master Gamer library for current App Store and Google Play releases. Browser versions are temporarily unavailable while selected titles are migrated to independent app builds.</p>
+          <p>Choose a game, tap its App Store or Google Play button, and make a little room for your next favourite. Platform availability is shown on each listing.</p>
           <a class="button button-primary" href="#games">Browse Games</a>
         </div>
       </section>
@@ -148,36 +163,6 @@
             <a href="#games">Browse Games</a>
           </article>
         </div>
-      </section>
-
-      <section class="section" id="news">
-        <div class="section-heading news-heading">
-          <p class="eyebrow">News</p>
-          <h2>Latest News</h2>
-          <p>
-            Follow launch notes, release updates, studio announcements, and
-            highlights from the Master Gamer collection.
-          </p>
-          <a class="button button-secondary" href="news.html">View All Updates</a>
-        </div>
-        <article class="news-promo-card">
-          <img
-            src="assets/site/lifeprint-ai-icon.png"
-            alt="LifePrint.ai icon"
-            loading="lazy"
-          />
-          <div class="news-promo-copy">
-            <span class="status-badge">Latest News</span>
-            <h3>MasterGamer Acquires LifePrint.ai</h3>
-            <p>
-              MasterGamer has welcomed LifePrint.ai into the MasterGamer
-              ecosystem, bringing personalised AI-powered experiences closer to
-              the MasterGamer portal.
-            </p>
-            <a class="button button-primary" href="lifeprint-ai-news.html">Read News</a>
-          </div>
-        </article>
-        <div class="news-grid" id="latestNewsGrid"></div>
       </section>
 
       <section class="section support-section" id="support">
@@ -481,8 +466,8 @@
       <span class="footer-copy">Copyright &copy; Master Gamer</span>
     </footer>
 
-    <script src="games.js?v=mobile-only-20260925"></script>
-    <script src="news.js?v=2"></script>
-    <script src="main.js?v=mobile-only-20260925"></script>
+    <script src="games.js?v=refresh-20261020"></script>
+    <script src="news.js?v=refresh-20261020"></script>
+    <script src="main.js?v=refresh-20261020"></script>
   </body>
 </html>
