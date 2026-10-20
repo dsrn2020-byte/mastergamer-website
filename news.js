@@ -43,7 +43,7 @@ const MASTERGAMER_NEWS = [
     "images": [
       "assets/games/chicken-flapper/chicken-flapper-icon.png",
       "assets/games/pass-me/pass-me-icon.png",
-      "assets/games/slap-santa/slap-santa-icon.png"
+      "assets/games/slap-santa/slap-santa-art.webp"
     ],
     "imageAlts": [
       "Chicken Flapper",

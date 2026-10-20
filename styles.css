@@ -2044,3 +2044,10 @@ textarea:focus {
 .legacy-intro{padding:2rem}.legacy-art-strip{display:flex;gap:1rem;flex-wrap:wrap;margin:2rem 0}.legacy-art-strip img{width:100px;height:100px;object-fit:contain;border-radius:18px}
 .closed-loop-hero{display:grid;grid-template-columns:1.5fr 1fr;gap:3rem;align-items:center}.closed-loop-hero>img{width:100%;max-width:360px;border-radius:28px}.closed-loop-hero h1{font-size:clamp(2.5rem,6vw,4.5rem)}.closed-loop-hero p{line-height:1.8}
 @media(max-width:600px){.release-tile{grid-template-columns:1fr;padding:1.3rem;gap:1rem}.release-tile-art{justify-self:start}.release-tile-art img,.release-monogram{width:90px}.closed-loop-hero{grid-template-columns:1fr}.closed-loop-hero>img{max-width:240px}.collection-nav a{font-size:.85rem}}
+
+/* Keep supplied artwork readable inside catalogue tiles. */
+.game-icon{flex-shrink:0;overflow:hidden}
+.game-icon.artwork-wambush img{object-fit:cover;object-position:left center}
+.game-icon.artwork-slap-santa img{object-fit:cover;transform:scale(1.8);transform-origin:50% 44%}
+.game-icon.artwork-watcher-in-the-dark img{object-fit:cover;object-position:50% 35%}
+.release-tile-art img{background:#080e18}
