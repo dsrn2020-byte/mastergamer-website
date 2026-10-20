@@ -25,11 +25,13 @@ const MASTERGAMER_NEWS = [
     "image": "assets/games/block-defender/block-defender-icon.png",
     "images": [
       "https://play-lh.googleusercontent.com/JotMUCSrVWsRky-h3Jejo2R5hu2TrZjlDZ6WfyqqQuu6XmTGpWu2wJjSuy8H_gbeHeeV58lTiuAXorfkAcrIEdA=s0-br30",
-      "assets/games/block-defender/block-defender-icon.png"
+      "assets/games/block-defender/block-defender-icon.png",
+      "assets/games/rumble-tumble/rumble-tumble-icon.png"
     ],
     "imageAlts": [
       "Spell Stack",
-      "Block Defender"
+      "Block Defender",
+      "Rumble Tumble"
     ],
     "imageFit": "contain",
     "category": "Coming Soon",
