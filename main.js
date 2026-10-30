@@ -217,7 +217,7 @@ function renderNewsCards(selector, limit) {
 
 function renderGames() {
   if (!gamesGrid || typeof MASTERGAMER_GAMES === "undefined") return;
-  const newOrder = ["TinyFall","Sevens","Zombie Block: Kill Everything","Wing Chun Chicken","Closed Loop"];
+  const newOrder = ["Watcher in the Dark","TinyFall","Sevens","Zombie Block: Kill Everything","Wing Chun Chicken","Closed Loop"];
   const groups = [
     {id: "new-releases", title: "New Releases", description: "Fresh favourites, ready to download. Choose the store available for your device.", games: newOrder.map(title => MASTERGAMER_GAMES.find(game => game.title === title)).filter(Boolean)},
     {id: "coming-soon", title: "Coming Soon", description: "The next wave of Master Gamer games. Spell Stack is already on Android, with iOS coming soon.", games: MASTERGAMER_GAMES.filter(game => game.collection === "upcoming").sort((a,b) => a.launchOrder-b.launchOrder)},

@@ -1,6 +1,16 @@
 /* Newest announcements appear first; earlier studio news is retained below. */
 const MASTERGAMER_NEWS = [
   {
+    "title": "Watcher in the Dark is live on Google Play",
+    "date": "2026-10-30",
+    "image": "assets/games/watcher-in-the-dark/watcher-in-the-dark-art.webp",
+    "imageFit": "contain",
+    "category": "Halloween Release",
+    "status": "Available Now on Google Play",
+    "summary": "Don’t blink. Watcher in the Dark is available now on Android, with Trick or Treat mode ready for Halloween.",
+    "url": "watcher-in-the-dark.html"
+  },
+  {
     "title": "New games. Fresh favourites. Ready to play.",
     "date": "2026-10-20",
     "image": "assets/games/tinyfall/tinyfall-icon.png",
@@ -16,7 +26,7 @@ const MASTERGAMER_NEWS = [
     ],
     "imageFit": "contain",
     "category": "New Releases",
-    "summary": "Discover TinyFall, Sevens, Zombie Block, Wing Chun Chicken and Closed Loop, with direct links to their available stores.",
+    "summary": "Discover Watcher in the Dark, TinyFall, Sevens, Zombie Block, Wing Chun Chicken and Closed Loop, with direct links to their available stores.",
     "url": "new-releases.html"
   },
   {
@@ -35,7 +45,7 @@ const MASTERGAMER_NEWS = [
     ],
     "imageFit": "contain",
     "category": "Coming Soon",
-    "summary": "Spell Stack, Wambush, Jingle Tingle Present Hunt, Block Defender, Rumble Tumble and Watcher in the Dark. Explore what is next, including Spell Stack’s Android release.",
+    "summary": "Spell Stack, Wambush, Jingle Tingle Present Hunt, Block Defender and Rumble Tumble. Explore what is next, including Spell Stack’s Android release.",
     "url": "coming-soon.html"
   },
   {
