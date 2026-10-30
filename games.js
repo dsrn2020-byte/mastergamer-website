@@ -852,8 +852,8 @@ const MASTERGAMER_GAMES = [
       "trailer": null
     },
     "media": {
-      "icon": "assets/games/watcher-in-the-dark/watcher-in-the-dark-art.webp",
-      "banner": "assets/games/watcher-in-the-dark/watcher-in-the-dark-art.webp"
+      "icon": "assets/games/watcher-in-the-dark/watcher-in-the-dark-art.webp?v=fb-20261030",
+      "banner": "assets/games/watcher-in-the-dark/watcher-in-the-dark-art.webp?v=fb-20261030"
     }
   }
 ];

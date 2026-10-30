@@ -2051,3 +2051,6 @@ textarea:focus {
 .game-icon.artwork-slap-santa img{object-fit:cover;transform:scale(1.8);transform-origin:50% 44%}
 .game-icon.artwork-watcher-in-the-dark img{object-fit:cover;object-position:50% 35%}
 .release-tile-art img{background:#080e18}
+
+/* Show the approved Watcher poster in full on desktop and mobile. */
+.hero-art-watcher img { aspect-ratio: 1; object-fit: contain; object-position: center; }

@@ -3,7 +3,7 @@ const MASTERGAMER_NEWS = [
   {
     "title": "Watcher in the Dark is live on Google Play",
     "date": "2026-10-30",
-    "image": "assets/games/watcher-in-the-dark/watcher-in-the-dark-art.webp",
+    "image": "assets/games/watcher-in-the-dark/watcher-in-the-dark-art.webp?v=fb-20261030",
     "imageFit": "contain",
     "category": "Halloween Release",
     "status": "Available Now on Google Play",
