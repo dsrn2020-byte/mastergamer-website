@@ -2054,3 +2054,13 @@ textarea:focus {
 
 /* Show the approved Watcher poster in full on desktop and mobile. */
 .hero-art-watcher img { aspect-ratio: 1; object-fit: contain; object-position: center; }
+
+/* Size the headline to its column and keep the game title on two clean lines. */
+.hero-copy { container-type: inline-size; }
+.hero-copy .watcher-title {
+  font-size: clamp(1.5rem, 10cqw, 3.25rem);
+  line-height: 1.15;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+.watcher-title span { display: block; white-space: nowrap; }
