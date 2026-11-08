@@ -21,13 +21,13 @@ const MASTERGAMER_NEWS = [
     "url": "watcher-in-the-dark.html"
   },
   {
-    "title": "Watcher in the Dark is live on Google Play",
+    "title": "Watcher in the Dark is now available on the App Store and Google Play",
     "date": "2026-10-30",
     "image": "assets/games/watcher-in-the-dark/watcher-in-the-dark-art.webp?v=fb-20261030",
     "imageFit": "contain",
     "category": "Halloween Release",
-    "status": "Available Now on Google Play",
-    "summary": "Don’t blink. Watcher in the Dark is available now on Android, with Trick or Treat mode ready for Halloween.",
+    "status": "Available on the App Store and Google Play",
+    "summary": "Don’t blink. Watcher in the Dark is now available on the App Store and Google Play, with Trick or Treat mode waiting in the darkness.",
     "url": "watcher-in-the-dark.html"
   },
   {
@@ -101,7 +101,7 @@ const MASTERGAMER_NEWS = [
     ],
     "imageFit": "contain",
     "category": "Game Releases",
-    "status": "Available Now on Google Play",
+    "status": "Available on the App Store and Google Play",
     "summary": "Chicken Flapper II: Never Ending Journey and Zombie Block: Kill Everything are now available to download on Google Play.",
     "url": "google-play-releases.html"
   },
