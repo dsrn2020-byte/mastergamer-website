@@ -1,15 +1,25 @@
 /* Newest announcements appear first; earlier studio news is retained below. */
 const MASTERGAMER_NEWS = [
-{
-  "title": "Jingle Tingle Christmas is here",
-  "date": "2026-11-08",
-  "image": "assets/games/jingle-tingle/jingle-tingle-art.webp",
-  "imageFit": "contain",
-  "category": "Christmas Music",
-  "status": "Song out now",
-  "summary": "Listen, buy the Christmas single or watch the full animated video. Jingle Tingle Present Hunt, the game, is coming soon.",
-  "url": "jingle-tingle-christmas.html"
-},
+  {
+    "title": "Jingle Tingle Christmas is here",
+    "date": "2026-11-08",
+    "image": "assets/games/jingle-tingle/jingle-tingle-art.webp",
+    "imageFit": "contain",
+    "category": "Christmas Music",
+    "status": "Song out now",
+    "summary": "Listen, buy the Christmas single or watch the full animated video. Jingle Tingle Present Hunt, the game, is coming soon.",
+    "url": "jingle-tingle-christmas.html"
+  },
+  {
+    "title": "Watcher in the Dark is now on the App Store",
+    "date": "2026-11-08",
+    "image": "assets/games/watcher-in-the-dark/watcher-in-the-dark-art.webp",
+    "imageFit": "contain",
+    "category": "Release update",
+    "status": "iOS and Android",
+    "summary": "iPhone players can now join the horror. Watcher in the Dark is available on the App Store as well as Google Play.",
+    "url": "watcher-in-the-dark.html"
+  },
   {
     "title": "Watcher in the Dark is live on Google Play",
     "date": "2026-10-30",

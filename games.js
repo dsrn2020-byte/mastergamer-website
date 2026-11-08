@@ -834,19 +834,20 @@ const MASTERGAMER_GAMES = [
     "initials": "WD",
     "accent": "#b2b9ff",
     "summary": "Keep watch. Stay alert. Something is waiting in the dark.",
-    "description": "They only move when you’re not looking. Dare to play Watcher in the Dark this Halloween, with Trick or Treat mode waiting in the darkness.\n\nAvailable now on Google Play for Android.",
-    "subtitle": "Available now on Google Play",
+    "description": "They only move when you’re not looking. Dare to play Watcher in the Dark this Halloween, with Trick or Treat mode waiting in the darkness.\n\nAvailable now on the App Store for iOS and Google Play for Android.",
+    "subtitle": "Available on the App Store and Google Play",
     "id": "watcher-in-the-dark",
     "collection": "new",
     "featured": true,
     "badge": "NEW RELEASE",
     "platforms": [
+      "iOS",
       "Android"
     ],
     "detailPage": "watcher-in-the-dark.html",
     "detailLabel": "Explore Watcher",
     "links": {
-      "appStore": null,
+      "appStore": "https://apps.apple.com/app/watcher-in-the-dark/id6823049975",
       "googlePlay": "https://play.google.com/store/apps/details?id=com.watcher.dark",
       "playOnline": null,
       "trailer": null
