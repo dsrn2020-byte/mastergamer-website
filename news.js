@@ -1,5 +1,15 @@
 /* Newest announcements appear first; earlier studio news is retained below. */
 const MASTERGAMER_NEWS = [
+{
+  "title": "Jingle Tingle Christmas is here",
+  "date": "2026-11-08",
+  "image": "assets/games/jingle-tingle/jingle-tingle-art.webp",
+  "imageFit": "contain",
+  "category": "Christmas Music",
+  "status": "Song out now",
+  "summary": "Listen, buy the Christmas single or watch the full animated video. Jingle Tingle Present Hunt, the game, is coming soon.",
+  "url": "jingle-tingle-christmas.html"
+},
   {
     "title": "Watcher in the Dark is live on Google Play",
     "date": "2026-10-30",
@@ -13,11 +23,11 @@ const MASTERGAMER_NEWS = [
   {
     "title": "New games. Fresh favourites. Ready to play.",
     "date": "2026-10-20",
-    "image": "assets/games/tinyfall/tinyfall-icon.png",
+    "image": "assets/games/tinyfall/tinyfall-icon.webp",
     "images": [
-      "assets/games/tinyfall/tinyfall-icon.png",
-      "assets/games/sevens/sevens-icon.png",
-      "assets/games/zombie-block/kill-everything-zombie-block-icon.png"
+      "assets/games/tinyfall/tinyfall-icon.webp",
+      "assets/games/sevens/sevens-icon.webp",
+      "assets/games/zombie-block/kill-everything-zombie-block-icon.webp"
     ],
     "imageAlts": [
       "TinyFall",
@@ -32,11 +42,11 @@ const MASTERGAMER_NEWS = [
   {
     "title": "Coming soon to Master Gamer",
     "date": "2026-10-20",
-    "image": "assets/games/block-defender/block-defender-icon.png",
+    "image": "assets/games/block-defender/block-defender-icon.webp",
     "images": [
       "https://play-lh.googleusercontent.com/JotMUCSrVWsRky-h3Jejo2R5hu2TrZjlDZ6WfyqqQuu6XmTGpWu2wJjSuy8H_gbeHeeV58lTiuAXorfkAcrIEdA=s0-br30",
-      "assets/games/block-defender/block-defender-icon.png",
-      "assets/games/rumble-tumble/rumble-tumble-icon.png"
+      "assets/games/block-defender/block-defender-icon.webp",
+      "assets/games/rumble-tumble/rumble-tumble-icon.webp"
     ],
     "imageAlts": [
       "Spell Stack",
@@ -51,10 +61,10 @@ const MASTERGAMER_NEWS = [
   {
     "title": "The classics have had an update",
     "date": "2026-10-20",
-    "image": "assets/games/chicken-flapper/chicken-flapper-icon.png",
+    "image": "assets/games/chicken-flapper/chicken-flapper-icon.webp",
     "images": [
-      "assets/games/chicken-flapper/chicken-flapper-icon.png",
-      "assets/games/pass-me/pass-me-icon.png",
+      "assets/games/chicken-flapper/chicken-flapper-icon.webp",
+      "assets/games/pass-me/pass-me-icon.webp",
       "assets/games/slap-santa/slap-santa-art.webp"
     ],
     "imageAlts": [
@@ -70,10 +80,10 @@ const MASTERGAMER_NEWS = [
   {
     "title": "Chicken Flapper II and Zombie Block Now Live on Google Play",
     "date": "2026-07-30",
-    "image": "assets/games/chicken-flapper-ii/chicken-flapper2-icon.png",
+    "image": "assets/games/chicken-flapper-ii/chicken-flapper2-icon.webp",
     "images": [
-      "assets/games/chicken-flapper-ii/chicken-flapper2-icon.png",
-      "assets/games/zombie-block/kill-everything-zombie-block-icon.png"
+      "assets/games/chicken-flapper-ii/chicken-flapper2-icon.webp",
+      "assets/games/zombie-block/kill-everything-zombie-block-icon.webp"
     ],
     "imageAlts": [
       "Chicken Flapper II icon",
@@ -88,11 +98,11 @@ const MASTERGAMER_NEWS = [
   {
     "title": "Three New MasterGamer Mobile Releases Update",
     "date": "2026-07-17",
-    "image": "assets/games/chicken-flapper-ii/chicken-flapper2-icon.png",
+    "image": "assets/games/chicken-flapper-ii/chicken-flapper2-icon.webp",
     "images": [
-      "assets/games/chicken-flapper-ii/chicken-flapper2-icon.png",
-      "assets/games/zombie-block/kill-everything-zombie-block-icon.png",
-      "assets/games/wing-chun-chicken/wing-chun-chicken-icon.png"
+      "assets/games/chicken-flapper-ii/chicken-flapper2-icon.webp",
+      "assets/games/zombie-block/kill-everything-zombie-block-icon.webp",
+      "assets/games/wing-chun-chicken/wing-chun-chicken-icon.webp"
     ],
     "imageAlts": [
       "Chicken Flapper II icon",
@@ -108,7 +118,7 @@ const MASTERGAMER_NEWS = [
   {
     "title": "Soccer Block Manager &mdash; Can You Take a Team of Blocks to the Top?",
     "date": "2026-08-14",
-    "image": "assets/games/soccer-block-manager/soccer-block-manager-icon.png",
+    "image": "assets/games/soccer-block-manager/soccer-block-manager-icon.webp",
     "imageFit": "contain",
     "category": "Football / Management / Strategy",
     "status": "Coming Soon",
@@ -118,7 +128,7 @@ const MASTERGAMER_NEWS = [
   {
     "title": "Block Defender &mdash; Coming Soon",
     "date": "2026-08-13",
-    "image": "assets/games/block-defender/block-defender-icon.png",
+    "image": "assets/games/block-defender/block-defender-icon.webp",
     "imageFit": "contain",
     "category": "Arcade / Action / Space Combat",
     "status": "Coming Soon",
@@ -128,7 +138,7 @@ const MASTERGAMER_NEWS = [
   {
     "title": "MasterGamer Acquires LifePrint.ai",
     "date": "2026-07-02",
-    "image": "assets/site/lifeprint-ai-icon.png",
+    "image": "assets/site/lifeprint-ai-icon.webp",
     "imageFit": "contain",
     "category": "Company News",
     "status": "Latest News",
@@ -138,7 +148,7 @@ const MASTERGAMER_NEWS = [
   {
     "title": "Wing Chun Chicken – Mobile Game Announcement",
     "date": "2026-06-27",
-    "image": "assets/games/wing-chun-chicken/wing-chun-chicken-icon.png",
+    "image": "assets/games/wing-chun-chicken/wing-chun-chicken-icon.webp",
     "imageFit": "contain",
     "category": "Game News",
     "summary": "Our original announcement of Wing Chun Chicken, now available on the App Store and Google Play.",
@@ -147,35 +157,35 @@ const MASTERGAMER_NEWS = [
   {
     "title": "Master Gamer Website Launch",
     "date": "2026-06-20",
-    "image": "assets/site/mastergamer-hero.png",
+    "image": "assets/site/mastergamer-hero.webp",
     "summary": "The refreshed Master Gamer website is now live with a cleaner studio presentation, expanded game pages, screenshots, platform links, and trailers.",
     "url": "index.html#home"
   },
   {
     "title": "Sevens Available Now",
     "date": "2026-06-18",
-    "image": "assets/games/sevens/sevens-banner.png",
+    "image": "assets/games/sevens/sevens-banner.webp",
     "summary": "Mastergamer 7's brings the classic Sevens card game to mobile with modern visuals, intelligent AI opponents, and strategic replayability.",
     "url": "sevens.html"
   },
   {
     "title": "TinyFall Released",
     "date": "2026-06-10",
-    "image": "assets/games/tinyfall/tinyfall-banner.png",
+    "image": "assets/games/tinyfall/tinyfall-banner.webp",
     "summary": "TinyFall is a colourful block-clearing puzzle game built for quick arcade sessions, multiple difficulty modes, and fast score chasing.",
     "url": "tinyfall.html"
   },
   {
     "title": "HumDing Launch",
     "date": "2026-05-08",
-    "image": "assets/games/humding/humding-banner.png",
+    "image": "assets/games/humding/humding-banner.webp",
     "summary": "HumDing launches as a calm AI companion for capturing thoughts, organising ideas, and turning daily mental clutter into clearer plans.",
     "url": "humding.html"
   },
   {
     "title": "Chicken Flapper Legacy Since 2018",
     "date": "2018-10-01",
-    "image": "assets/games/chicken-flapper/chicken-flapper-screenshot1.png",
+    "image": "assets/games/chicken-flapper/chicken-flapper-screenshot1.webp",
     "summary": "Chicken Flapper helped begin the Master Gamer catalogue in 2018 with fast arcade action, humour, and a haunted forest full of challenge.",
     "url": "chicken-flapper.html"
   }

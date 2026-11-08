@@ -13,15 +13,15 @@ const MASTERGAMER_GAMES = [
     "summary": "A fast-paced haunted forest arcade shooter packed with action and challenge.",
     "description": "You are Chicken Flapper, battling your way through a haunted forest filled with terrifying creatures and powerful bosses.\n\nFace rabid bats, mummified birds, giant spiders, demons, scorpions, and more as you fight through increasingly difficult stages. Collect power-ups, defeat enemy hordes, and survive epic boss battles on your journey through the forest.\n\nA fast-paced arcade shooter packed with action, humour, and challenge.",
     "media": {
-      "icon": "assets/games/chicken-flapper/chicken-flapper-icon.png",
-      "banner": "assets/games/chicken-flapper/chicken-flapper-banner.png",
-      "cover": "assets/games/chicken-flapper/chicken-flapper-screenshot1.png",
+      "icon": "assets/games/chicken-flapper/chicken-flapper-icon.webp",
+      "banner": "assets/games/chicken-flapper/chicken-flapper-banner.webp",
+      "cover": "assets/games/chicken-flapper/chicken-flapper-screenshot1.webp",
       "screenshots": [
-        "assets/games/chicken-flapper/chicken-flapper-screenshot1.png",
-        "assets/games/chicken-flapper/chicken-flapper-screenshot2.png",
-        "assets/games/chicken-flapper/chicken-flapper-screenshot3.png",
-        "assets/games/chicken-flapper/chicken-flapper-screenshot4.png",
-        "assets/games/chicken-flapper/chicken-flapper-screenshot5.png"
+        "assets/games/chicken-flapper/chicken-flapper-screenshot1.webp",
+        "assets/games/chicken-flapper/chicken-flapper-screenshot2.webp",
+        "assets/games/chicken-flapper/chicken-flapper-screenshot3.webp",
+        "assets/games/chicken-flapper/chicken-flapper-screenshot4.webp",
+        "assets/games/chicken-flapper/chicken-flapper-screenshot5.webp"
       ]
     },
     "detailPage": "chicken-flapper.html",
@@ -56,9 +56,9 @@ const MASTERGAMER_GAMES = [
       "Original energetic soundtrack"
     ],
     "media": {
-      "icon": "assets/games/chicken-flapper-ii/chicken-flapper2-icon.png",
-      "banner": "assets/games/chicken-flapper-ii/chicken-flapper2-icon.png",
-      "cover": "assets/games/chicken-flapper-ii/chicken-flapper2-icon.png",
+      "icon": "assets/games/chicken-flapper-ii/chicken-flapper2-icon.webp",
+      "banner": "assets/games/chicken-flapper-ii/chicken-flapper2-icon.webp",
+      "cover": "assets/games/chicken-flapper-ii/chicken-flapper2-icon.webp",
       "screenshots": []
     },
     "detailPage": "chicken-flapper-ii.html",
@@ -95,9 +95,9 @@ const MASTERGAMER_GAMES = [
       "Boss battles across 100 levels"
     ],
     "media": {
-      "icon": "assets/games/wing-chun-chicken/wing-chun-chicken-icon.png",
-      "banner": "assets/games/wing-chun-chicken/wing-chun-chicken-icon.png",
-      "cover": "assets/games/wing-chun-chicken/wing-chun-chicken-icon.png",
+      "icon": "assets/games/wing-chun-chicken/wing-chun-chicken-icon.webp",
+      "banner": "assets/games/wing-chun-chicken/wing-chun-chicken-icon.webp",
+      "cover": "assets/games/wing-chun-chicken/wing-chun-chicken-icon.webp",
       "screenshots": []
     },
     "detailPage": "games/wing-chun-chicken.html",
@@ -132,9 +132,9 @@ const MASTERGAMER_GAMES = [
       "Final boss battle against Block Zero"
     ],
     "media": {
-      "icon": "assets/games/zombie-block/kill-everything-zombie-block-icon.png",
-      "banner": "assets/games/zombie-block/kill-everything-zombie-block-icon.png",
-      "cover": "assets/games/zombie-block/kill-everything-zombie-block-icon.png",
+      "icon": "assets/games/zombie-block/kill-everything-zombie-block-icon.webp",
+      "banner": "assets/games/zombie-block/kill-everything-zombie-block-icon.webp",
+      "cover": "assets/games/zombie-block/kill-everything-zombie-block-icon.webp",
       "screenshots": []
     },
     "detailPage": "zombie-block.html",
@@ -172,14 +172,14 @@ const MASTERGAMER_GAMES = [
       "Fast and responsive gameplay"
     ],
     "media": {
-      "icon": "assets/games/sevens/sevens-icon.png",
-      "banner": "assets/games/sevens/sevens-banner.png",
-      "cover": "assets/games/sevens/sevens-cover.png",
+      "icon": "assets/games/sevens/sevens-icon.webp",
+      "banner": "assets/games/sevens/sevens-banner.webp",
+      "cover": "assets/games/sevens/sevens-cover.webp",
       "screenshots": [
-        "assets/games/sevens/sevens-screenshot1.png",
-        "assets/games/sevens/sevens-screenshot2.png",
-        "assets/games/sevens/sevens-screenshot3.png",
-        "assets/games/sevens/sevens-screenshot4.png"
+        "assets/games/sevens/sevens-screenshot1.webp",
+        "assets/games/sevens/sevens-screenshot2.webp",
+        "assets/games/sevens/sevens-screenshot3.webp",
+        "assets/games/sevens/sevens-screenshot4.webp"
       ]
     },
     "detailPage": "sevens.html",
@@ -205,15 +205,15 @@ const MASTERGAMER_GAMES = [
     "summary": "A colourful block-clearing puzzle game built for quick arcade fun.",
     "description": "TinyFall is a colourful block-clearing puzzle game built for quick arcade fun.\n\nTap groups of matching blocks before the stack reaches the top. Every move matters--single blocks won't clear, so strategy and timing are key.\n\nChoose from Easy, Medium, Hard, or Pro modes and challenge yourself to achieve higher scores and faster clears.\n\nPop fast. Stack smart. Don't crack.",
     "media": {
-      "icon": "assets/games/tinyfall/tinyfall-icon.png",
-      "banner": "assets/games/tinyfall/tinyfall-banner.png",
-      "cover": "assets/games/tinyfall/tinyfall-cover.png",
+      "icon": "assets/games/tinyfall/tinyfall-icon.webp",
+      "banner": "assets/games/tinyfall/tinyfall-banner.webp",
+      "cover": "assets/games/tinyfall/tinyfall-cover.webp",
       "screenshots": [
-        "assets/games/tinyfall/tinyfall-screenshot1.png",
-        "assets/games/tinyfall/tinyfall-screenshot2.png",
-        "assets/games/tinyfall/tinyfall-screenshot3.png",
-        "assets/games/tinyfall/tinyfall-screenshot4.png",
-        "assets/games/tinyfall/tinyfall-screenshot5.png"
+        "assets/games/tinyfall/tinyfall-screenshot1.webp",
+        "assets/games/tinyfall/tinyfall-screenshot2.webp",
+        "assets/games/tinyfall/tinyfall-screenshot3.webp",
+        "assets/games/tinyfall/tinyfall-screenshot4.webp",
+        "assets/games/tinyfall/tinyfall-screenshot5.webp"
       ]
     },
     "detailPage": "tinyfall.html",
@@ -247,14 +247,14 @@ const MASTERGAMER_GAMES = [
       "Personal planning"
     ],
     "media": {
-      "icon": "assets/games/humding/humding-icon.png",
-      "banner": "assets/games/humding/humding-banner.png",
-      "cover": "assets/games/humding/humding-cover.png",
+      "icon": "assets/games/humding/humding-icon.webp",
+      "banner": "assets/games/humding/humding-banner.webp",
+      "cover": "assets/games/humding/humding-cover.webp",
       "screenshots": [
-        "assets/games/humding/humding-screenshot1.png",
-        "assets/games/humding/humding-screenshot2.png",
-        "assets/games/humding/humding-screenshot3.png",
-        "assets/games/humding/humding-screenshot4.png"
+        "assets/games/humding/humding-screenshot1.webp",
+        "assets/games/humding/humding-screenshot2.webp",
+        "assets/games/humding/humding-screenshot3.webp",
+        "assets/games/humding/humding-screenshot4.webp"
       ]
     },
     "detailPage": "humding.html",
@@ -277,16 +277,16 @@ const MASTERGAMER_GAMES = [
     "summary": "Blast your chicken from a cannon and escape mischievous monkeys.",
     "description": "Blast your chicken from a cannon and escape an army of mischievous monkeys in this fast-paced arcade adventure.\n\nCollect power-ups, dodge obstacles, and fly as far as possible while chasing high scores and leaderboard glory.\n\nSimple controls, colourful visuals, and endless gameplay make Chicken Blast easy to pick up and hard to put down.",
     "media": {
-      "icon": "assets/games/chicken-blast/chicken-blast-icon.png",
-      "banner": "assets/games/chicken-blast/chicken-blast-banner.png",
-      "cover": "assets/games/chicken-blast/chicken-blast-cover.png",
-      "trailerThumbnail": "assets/games/chicken-blast/chicken-blast-video-thumbnail.png",
+      "icon": "assets/games/chicken-blast/chicken-blast-icon.webp",
+      "banner": "assets/games/chicken-blast/chicken-blast-banner.webp",
+      "cover": "assets/games/chicken-blast/chicken-blast-cover.webp",
+      "trailerThumbnail": "assets/games/chicken-blast/chicken-blast-video-thumbnail.webp",
       "video": "assets/games/chicken-blast/chicken-blast-video.mp4",
       "screenshots": [
-        "assets/games/chicken-blast/chicken-blast-screenshot1.png",
-        "assets/games/chicken-blast/chicken-blast-screenshot2.png",
-        "assets/games/chicken-blast/chicken-blast-screenshot3.png",
-        "assets/games/chicken-blast/chicken-blast-screenshot4.png"
+        "assets/games/chicken-blast/chicken-blast-screenshot1.webp",
+        "assets/games/chicken-blast/chicken-blast-screenshot2.webp",
+        "assets/games/chicken-blast/chicken-blast-screenshot3.webp",
+        "assets/games/chicken-blast/chicken-blast-screenshot4.webp"
       ]
     },
     "detailPage": "chicken-blast.html",
@@ -319,17 +319,17 @@ const MASTERGAMER_GAMES = [
       "Easy to learn and fun to master"
     ],
     "media": {
-      "icon": "assets/games/pass-me/pass-me-icon.png",
-      "banner": "assets/games/pass-me/pass-me-banner.png",
-      "cover": "assets/games/pass-me/pass-me-cover.png",
+      "icon": "assets/games/pass-me/pass-me-icon.webp",
+      "banner": "assets/games/pass-me/pass-me-banner.webp",
+      "cover": "assets/games/pass-me/pass-me-cover.webp",
       "screenshots": [
         "assets/games/pass-me/pass-me-screenshot1.png",
-        "assets/games/pass-me/pass-me-screenshot2.png",
-        "assets/games/pass-me/pass-me-screenshot3.png",
-        "assets/games/pass-me/pass-me-screenshot4.png",
-        "assets/games/pass-me/pass-me-screenshot5.png",
-        "assets/games/pass-me/pass-me-screenshot6.png",
-        "assets/games/pass-me/pass-me-screenshot7.png"
+        "assets/games/pass-me/pass-me-screenshot2.webp",
+        "assets/games/pass-me/pass-me-screenshot3.webp",
+        "assets/games/pass-me/pass-me-screenshot4.webp",
+        "assets/games/pass-me/pass-me-screenshot5.webp",
+        "assets/games/pass-me/pass-me-screenshot6.webp",
+        "assets/games/pass-me/pass-me-screenshot7.webp"
       ]
     },
     "detailPage": "pass-me.html",
@@ -354,16 +354,16 @@ const MASTERGAMER_GAMES = [
     "summary": "Guide chickens through 100 sheep-splatting arcade puzzle levels.",
     "description": "Guide your chickens through 100 increasingly challenging levels as you attempt to eliminate troublesome sheep using strategy, timing, and unique character abilities.\n\nUnlock special chickens, discover power-ups, and prepare for the ultimate showdown against the Boss Sheep in Level 100.\n\nA quirky arcade puzzle experience packed with humour and challenge.",
     "media": {
-      "icon": "assets/games/chicken-splat/chicken-splat-icon.png",
-      "banner": "assets/games/chicken-splat/chicken-splat-banner.png",
-      "cover": "assets/games/chicken-splat/chicken-splat-cover.png",
+      "icon": "assets/games/chicken-splat/chicken-splat-icon.webp",
+      "banner": "assets/games/chicken-splat/chicken-splat-banner.webp",
+      "cover": "assets/games/chicken-splat/chicken-splat-cover.webp",
       "screenshots": [
-        "assets/games/chicken-splat/chicken-splat-screenshot1.png",
-        "assets/games/chicken-splat/chicken-splat-screenshot2.png",
-        "assets/games/chicken-splat/chicken-splat-screenshot3.png",
-        "assets/games/chicken-splat/chicken-splat-screenshot4.png",
-        "assets/games/chicken-splat/chicken-splat-screenshot5.png",
-        "assets/games/chicken-splat/chicken-splat-screenshot6.png"
+        "assets/games/chicken-splat/chicken-splat-screenshot1.webp",
+        "assets/games/chicken-splat/chicken-splat-screenshot2.webp",
+        "assets/games/chicken-splat/chicken-splat-screenshot3.webp",
+        "assets/games/chicken-splat/chicken-splat-screenshot4.webp",
+        "assets/games/chicken-splat/chicken-splat-screenshot5.webp",
+        "assets/games/chicken-splat/chicken-splat-screenshot6.webp"
       ]
     },
     "detailPage": "chicken-splat.html",
@@ -388,15 +388,15 @@ const MASTERGAMER_GAMES = [
     "summary": "A fast-paced reflex game about timing, precision, and focus.",
     "description": "Lights Alive is a fast-paced reflex game that tests your timing, precision, and concentration.\n\nWatch bouncing lights race across the screen and strike at exactly the right moment to score points and advance through increasingly difficult levels.\n\nChallenge the AI or compete head-to-head against a friend in fast and frantic battles.",
     "media": {
-      "icon": "assets/games/lights-alive/lights-alive-icon.png",
-      "banner": "assets/games/lights-alive/lights-alive-banner.png",
-      "cover": "assets/games/lights-alive/lights-alive-cover.png",
+      "icon": "assets/games/lights-alive/lights-alive-icon.webp",
+      "banner": "assets/games/lights-alive/lights-alive-banner.webp",
+      "cover": "assets/games/lights-alive/lights-alive-cover.webp",
       "screenshots": [
-        "assets/games/lights-alive/lights-alive-screenshot1.png",
-        "assets/games/lights-alive/lights-alive-screenshot2.png",
-        "assets/games/lights-alive/lights-alive-screenshot3.png",
-        "assets/games/lights-alive/lights-alive-screenshot4.png",
-        "assets/games/lights-alive/lights-alive-screenshot5.png"
+        "assets/games/lights-alive/lights-alive-screenshot1.webp",
+        "assets/games/lights-alive/lights-alive-screenshot2.webp",
+        "assets/games/lights-alive/lights-alive-screenshot3.webp",
+        "assets/games/lights-alive/lights-alive-screenshot4.webp",
+        "assets/games/lights-alive/lights-alive-screenshot5.webp"
       ]
     },
     "detailPage": "lights-alive.html",
@@ -422,14 +422,14 @@ const MASTERGAMER_GAMES = [
     "description": "Jess keeps making bad decisions--and it's your job to stop him.\n\nMatch falling boxes with your active box as the pace increases and mistakes become more costly.\n\nSimple to understand, surprisingly challenging to master, and packed with fast-paced arcade action.",
     "media": {
       "icon": "assets/games/stoned/stoned-icon.png",
-      "banner": "assets/games/stoned/stoned-banner.png",
-      "cover": "assets/games/stoned/stoned-cover.png",
+      "banner": "assets/games/stoned/stoned-banner.webp",
+      "cover": "assets/games/stoned/stoned-cover.webp",
       "screenshots": [
-        "assets/games/stoned/stoned-screenshot1.png",
-        "assets/games/stoned/stoned-screenshot2.png",
-        "assets/games/stoned/stoned-screenshot3.png",
-        "assets/games/stoned/stoned-screenshot4.png",
-        "assets/games/stoned/stoned-screenshot5.png"
+        "assets/games/stoned/stoned-screenshot1.webp",
+        "assets/games/stoned/stoned-screenshot2.webp",
+        "assets/games/stoned/stoned-screenshot3.webp",
+        "assets/games/stoned/stoned-screenshot4.webp",
+        "assets/games/stoned/stoned-screenshot5.webp"
       ]
     },
     "detailPage": "stoned.html",
@@ -463,14 +463,14 @@ const MASTERGAMER_GAMES = [
       "Family-friendly arcade humour"
     ],
     "media": {
-      "icon": "assets/games/rock-paper-chicken/rock-paper-chicken-icon.png",
-      "banner": "assets/games/rock-paper-chicken/rock-paper-chicken-banner.png",
-      "cover": "assets/games/rock-paper-chicken/rock-paper-chicken-cover.png",
+      "icon": "assets/games/rock-paper-chicken/rock-paper-chicken-icon.webp",
+      "banner": "assets/games/rock-paper-chicken/rock-paper-chicken-banner.webp",
+      "cover": "assets/games/rock-paper-chicken/rock-paper-chicken-cover.webp",
       "screenshots": [
-        "assets/games/rock-paper-chicken/rock-paper-chicken-screenshot1.png",
-        "assets/games/rock-paper-chicken/rock-paper-chicken-screenshot2.png",
-        "assets/games/rock-paper-chicken/rock-paper-chicken-screenshot3.png",
-        "assets/games/rock-paper-chicken/rock-paper-chicken-screenshot4.png"
+        "assets/games/rock-paper-chicken/rock-paper-chicken-screenshot1.webp",
+        "assets/games/rock-paper-chicken/rock-paper-chicken-screenshot2.webp",
+        "assets/games/rock-paper-chicken/rock-paper-chicken-screenshot3.webp",
+        "assets/games/rock-paper-chicken/rock-paper-chicken-screenshot4.webp"
       ]
     },
     "detailPage": "rock-paper-chicken.html",
@@ -503,16 +503,16 @@ const MASTERGAMER_GAMES = [
       "Fast-paced arcade action"
     ],
     "media": {
-      "icon": "assets/games/cave-runner/cave-runner-icon.png",
-      "banner": "assets/games/cave-runner/cave-runner-banner.png",
-      "cover": "assets/games/cave-runner/cave-runner-cover.png",
+      "icon": "assets/games/cave-runner/cave-runner-icon.webp",
+      "banner": "assets/games/cave-runner/cave-runner-banner.webp",
+      "cover": "assets/games/cave-runner/cave-runner-cover.webp",
       "screenshots": [
-        "assets/games/cave-runner/cave-runner-screenshot1.png",
-        "assets/games/cave-runner/cave-runner-screenshot2.png",
-        "assets/games/cave-runner/cave-runner-screenshot3.png",
-        "assets/games/cave-runner/cave-runner-screenshot4.png",
-        "assets/games/cave-runner/cave-runner-screenshot5.png",
-        "assets/games/cave-runner/cave-runner-screenshot6.png"
+        "assets/games/cave-runner/cave-runner-screenshot1.webp",
+        "assets/games/cave-runner/cave-runner-screenshot2.webp",
+        "assets/games/cave-runner/cave-runner-screenshot3.webp",
+        "assets/games/cave-runner/cave-runner-screenshot4.webp",
+        "assets/games/cave-runner/cave-runner-screenshot5.webp",
+        "assets/games/cave-runner/cave-runner-screenshot6.webp"
       ]
     },
     "detailPage": "cave-runner.html",
@@ -569,14 +569,14 @@ const MASTERGAMER_GAMES = [
     ],
     "media": {
       "icon": "assets/games/flappy-christmas/flappy-christmas-icon.png",
-      "banner": "assets/games/flappy-christmas/flappy-christmas-banner.png",
-      "cover": "assets/games/flappy-christmas/flappy-christmas-cover.png",
+      "banner": "assets/games/flappy-christmas/flappy-christmas-banner.webp",
+      "cover": "assets/games/flappy-christmas/flappy-christmas-cover.webp",
       "screenshots": [
-        "assets/games/flappy-christmas/flappy-christmas-screenshot1.png",
-        "assets/games/flappy-christmas/flappy-christmas-screenshot2.png",
-        "assets/games/flappy-christmas/flappy-christmas-screenshot3.png",
-        "assets/games/flappy-christmas/flappy-christmas-screenshot4.png",
-        "assets/games/flappy-christmas/flappy-christmas-screenshot5.png"
+        "assets/games/flappy-christmas/flappy-christmas-screenshot1.webp",
+        "assets/games/flappy-christmas/flappy-christmas-screenshot2.webp",
+        "assets/games/flappy-christmas/flappy-christmas-screenshot3.webp",
+        "assets/games/flappy-christmas/flappy-christmas-screenshot4.webp",
+        "assets/games/flappy-christmas/flappy-christmas-screenshot5.webp"
       ]
     },
     "detailPage": "flappy-christmas.html",
@@ -602,14 +602,14 @@ const MASTERGAMER_GAMES = [
     "description": "Get ready for a festive tapping adventure in Slap Santa.\n\nJourney through a playful Christmas world filled with cheeky elves, magical fairies, spirited reindeer, and plenty of holiday mischief. Test your reflexes in fast, funny slap battles where every tap counts.\n\nWin battles, collect bonuses, boost your slapping power, and unlock new surprises as the world becomes brighter, wilder, and more festive.\n\nWith a final showdown against Santa himself, Slap Santa delivers light-hearted holiday fun for players of all ages.\n\nYour finger's journey to Santa starts now.",
     "media": {
       "icon": "assets/games/slap-santa/slap-santa-art.webp",
-      "banner": "assets/games/slap-santa/slap-santa-banner.png",
-      "cover": "assets/games/slap-santa/slap-santa-cover.png",
+      "banner": "assets/games/slap-santa/slap-santa-banner.webp",
+      "cover": "assets/games/slap-santa/slap-santa-cover.webp",
       "screenshots": [
-        "assets/games/slap-santa/slap-santa-screenshot1.png",
-        "assets/games/slap-santa/slap-santa-screenshot2.png",
-        "assets/games/slap-santa/slap-santa-screenshot3.png",
-        "assets/games/slap-santa/slap-santa-screenshot4.png",
-        "assets/games/slap-santa/slap-santa-screenshot5.png"
+        "assets/games/slap-santa/slap-santa-screenshot1.webp",
+        "assets/games/slap-santa/slap-santa-screenshot2.webp",
+        "assets/games/slap-santa/slap-santa-screenshot3.webp",
+        "assets/games/slap-santa/slap-santa-screenshot4.webp",
+        "assets/games/slap-santa/slap-santa-screenshot5.webp"
       ]
     },
     "detailPage": "slap-santa.html",
@@ -637,9 +637,9 @@ const MASTERGAMER_GAMES = [
     "summary": "Build your squad, choose your tactics, develop team chemistry and lead an unlikely team of blocks from the lower divisions all the way to football glory.",
     "description": "Build your squad, choose your tactics, develop team chemistry and lead an unlikely team of blocks from the lower divisions all the way to football glory.",
     "media": {
-      "icon": "assets/games/soccer-block-manager/soccer-block-manager-icon.png",
-      "banner": "assets/games/soccer-block-manager/soccer-block-manager-icon.png",
-      "cover": "assets/games/soccer-block-manager/soccer-block-manager-icon.png",
+      "icon": "assets/games/soccer-block-manager/soccer-block-manager-icon.webp",
+      "banner": "assets/games/soccer-block-manager/soccer-block-manager-icon.webp",
+      "cover": "assets/games/soccer-block-manager/soccer-block-manager-icon.webp",
       "screenshots": []
     },
     "detailPage": "soccer-block-manager-news.html",
@@ -671,9 +671,9 @@ const MASTERGAMER_GAMES = [
     "summary": "Pilot your defender through increasingly intense waves of enemy fighters, gunships and massive airborne threats. Dodge incoming fire, destroy enemy weapons and survive the chaos.",
     "description": "Pilot your defender through increasingly intense waves of enemy fighters, gunships and massive airborne threats. Dodge incoming fire, destroy enemy weapons and survive the chaos.",
     "media": {
-      "icon": "assets/games/block-defender/block-defender-icon.png",
-      "banner": "assets/games/block-defender/block-defender-icon.png",
-      "cover": "assets/games/block-defender/block-defender-icon.png",
+      "icon": "assets/games/block-defender/block-defender-icon.webp",
+      "banner": "assets/games/block-defender/block-defender-icon.webp",
+      "cover": "assets/games/block-defender/block-defender-icon.webp",
       "screenshots": []
     },
     "detailPage": "block-defender-news.html",
@@ -819,8 +819,8 @@ const MASTERGAMER_GAMES = [
     "detailPage": "coming-soon.html#rumble-tumble",
     "detailLabel": "Release updates",
     "media": {
-      "icon": "assets/games/rumble-tumble/rumble-tumble-icon.png",
-      "banner": "assets/games/rumble-tumble/rumble-tumble-icon.png"
+      "icon": "assets/games/rumble-tumble/rumble-tumble-icon.webp",
+      "banner": "assets/games/rumble-tumble/rumble-tumble-icon.webp"
     },
     "links": {
       "appStore": null,

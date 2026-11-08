@@ -403,10 +403,12 @@ function setupContactForm() {
     const body = [
       `Name: ${formData.get("name") || ""}`,
       `Email: ${formData.get("email") || ""}`,
-      `Message: ${formData.get("message") || ""}`,
+      ...(contactForm.classList.contains("request-form")
+        ? [`Request Type: ${formData.get("request-type") || ""}`, `Details: ${formData.get("details") || ""}`]
+        : [`Message: ${formData.get("message") || ""}`]),
     ].join("\n\n");
 
-    window.location.href = `mailto:info@mastergamer.com.au?subject=${encodeURIComponent("Mastergamer Website Enquiry")}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:info@mastergamer.com.au?subject=${encodeURIComponent(contactForm.classList.contains("request-form") ? "Master Gamer Privacy Request" : "Mastergamer Website Enquiry")}&body=${encodeURIComponent(body)}`;
   });
 }
 
@@ -443,7 +445,7 @@ function drawArcadeGrid(time = 0) {
     ctx.fill();
   }
 
-  requestAnimationFrame(drawArcadeGrid);
+  if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) requestAnimationFrame(drawArcadeGrid);
 }
 
 renderGames();
