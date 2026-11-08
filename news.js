@@ -101,7 +101,7 @@ const MASTERGAMER_NEWS = [
     ],
     "imageFit": "contain",
     "category": "Game Releases",
-    "status": "Available on the App Store and Google Play",
+    "status": "Available Now on Google Play",
     "summary": "Chicken Flapper II: Never Ending Journey and Zombie Block: Kill Everything are now available to download on Google Play.",
     "url": "google-play-releases.html"
   },
