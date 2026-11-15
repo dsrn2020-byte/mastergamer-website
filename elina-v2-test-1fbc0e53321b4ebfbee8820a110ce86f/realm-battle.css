@@ -1,0 +1,49 @@
+/* Realm scenery for V2 combat. Kept separate from generated bundles.
+   Source build integration: import this stylesheet after v2.css. */
+.tbl:has(> .backdrop img[src*="loc-01-woods-"]) { --battle-realm-art: url("./assets/art/locations/loc-01-woods-portrait.webp"); }
+.tbl:has(> .backdrop img[src*="loc-02-abbey-"]) { --battle-realm-art: url("./assets/art/locations/loc-02-abbey-portrait.webp"); }
+.tbl:has(> .backdrop img[src*="loc-03-marsh-"]) { --battle-realm-art: url("./assets/art/locations/loc-03-marsh-portrait.webp"); }
+.tbl:has(> .backdrop img[src*="loc-04-plain-"]) { --battle-realm-art: url("./assets/art/locations/loc-04-plain-portrait.webp"); }
+.tbl:has(> .backdrop img[src*="loc-05-ridge-"]) { --battle-realm-art: url("./assets/art/locations/loc-05-ridge-portrait.webp"); }
+.tbl:has(> .backdrop img[src*="loc-06-frost-"]) { --battle-realm-art: url("./assets/art/locations/loc-06-frost-portrait.webp"); }
+.tbl:has(> .backdrop img[src*="loc-07-ember-"]) { --battle-realm-art: url("./assets/art/locations/loc-07-ember-portrait.webp"); }
+.tbl:has(> .backdrop img[src*="loc-08-caverns-"]) { --battle-realm-art: url("./assets/art/locations/loc-08-caverns-portrait.webp"); }
+.tbl:has(> .backdrop img[src*="loc-09-coast-"]) { --battle-realm-art: url("./assets/art/locations/loc-09-coast-portrait.webp"); }
+.tbl:has(> .backdrop img[src*="loc-10-citadel-"]) { --battle-realm-art: url("./assets/art/locations/loc-10-citadel-portrait.webp"); }
+
+/* A clear scenic window keeps artwork visible even on narrow phones.
+   Text and stats retain their opaque, high-contrast surfaces. */
+.tbl > .overlay > .bp::before {
+  content: "";
+  display: block;
+  height: clamp(88px, 18vh, 140px);
+  margin: -12px -12px 12px;
+  border-bottom: 1px solid #a78b4b;
+  border-radius: 15px 15px 0 0;
+  background-image: linear-gradient(0deg, #101719 0%, #10171900 60%), var(--battle-realm-art);
+  background-size: cover;
+  background-position: center 40%;
+}
+.tbl > .overlay > .bp {
+  background-color: #101719;
+  background-image: linear-gradient(#101719db, #101719f5), var(--battle-realm-art);
+  background-size: cover;
+  background-position: center;
+}
+.tbl > .overlay > .bp .side,
+.tbl > .overlay > .bp .pick {
+  background-color: #182226f2;
+}
+@media (orientation: landscape) {
+  .tbl:has(> .backdrop img[src*="loc-01-woods-"]) { --battle-realm-art: url("./assets/art/locations/loc-01-woods-landscape.webp"); }
+  .tbl:has(> .backdrop img[src*="loc-02-abbey-"]) { --battle-realm-art: url("./assets/art/locations/loc-02-abbey-landscape.webp"); }
+  .tbl:has(> .backdrop img[src*="loc-03-marsh-"]) { --battle-realm-art: url("./assets/art/locations/loc-03-marsh-landscape.webp"); }
+  .tbl:has(> .backdrop img[src*="loc-04-plain-"]) { --battle-realm-art: url("./assets/art/locations/loc-04-plain-landscape.webp"); }
+  .tbl:has(> .backdrop img[src*="loc-05-ridge-"]) { --battle-realm-art: url("./assets/art/locations/loc-05-ridge-landscape.webp"); }
+  .tbl:has(> .backdrop img[src*="loc-06-frost-"]) { --battle-realm-art: url("./assets/art/locations/loc-06-frost-landscape.webp"); }
+  .tbl:has(> .backdrop img[src*="loc-07-ember-"]) { --battle-realm-art: url("./assets/art/locations/loc-07-ember-landscape.webp"); }
+  .tbl:has(> .backdrop img[src*="loc-08-caverns-"]) { --battle-realm-art: url("./assets/art/locations/loc-08-caverns-landscape.webp"); }
+  .tbl:has(> .backdrop img[src*="loc-09-coast-"]) { --battle-realm-art: url("./assets/art/locations/loc-09-coast-landscape.webp"); }
+  .tbl:has(> .backdrop img[src*="loc-10-citadel-"]) { --battle-realm-art: url("./assets/art/locations/loc-10-citadel-landscape.webp"); }
+}
+@media (max-height: 500px) { .tbl > .overlay > .bp::before { height: 72px; } }
