@@ -217,10 +217,12 @@ function renderNewsCards(selector, limit) {
 
 function renderGames() {
   if (!gamesGrid || typeof MASTERGAMER_GAMES === "undefined") return;
-  const newOrder = ["Watcher in the Dark","TinyFall","Sevens","Zombie Block: Kill Everything","Wing Chun Chicken","Closed Loop"];
+  const latestIds = ["spell-stack","wambush","block-defender","rumble-tumble","watcher-in-the-dark","tinyfall","sevens","zombie-block-kill-everything","wing-chun-chicken","closed-loop"];
+  const newGames = MASTERGAMER_GAMES.filter(game => game.collection === "new");
+  const newOrder = [...latestIds.map(id => newGames.find(game => game.id === id)).filter(Boolean), ...newGames.filter(game => !latestIds.includes(game.id))];
   const groups = [
-    {id: "new-releases", title: "New Releases", description: "Fresh favourites, ready to download. Choose the store available for your device.", games: newOrder.map(title => MASTERGAMER_GAMES.find(game => game.title === title)).filter(Boolean)},
-    {id: "coming-soon", title: "Coming Soon", description: "The next wave of Master Gamer games. Spell Stack is already on Android, with iOS coming soon.", games: MASTERGAMER_GAMES.filter(game => game.collection === "upcoming").sort((a,b) => a.launchOrder-b.launchOrder)},
+    {id: "new-releases", title: "New Releases", description: "Fresh favourites, ready to download. Choose the store available for your device.", games: newOrder},
+    {id: "coming-soon", title: "Coming Soon", description: "Games not yet available to download. Check our news for release updates.", games: MASTERGAMER_GAMES.filter(game => game.collection === "upcoming").sort((a,b) => a.launchOrder-b.launchOrder)},
     {id: "more-to-play", title: "More to Play", description: "Keep exploring the Master Gamer collection.", games: MASTERGAMER_GAMES.filter(game => game.collection === "more")},
     {id: "updated-classics", title: "Updated Classics", description: "Our legacy games have been updated. Revisit the originals and check each store for the latest version available to you.", games: MASTERGAMER_GAMES.filter(game => game.collection === "legacy")},
     {id: "in-development", title: "Also in Development", description: "More from the studio, with release news to follow.", games: MASTERGAMER_GAMES.filter(game => game.collection === "development")},

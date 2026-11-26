@@ -664,12 +664,11 @@ const MASTERGAMER_GAMES = [
     "category": "Arcade / Action / Space Combat",
     "featured": false,
     "platforms": [
-      "iOS Coming Soon",
-      "Android Coming Soon"
+      "Android"
     ],
-    "badge": "COMING SOON",
-    "summary": "Pilot your defender through increasingly intense waves of enemy fighters, gunships and massive airborne threats. Dodge incoming fire, destroy enemy weapons and survive the chaos.",
-    "description": "Pilot your defender through increasingly intense waves of enemy fighters, gunships and massive airborne threats. Dodge incoming fire, destroy enemy weapons and survive the chaos.",
+    "badge": "AVAILABLE ON ANDROID",
+    "summary": "Pilot your defender through waves of enemies in a fast-paced arcade space battle.",
+    "description": "Dodge incoming fire, destroy enemy weapons and survive increasingly intense waves of enemy fighters, gunships and massive airborne threats.\n\nAvailable on Google Play.",
     "media": {
       "icon": "assets/games/block-defender/block-defender-icon.webp",
       "banner": "assets/games/block-defender/block-defender-icon.webp",
@@ -677,20 +676,16 @@ const MASTERGAMER_GAMES = [
       "screenshots": []
     },
     "detailPage": "block-defender-news.html",
-    "detailLabel": "Watch This Space",
+    "detailLabel": "Explore game",
     "links": {
-      "appStore": {
-        "comingSoon": true
-      },
-      "googlePlay": {
-        "comingSoon": true
-      },
+      "appStore": null,
+      "googlePlay": "https://play.google.com/store/apps/details?id=com.Block.defender",
       "playOnline": null,
       "trailer": null
     },
     "id": "block-defender",
-    "collection": "upcoming",
-    "launchOrder": 3
+    "collection": "new",
+    "subtitle": "Available on Google Play"
   },
   {
     "title": "Closed Loop",
@@ -729,55 +724,55 @@ const MASTERGAMER_GAMES = [
     "initials": "SS",
     "accent": "#c69aff",
     "summary": "Falling letters. Clever words. One more go.",
-    "description": "Trace words through falling letters, clear space and keep the stack under control.\n\nAvailable now on Google Play, with the iOS release coming soon.",
-    "subtitle": "Android available · iOS coming soon",
+    "description": "Trace words through falling letters, clear space and keep the stack under control.\n\nAvailable on the App Store and Google Play.",
+    "subtitle": "Available on the App Store and Google Play",
     "media": {
       "icon": "https://play-lh.googleusercontent.com/JotMUCSrVWsRky-h3Jejo2R5hu2TrZjlDZ6WfyqqQuu6XmTGpWu2wJjSuy8H_gbeHeeV58lTiuAXorfkAcrIEdA=s0-br30"
     },
     "links": {
-      "appStore": {
-        "comingSoon": true
-      },
+      "appStore": "https://apps.apple.com/au/app/spell-stack/id6818916044",
       "googlePlay": "https://play.google.com/store/apps/details?id=com.mastergamer.spellstack",
       "playOnline": null,
       "trailer": null
     },
     "id": "spell-stack",
-    "collection": "upcoming",
-    "launchOrder": 0,
+    "collection": "new",
     "featured": false,
-    "badge": "iOS COMING SOON",
+    "badge": "AVAILABLE ON iOS + ANDROID",
     "platforms": [
-      "Android",
-      "iOS Coming Soon"
+      "iOS",
+      "Android"
     ],
-    "detailPage": "coming-soon.html#spell-stack",
-    "detailLabel": "Release updates"
+    "detailPage": "new-releases.html#spell-stack",
+    "detailLabel": "Game details"
   },
   {
     "title": "Wambush",
     "initials": "W",
     "accent": "#ffcc70",
-    "summary": "A new word-game challenge is on its way.",
-    "description": "Wambush is joining the Master Gamer line-up. Watch this space for game previews and release news.",
+    "summary": "Hide your words. Hunt theirs.",
+    "description": "A tactical word battle. Conceal your words, uncover your opponent’s and decide when to risk a full-word guess.\n\nAvailable on the App Store and Google Play.",
     "id": "wambush",
-    "collection": "upcoming",
-    "launchOrder": 1,
+    "collection": "new",
     "featured": false,
-    "badge": "COMING SOON",
-    "platforms": [],
-    "detailPage": "coming-soon.html#wambush",
-    "detailLabel": "Release updates",
+    "badge": "AVAILABLE ON iOS + ANDROID",
+    "platforms": [
+      "iOS",
+      "Android"
+    ],
+    "detailPage": "new-releases.html#wambush",
+    "detailLabel": "Game details",
     "links": {
-      "appStore": null,
-      "googlePlay": null,
+      "appStore": "https://apps.apple.com/au/app/wambush/id6823056274",
+      "googlePlay": "https://play.google.com/store/apps/details?id=com.wam.bush",
       "playOnline": null,
       "trailer": null
     },
     "media": {
       "icon": "assets/games/wambush/wambush-art.webp",
       "banner": "assets/games/wambush/wambush-art.webp"
-    }
+    },
+    "subtitle": "Available on the App Store and Google Play"
   },
   {
     "title": "Jingle Tingle Present Hunt",
@@ -808,26 +803,28 @@ const MASTERGAMER_GAMES = [
     "title": "Rumble Tumble",
     "initials": "RT",
     "accent": "#ff9c72",
-    "summary": "A new addition to the Master Gamer line-up.",
-    "description": "Rumble Tumble is in development. More game details, previews and release news are on the way.",
+    "summary": "Explore Rumble Tumble on Android.",
+    "description": "Rumble Tumble is available to download from Google Play.",
     "id": "rumble-tumble",
-    "collection": "upcoming",
-    "launchOrder": 4,
+    "collection": "new",
     "featured": false,
-    "badge": "COMING SOON",
-    "platforms": [],
-    "detailPage": "coming-soon.html#rumble-tumble",
-    "detailLabel": "Release updates",
+    "badge": "AVAILABLE ON ANDROID",
+    "platforms": [
+      "Android"
+    ],
+    "detailPage": "new-releases.html#rumble-tumble",
+    "detailLabel": "Game details",
     "media": {
       "icon": "assets/games/rumble-tumble/rumble-tumble-icon.webp",
       "banner": "assets/games/rumble-tumble/rumble-tumble-icon.webp"
     },
     "links": {
       "appStore": null,
-      "googlePlay": null,
+      "googlePlay": "https://play.google.com/store/apps/details?id=com.mastergamer.rumbletumble",
       "playOnline": null,
       "trailer": null
-    }
+    },
+    "subtitle": "Available on Google Play"
   },
   {
     "title": "Watcher in the Dark",

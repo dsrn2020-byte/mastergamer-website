@@ -1,6 +1,16 @@
 /* Newest announcements appear first; earlier studio news is retained below. */
 const MASTERGAMER_NEWS = [
   {
+    "title": "Store availability update: Spell Stack, Wambush and more",
+    "date": "2026-11-26",
+    "image": "https://play-lh.googleusercontent.com/JotMUCSrVWsRky-h3Jejo2R5hu2TrZjlDZ6WfyqqQuu6XmTGpWu2wJjSuy8H_gbeHeeV58lTiuAXorfkAcrIEdA=s0-br30",
+    "imageFit": "contain",
+    "category": "Release update",
+    "status": "Store links verified",
+    "summary": "Spell Stack and Wambush are on the App Store and Google Play. Block Defender and Rumble Tumble are available on Google Play.",
+    "url": "new-releases.html"
+  },
+  {
     "title": "Jingle Tingle Christmas is here",
     "date": "2026-11-08",
     "image": "assets/games/jingle-tingle/jingle-tingle-art.webp",
@@ -50,7 +60,7 @@ const MASTERGAMER_NEWS = [
     "url": "new-releases.html"
   },
   {
-    "title": "Coming soon to Master Gamer",
+    "title": "October studio preview",
     "date": "2026-10-20",
     "image": "assets/games/block-defender/block-defender-icon.webp",
     "images": [
@@ -64,8 +74,8 @@ const MASTERGAMER_NEWS = [
       "Rumble Tumble"
     ],
     "imageFit": "contain",
-    "category": "Coming Soon",
-    "summary": "Spell Stack, Wambush, Jingle Tingle Present Hunt, Block Defender and Rumble Tumble. Explore what is next, including Spell Stack’s Android release.",
+    "category": "From the archive",
+    "summary": "Our October look at the games in the pipeline. Check New Releases for the latest store links.",
     "url": "coming-soon.html"
   },
   {
@@ -136,12 +146,12 @@ const MASTERGAMER_NEWS = [
     "url": "soccer-block-manager-news.html"
   },
   {
-    "title": "Block Defender &mdash; Coming Soon",
+    "title": "Block Defender",
     "date": "2026-08-13",
     "image": "assets/games/block-defender/block-defender-icon.webp",
     "imageFit": "contain",
     "category": "Arcade / Action / Space Combat",
-    "status": "Coming Soon",
+    "status": "Available on Google Play",
     "summary": "The invasion has begun. Take control of your defender, battle enemy fighters and massive airborne threats, and hold the line through increasingly intense arcade combat.",
     "url": "block-defender-news.html"
   },
