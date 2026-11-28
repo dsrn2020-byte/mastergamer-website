@@ -779,17 +779,19 @@ const MASTERGAMER_GAMES = [
     "initials": "JT",
     "accent": "#80e8ba",
     "summary": "A little Christmas magic. A house full of presents to find.",
-    "description": "Bring the festive fun home with Jingle Tingle Present Hunt, a Christmas present-hunting adventure for families.\n\nComing soon. Follow our news for release updates.",
+    "description": "Bring the festive fun home with Jingle Tingle Present Hunt, a Christmas present-hunting adventure for families.\n\nFree on iPhone and iPad with no ads or in-app purchases in the Apple launch version. Google Play is not yet available.",
     "id": "jingle-tingle-present-hunt",
-    "collection": "upcoming",
+    "collection": "new",
     "launchOrder": 2,
     "featured": false,
-    "badge": "COMING SOON",
-    "platforms": [],
-    "detailPage": "coming-soon.html#jingle-tingle-present-hunt",
-    "detailLabel": "Release updates",
+    "badge": "AVAILABLE ON iOS",
+    "platforms": [
+      "iOS"
+    ],
+    "detailPage": "jingle-tingle-christmas.html#jingle-tingle-present-hunt",
+    "detailLabel": "Game details",
     "links": {
-      "appStore": null,
+      "appStore": "https://apps.apple.com/au/app/jingle-tingle-present-hunt/id6824752871",
       "googlePlay": null,
       "playOnline": null,
       "trailer": null

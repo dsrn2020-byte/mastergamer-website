@@ -17,7 +17,7 @@ const MASTERGAMER_NEWS = [
     "imageFit": "contain",
     "category": "Christmas Music",
     "status": "Song out now",
-    "summary": "Listen, buy the Christmas single or watch the full animated video. Jingle Tingle Present Hunt, the game, is coming soon.",
+    "summary": "Listen, buy the Christmas single or watch the full animated video. The separate Jingle Tingle Present Hunt game is free on iPhone and iPad.",
     "url": "jingle-tingle-christmas.html"
   },
   {
